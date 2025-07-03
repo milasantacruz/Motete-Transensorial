@@ -8,7 +8,7 @@
 ## 🎯 **FASE 1: Preparación del Entorno**
 
 ### Paso 1.1: Configurar Raspberry Pi
-**⏱️ Tiempo estimado: 30 minutos**
+**⏱️ Tiempo estimado: 60 minutos**
 
 1. **Instalar Raspberry Pi OS**
    ```bash
@@ -38,7 +38,7 @@
    ```
 
 ### Paso 1.2: Instalar Dependencias Base
-**⏱️ Tiempo estimado: 20 minutos**
+**⏱️ Tiempo estimado: 60 minutos**
 
 1. **Instalar Node.js**
    ```bash
@@ -64,7 +64,8 @@
 ## 🦟 **FASE 2: Configuración del Broker Mosquitto**
 
 ### Paso 2.1: Configurar Mosquitto
-**⏱️ Tiempo estimado: 15 minutos**
+**⏱️ 
+ estimado: 60 minutos**
 
 1. **Detener servicio por defecto**
    ```bash
@@ -117,7 +118,7 @@
    ```
 
 ### Paso 2.2: Configurar Usuarios MQTT
-**⏱️ Tiempo estimado: 10 minutos**
+**⏱️ Tiempo estimado: 40 minutos**
 
 1. **Crear archivo de contraseñas**
    ```bash
@@ -140,7 +141,7 @@
    ```
 
 ### Paso 2.3: Probar Mosquitto
-**⏱️ Tiempo estimado: 10 minutos**
+**⏱️ Tiempo estimado: 30 minutos**
 
 1. **Iniciar broker manualmente**
    ```bash
@@ -167,7 +168,7 @@
 ## 📦 **FASE 3: Desarrollo de la Aplicación Node.js**
 
 ### Paso 3.1: Inicializar Proyecto Node.js
-**⏱️ Tiempo estimado: 10 minutos**
+**⏱️ Tiempo estimado: 60 minutos**
 
 1. **Crear estructura del proyecto**
    ```bash
@@ -324,7 +325,7 @@
    ```
 
 ### Paso 3.3: Crear Servidor Express
-**⏱️ Tiempo estimado: 15 minutos**
+**⏱️ Tiempo estimado: 60 minutos**
 
 1. **Crear servidor principal**
    ```bash
@@ -418,7 +419,7 @@
    ```
 
 ### Paso 3.4: Crear Interfaz Web Básica
-**⏱️ Tiempo estimado: 15 minutos**
+**⏱️ Tiempo estimado: 60 minutos**
 
 1. **Crear página principal**
    ```bash
@@ -591,7 +592,7 @@
 ## 🧪 **FASE 4: Pruebas y Validación**
 
 ### Paso 4.1: Probar Sistema Sin Osmos
-**⏱️ Tiempo estimado: 10 minutos**
+**⏱️ Tiempo estimado: 30 minutos**
 
 1. **Iniciar broker Mosquitto**
    ```bash
@@ -611,7 +612,7 @@
    - Debe mostrar "Esperando conexión de Osmos"
 
 ### Paso 4.2: Simular Osmo con Mosquitto Client
-**⏱️ Tiempo estimado: 15 minutos**
+**⏱️ Tiempo estimado: 40 minutos**
 
 1. **En nueva terminal, simular discovery**
    ```bash
@@ -649,7 +650,7 @@
    - Probar botones de bombas
 
 ### Paso 4.3: Monitorear Comandos
-**⏱️ Tiempo estimado: 5 minutos**
+**⏱️ Tiempo estimado: 15 minutos**
 
 1. **Escuchar comandos desde la web**
    ```bash
@@ -666,7 +667,7 @@
 ## 🔧 **FASE 5: Scripts de Automatización**
 
 ### Paso 5.1: Script de Inicio Automático
-**⏱️ Tiempo estimado: 10 minutos**
+**⏱️ Tiempo estimado: 30 minutos**
 
 1. **Crear script de inicio**
    ```bash
@@ -713,7 +714,7 @@
    ```
 
 ### Paso 5.2: Script de Parada
-**⏱️ Tiempo estimado: 5 minutos**
+**⏱️ Tiempo estimado: 15 minutos**
 
 1. **Crear script de parada**
    ```bash

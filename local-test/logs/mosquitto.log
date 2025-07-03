@@ -1,0 +1,379 @@
+1751570938: mosquitto version 2.0.21 starting
+1751570938: Config loaded from mosquitto.conf.
+1751570938: Opening ipv6 listen socket on port 1883.
+1751570938: Opening ipv4 listen socket on port 1883.
+1751570938: mosquitto version 2.0.21 running
+1751570995: mosquitto version 2.0.21 terminating
+1751570995: Saving in-memory database to F:/Persona/Correspondencias Transmodales/local-test/data/\mosquitto.db.
+1751571365: mosquitto version 2.0.21 starting
+1751571365: Config loaded from mosquitto.conf.
+1751571365: Opening ipv6 listen socket on port 1883.
+1751571365: Opening ipv4 listen socket on port 1883.
+1751571365: mosquitto version 2.0.21 running
+1751571459: New connection from ::1:61980 on port 1883.
+1751571459: New client connected from ::1:61980 as director_e48c5cd2 (p2, c1, k60, u'director').
+1751571459: No will message specified.
+1751571459: Sending CONNACK to director_e48c5cd2 (0, 0)
+1751571459: Received SUBSCRIBE from director_e48c5cd2
+1751571459: 	motete/osmo/+/status (QoS 1)
+1751571459: director_e48c5cd2 1 motete/osmo/+/status
+1751571459: Sending SUBACK to director_e48c5cd2
+1751571459: Received SUBSCRIBE from director_e48c5cd2
+1751571459: 	motete/osmo/discovery (QoS 1)
+1751571459: director_e48c5cd2 1 motete/osmo/discovery
+1751571459: Sending SUBACK to director_e48c5cd2
+1751571519: Received PINGREQ from director_e48c5cd2
+1751571519: Sending PINGRESP to director_e48c5cd2
+1751571579: Received PINGREQ from director_e48c5cd2
+1751571579: Sending PINGRESP to director_e48c5cd2
+1751571639: Received PINGREQ from director_e48c5cd2
+1751571639: Sending PINGRESP to director_e48c5cd2
+1751571699: Received PINGREQ from director_e48c5cd2
+1751571699: Sending PINGRESP to director_e48c5cd2
+1751571759: Received PINGREQ from director_e48c5cd2
+1751571759: Sending PINGRESP to director_e48c5cd2
+1751571819: Received PINGREQ from director_e48c5cd2
+1751571819: Sending PINGRESP to director_e48c5cd2
+1751571879: Received PINGREQ from director_e48c5cd2
+1751571879: Sending PINGRESP to director_e48c5cd2
+1751571939: Received PINGREQ from director_e48c5cd2
+1751571939: Sending PINGRESP to director_e48c5cd2
+1751571999: Received PINGREQ from director_e48c5cd2
+1751571999: Sending PINGRESP to director_e48c5cd2
+1751572059: Received PINGREQ from director_e48c5cd2
+1751572059: Sending PINGRESP to director_e48c5cd2
+1751572119: Received PINGREQ from director_e48c5cd2
+1751572119: Sending PINGRESP to director_e48c5cd2
+1751572179: Received PINGREQ from director_e48c5cd2
+1751572179: Sending PINGRESP to director_e48c5cd2
+1751572239: Received PINGREQ from director_e48c5cd2
+1751572239: Sending PINGRESP to director_e48c5cd2
+1751572247: New connection from ::1:62246 on port 1883.
+1751572247: Sending CONNACK to auto-B73B54EF-A99D-6817-0C9C-CB610BB0A301 (0, 5)
+1751572247: Client auto-B73B54EF-A99D-6817-0C9C-CB610BB0A301 disconnected, not authorised.
+1751572260: New connection from ::1:62250 on port 1883.
+1751572260: New client connected from ::1:62250 as auto-4A3083D1-7243-A6A6-723B-06B8907B34F9 (p2, c1, k60, u'osmo_norte').
+1751572260: No will message specified.
+1751572260: Sending CONNACK to auto-4A3083D1-7243-A6A6-723B-06B8907B34F9 (0, 0)
+1751572260: Received PUBLISH from auto-4A3083D1-7243-A6A6-723B-06B8907B34F9 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572260: Sending PUBLISH to director_e48c5cd2 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572260: Received DISCONNECT from auto-4A3083D1-7243-A6A6-723B-06B8907B34F9
+1751572260: Client auto-4A3083D1-7243-A6A6-723B-06B8907B34F9 disconnected.
+1751572299: Received PINGREQ from director_e48c5cd2
+1751572299: Sending PINGRESP to director_e48c5cd2
+1751572359: Received PINGREQ from director_e48c5cd2
+1751572359: Sending PINGRESP to director_e48c5cd2
+1751572419: Received PINGREQ from director_e48c5cd2
+1751572419: Sending PINGRESP to director_e48c5cd2
+1751572479: Received PINGREQ from director_e48c5cd2
+1751572479: Sending PINGRESP to director_e48c5cd2
+1751572505: New connection from ::1:62303 on port 1883.
+1751572505: New client connected from ::1:62303 as auto-7F01CCA1-E7C3-CF30-6D74-B1AF023F88FF (p2, c1, k60, u'osmo_norte').
+1751572505: No will message specified.
+1751572505: Sending CONNACK to auto-7F01CCA1-E7C3-CF30-6D74-B1AF023F88FF (0, 0)
+1751572505: Received PUBLISH from auto-7F01CCA1-E7C3-CF30-6D74-B1AF023F88FF (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572505: Sending PUBLISH to director_e48c5cd2 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572505: Received DISCONNECT from auto-7F01CCA1-E7C3-CF30-6D74-B1AF023F88FF
+1751572505: Client auto-7F01CCA1-E7C3-CF30-6D74-B1AF023F88FF disconnected.
+1751572539: Received PINGREQ from director_e48c5cd2
+1751572539: Sending PINGRESP to director_e48c5cd2
+1751572547: New connection from ::1:62333 on port 1883.
+1751572547: Sending CONNACK to auto-D4642EE8-82FF-4E2C-7426-F37EED0E4A33 (0, 5)
+1751572547: Client auto-D4642EE8-82FF-4E2C-7426-F37EED0E4A33 disconnected, not authorised.
+1751572568: New connection from ::1:62336 on port 1883.
+1751572568: New client connected from ::1:62336 as auto-E67238C3-364C-8509-31F5-E1E65A3DA96D (p2, c1, k60, u'osmo_norte').
+1751572568: No will message specified.
+1751572568: Sending CONNACK to auto-E67238C3-364C-8509-31F5-E1E65A3DA96D (0, 0)
+1751572568: Received PUBLISH from auto-E67238C3-364C-8509-31F5-E1E65A3DA96D (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572568: Sending PUBLISH to director_e48c5cd2 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572568: Received DISCONNECT from auto-E67238C3-364C-8509-31F5-E1E65A3DA96D
+1751572568: Client auto-E67238C3-364C-8509-31F5-E1E65A3DA96D disconnected.
+1751572599: Received PINGREQ from director_e48c5cd2
+1751572599: Sending PINGRESP to director_e48c5cd2
+1751572650: Client director_e48c5cd2 closed its connection.
+1751572712: New connection from ::1:62405 on port 1883.
+1751572712: New client connected from ::1:62405 as director_6570addd (p2, c1, k60, u'director').
+1751572712: No will message specified.
+1751572712: Sending CONNACK to director_6570addd (0, 0)
+1751572712: Received SUBSCRIBE from director_6570addd
+1751572712: 	motete/osmo/+/status (QoS 1)
+1751572712: director_6570addd 1 motete/osmo/+/status
+1751572712: Sending SUBACK to director_6570addd
+1751572712: Received SUBSCRIBE from director_6570addd
+1751572712: 	motete/osmo/discovery (QoS 1)
+1751572712: director_6570addd 1 motete/osmo/discovery
+1751572712: Sending SUBACK to director_6570addd
+1751572772: Received PINGREQ from director_6570addd
+1751572772: Sending PINGRESP to director_6570addd
+1751572831: New connection from ::1:62449 on port 1883.
+1751572831: New client connected from ::1:62449 as auto-393B4F10-DFF5-5770-AAD8-D63518BC5A87 (p2, c1, k60, u'osmo_norte').
+1751572831: No will message specified.
+1751572831: Sending CONNACK to auto-393B4F10-DFF5-5770-AAD8-D63518BC5A87 (0, 0)
+1751572831: Received PUBLISH from auto-393B4F10-DFF5-5770-AAD8-D63518BC5A87 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572831: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751572831: Received DISCONNECT from auto-393B4F10-DFF5-5770-AAD8-D63518BC5A87
+1751572831: Client auto-393B4F10-DFF5-5770-AAD8-D63518BC5A87 disconnected.
+1751572832: Received PINGREQ from director_6570addd
+1751572832: Sending PINGRESP to director_6570addd
+1751572892: Received PINGREQ from director_6570addd
+1751572892: Sending PINGRESP to director_6570addd
+1751572952: Received PINGREQ from director_6570addd
+1751572952: Sending PINGRESP to director_6570addd
+1751573012: Received PINGREQ from director_6570addd
+1751573012: Sending PINGRESP to director_6570addd
+1751573072: Received PINGREQ from director_6570addd
+1751573072: Sending PINGRESP to director_6570addd
+1751573128: New connection from ::1:62544 on port 1883.
+1751573128: New client connected from ::1:62544 as auto-E888DF18-FB6E-6119-0E9C-97CABCC7F46B (p2, c1, k60, u'osmo_norte').
+1751573128: No will message specified.
+1751573128: Sending CONNACK to auto-E888DF18-FB6E-6119-0E9C-97CABCC7F46B (0, 0)
+1751573128: Received PUBLISH from auto-E888DF18-FB6E-6119-0E9C-97CABCC7F46B (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751573128: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751573128: Received DISCONNECT from auto-E888DF18-FB6E-6119-0E9C-97CABCC7F46B
+1751573128: Client auto-E888DF18-FB6E-6119-0E9C-97CABCC7F46B disconnected.
+1751573132: Received PINGREQ from director_6570addd
+1751573132: Sending PINGRESP to director_6570addd
+1751573166: Saving in-memory database to F:/Persona/Correspondencias Transmodales/local-test/data/\mosquitto.db.
+1751573192: Received PINGREQ from director_6570addd
+1751573192: Sending PINGRESP to director_6570addd
+1751573252: Received PINGREQ from director_6570addd
+1751573252: Sending PINGRESP to director_6570addd
+1751573312: Received PINGREQ from director_6570addd
+1751573312: Sending PINGRESP to director_6570addd
+1751573372: Received PINGREQ from director_6570addd
+1751573372: Sending PINGRESP to director_6570addd
+1751573432: Received PINGREQ from director_6570addd
+1751573432: Sending PINGRESP to director_6570addd
+1751573492: Received PINGREQ from director_6570addd
+1751573492: Sending PINGRESP to director_6570addd
+1751573552: Received PINGREQ from director_6570addd
+1751573552: Sending PINGRESP to director_6570addd
+1751573612: Received PINGREQ from director_6570addd
+1751573612: Sending PINGRESP to director_6570addd
+1751573672: Received PINGREQ from director_6570addd
+1751573672: Sending PINGRESP to director_6570addd
+1751573732: Received PINGREQ from director_6570addd
+1751573732: Sending PINGRESP to director_6570addd
+1751573792: Received PINGREQ from director_6570addd
+1751573792: Sending PINGRESP to director_6570addd
+1751573852: Received PINGREQ from director_6570addd
+1751573852: Sending PINGRESP to director_6570addd
+1751573912: Received PINGREQ from director_6570addd
+1751573912: Sending PINGRESP to director_6570addd
+1751573972: Received PINGREQ from director_6570addd
+1751573972: Sending PINGRESP to director_6570addd
+1751574032: Received PINGREQ from director_6570addd
+1751574032: Sending PINGRESP to director_6570addd
+1751574059: New connection from ::1:62816 on port 1883.
+1751574059: New client connected from ::1:62816 as auto-94FAB2E8-635F-B2E1-929C-17C6D5597F97 (p2, c1, k60, u'osmo_norte').
+1751574059: No will message specified.
+1751574059: Sending CONNACK to auto-94FAB2E8-635F-B2E1-929C-17C6D5597F97 (0, 0)
+1751574059: Received PUBLISH from auto-94FAB2E8-635F-B2E1-929C-17C6D5597F97 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574059: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574059: Received DISCONNECT from auto-94FAB2E8-635F-B2E1-929C-17C6D5597F97
+1751574059: Client auto-94FAB2E8-635F-B2E1-929C-17C6D5597F97 disconnected.
+1751574085: New connection from ::1:62828 on port 1883.
+1751574085: New client connected from ::1:62828 as auto-C17F413B-2C72-C702-0FEB-8F95832A3A2D (p2, c1, k60, u'osmo_norte').
+1751574085: No will message specified.
+1751574085: Sending CONNACK to auto-C17F413B-2C72-C702-0FEB-8F95832A3A2D (0, 0)
+1751574085: Received PUBLISH from auto-C17F413B-2C72-C702-0FEB-8F95832A3A2D (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574085: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574085: Received DISCONNECT from auto-C17F413B-2C72-C702-0FEB-8F95832A3A2D
+1751574085: Client auto-C17F413B-2C72-C702-0FEB-8F95832A3A2D disconnected.
+1751574092: Received PINGREQ from director_6570addd
+1751574092: Sending PINGRESP to director_6570addd
+1751574152: Received PINGREQ from director_6570addd
+1751574152: Sending PINGRESP to director_6570addd
+1751574212: Received PINGREQ from director_6570addd
+1751574212: Sending PINGRESP to director_6570addd
+1751574272: Received PINGREQ from director_6570addd
+1751574272: Sending PINGRESP to director_6570addd
+1751574332: Received PINGREQ from director_6570addd
+1751574332: Sending PINGRESP to director_6570addd
+1751574392: Received PINGREQ from director_6570addd
+1751574392: Sending PINGRESP to director_6570addd
+1751574452: Received PINGREQ from director_6570addd
+1751574452: Sending PINGRESP to director_6570addd
+1751574512: Received PINGREQ from director_6570addd
+1751574512: Sending PINGRESP to director_6570addd
+1751574520: New connection from ::1:62920 on port 1883.
+1751574520: New client connected from ::1:62920 as auto-BC2B85DA-8547-1D0E-C322-570BFB16123F (p2, c1, k60, u'osmo_norte').
+1751574520: No will message specified.
+1751574520: Sending CONNACK to auto-BC2B85DA-8547-1D0E-C322-570BFB16123F (0, 0)
+1751574520: Received PUBLISH from auto-BC2B85DA-8547-1D0E-C322-570BFB16123F (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574520: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574520: Received DISCONNECT from auto-BC2B85DA-8547-1D0E-C322-570BFB16123F
+1751574520: Client auto-BC2B85DA-8547-1D0E-C322-570BFB16123F disconnected.
+1751574572: Received PINGREQ from director_6570addd
+1751574572: Sending PINGRESP to director_6570addd
+1751574619: New connection from ::1:62972 on port 1883.
+1751574619: Sending CONNACK to auto-53CA4DC9-F360-BAD4-B3C6-FA2CF4FFBA1F (0, 5)
+1751574619: Client auto-53CA4DC9-F360-BAD4-B3C6-FA2CF4FFBA1F disconnected, not authorised.
+1751574632: Received PINGREQ from director_6570addd
+1751574632: Sending PINGRESP to director_6570addd
+1751574634: New connection from ::1:62988 on port 1883.
+1751574634: New client connected from ::1:62988 as auto-9470E488-1490-EF3E-2812-06C7BA2EDA19 (p2, c1, k60, u'osmo_norte').
+1751574634: No will message specified.
+1751574634: Sending CONNACK to auto-9470E488-1490-EF3E-2812-06C7BA2EDA19 (0, 0)
+1751574634: Received PUBLISH from auto-9470E488-1490-EF3E-2812-06C7BA2EDA19 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574634: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (51 bytes))
+1751574634: Received DISCONNECT from auto-9470E488-1490-EF3E-2812-06C7BA2EDA19
+1751574634: Client auto-9470E488-1490-EF3E-2812-06C7BA2EDA19 disconnected.
+1751574692: Received PINGREQ from director_6570addd
+1751574692: Sending PINGRESP to director_6570addd
+1751574752: Received PINGREQ from director_6570addd
+1751574752: Sending PINGRESP to director_6570addd
+1751574812: Received PINGREQ from director_6570addd
+1751574812: Sending PINGRESP to director_6570addd
+1751574873: Received PINGREQ from director_6570addd
+1751574873: Sending PINGRESP to director_6570addd
+1751574933: Received PINGREQ from director_6570addd
+1751574933: Sending PINGRESP to director_6570addd
+1751574967: Saving in-memory database to F:/Persona/Correspondencias Transmodales/local-test/data/\mosquitto.db.
+1751574993: Received PINGREQ from director_6570addd
+1751574993: Sending PINGRESP to director_6570addd
+1751575053: Received PINGREQ from director_6570addd
+1751575053: Sending PINGRESP to director_6570addd
+1751575113: Received PINGREQ from director_6570addd
+1751575113: Sending PINGRESP to director_6570addd
+1751575173: Received PINGREQ from director_6570addd
+1751575173: Sending PINGRESP to director_6570addd
+1751575233: Received PINGREQ from director_6570addd
+1751575233: Sending PINGRESP to director_6570addd
+1751575293: Received PINGREQ from director_6570addd
+1751575293: Sending PINGRESP to director_6570addd
+1751575353: Received PINGREQ from director_6570addd
+1751575353: Sending PINGRESP to director_6570addd
+1751575413: Received PINGREQ from director_6570addd
+1751575413: Sending PINGRESP to director_6570addd
+1751575473: Received PINGREQ from director_6570addd
+1751575473: Sending PINGRESP to director_6570addd
+1751575533: Received PINGREQ from director_6570addd
+1751575533: Sending PINGRESP to director_6570addd
+1751575593: Received PINGREQ from director_6570addd
+1751575593: Sending PINGRESP to director_6570addd
+1751575640: New connection from ::1:63313 on port 1883.
+1751575640: New client connected from ::1:63313 as auto-AA5ACEA7-614E-508E-EB17-DFEA49200494 (p2, c1, k60, u'osmo_norte').
+1751575640: No will message specified.
+1751575640: Sending CONNACK to auto-AA5ACEA7-614E-508E-EB17-DFEA49200494 (0, 0)
+1751575640: Received PUBLISH from auto-AA5ACEA7-614E-508E-EB17-DFEA49200494 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (79 bytes))
+1751575640: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (79 bytes))
+1751575640: Received DISCONNECT from auto-AA5ACEA7-614E-508E-EB17-DFEA49200494
+1751575640: Client auto-AA5ACEA7-614E-508E-EB17-DFEA49200494 disconnected.
+1751575653: Received PINGREQ from director_6570addd
+1751575653: Sending PINGRESP to director_6570addd
+1751575679: Received PUBLISH from director_6570addd (d0, q1, r0, m25310, 'motete/director/commands/osmo_norte', ... (145 bytes))
+1751575679: Sending PUBACK to director_6570addd (m25310, rc0)
+1751575739: Received PINGREQ from director_6570addd
+1751575739: Sending PINGRESP to director_6570addd
+1751575799: Received PINGREQ from director_6570addd
+1751575799: Sending PINGRESP to director_6570addd
+1751575820: New connection from ::1:63373 on port 1883.
+1751575820: Sending CONNACK to auto-A1E57E21-6327-37F5-8A31-5A56D8932164 (0, 5)
+1751575820: Client auto-A1E57E21-6327-37F5-8A31-5A56D8932164 disconnected, not authorised.
+1751575834: New connection from ::1:63385 on port 1883.
+1751575834: New client connected from ::1:63385 as auto-A17B2A95-AE44-51FD-B7DD-3FA6A1912FC8 (p2, c1, k60, u'osmo_sur').
+1751575834: No will message specified.
+1751575834: Sending CONNACK to auto-A17B2A95-AE44-51FD-B7DD-3FA6A1912FC8 (0, 0)
+1751575834: Received PUBLISH from auto-A17B2A95-AE44-51FD-B7DD-3FA6A1912FC8 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (76 bytes))
+1751575834: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (76 bytes))
+1751575834: Received DISCONNECT from auto-A17B2A95-AE44-51FD-B7DD-3FA6A1912FC8
+1751575834: Client auto-A17B2A95-AE44-51FD-B7DD-3FA6A1912FC8 disconnected.
+1751575859: Received PINGREQ from director_6570addd
+1751575859: Sending PINGRESP to director_6570addd
+1751575919: Received PINGREQ from director_6570addd
+1751575919: Sending PINGRESP to director_6570addd
+1751575979: Received PINGREQ from director_6570addd
+1751575979: Sending PINGRESP to director_6570addd
+1751576020: New connection from ::1:63438 on port 1883.
+1751576020: New client connected from ::1:63438 as auto-CDBF45DE-BE91-DD8D-4725-061E1661E475 (p2, c1, k60, u'osmo_sur').
+1751576020: No will message specified.
+1751576020: Sending CONNACK to auto-CDBF45DE-BE91-DD8D-4725-061E1661E475 (0, 0)
+1751576020: Received PUBLISH from auto-CDBF45DE-BE91-DD8D-4725-061E1661E475 (d0, q0, r0, m0, 'motete/osmo/osmo_sur/status', ... (76 bytes))
+1751576020: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_sur/status', ... (76 bytes))
+1751576020: Received DISCONNECT from auto-CDBF45DE-BE91-DD8D-4725-061E1661E475
+1751576020: Client auto-CDBF45DE-BE91-DD8D-4725-061E1661E475 disconnected.
+1751576039: Received PINGREQ from director_6570addd
+1751576039: Sending PINGRESP to director_6570addd
+1751576052: New connection from ::1:63448 on port 1883.
+1751576052: New client connected from ::1:63448 as auto-734F5F6F-B6A8-64ED-9CE5-9A992C793F05 (p2, c1, k60, u'osmo_norte').
+1751576052: No will message specified.
+1751576052: Sending CONNACK to auto-734F5F6F-B6A8-64ED-9CE5-9A992C793F05 (0, 0)
+1751576052: Received PUBLISH from auto-734F5F6F-B6A8-64ED-9CE5-9A992C793F05 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (79 bytes))
+1751576052: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (79 bytes))
+1751576052: Received DISCONNECT from auto-734F5F6F-B6A8-64ED-9CE5-9A992C793F05
+1751576052: Client auto-734F5F6F-B6A8-64ED-9CE5-9A992C793F05 disconnected.
+1751576099: Received PINGREQ from director_6570addd
+1751576099: Sending PINGRESP to director_6570addd
+1751576159: Received PINGREQ from director_6570addd
+1751576159: Sending PINGRESP to director_6570addd
+1751576219: Received PINGREQ from director_6570addd
+1751576219: Sending PINGRESP to director_6570addd
+1751576254: New connection from ::1:63519 on port 1883.
+1751576254: New client connected from ::1:63519 as auto-12B57DC2-549B-84DA-DA0D-3A5CAEB4710A (p2, c1, k60, u'osmo_este').
+1751576254: No will message specified.
+1751576254: Sending CONNACK to auto-12B57DC2-549B-84DA-DA0D-3A5CAEB4710A (0, 0)
+1751576254: Received PUBLISH from auto-12B57DC2-549B-84DA-DA0D-3A5CAEB4710A (d0, q0, r0, m0, 'motete/osmo/osmo_este/status', ... (78 bytes))
+1751576254: Sending PUBLISH to director_6570addd (d0, q0, r0, m0, 'motete/osmo/osmo_este/status', ... (78 bytes))
+1751576254: Received DISCONNECT from auto-12B57DC2-549B-84DA-DA0D-3A5CAEB4710A
+1751576254: Client auto-12B57DC2-549B-84DA-DA0D-3A5CAEB4710A disconnected.
+1751576279: Received PINGREQ from director_6570addd
+1751576279: Sending PINGRESP to director_6570addd
+1751576339: Received PINGREQ from director_6570addd
+1751576339: Sending PINGRESP to director_6570addd
+1751576367: Received PUBLISH from director_6570addd (d0, q1, r0, m25311, 'motete/director/commands/osmo_norte', ... (145 bytes))
+1751576367: Sending PUBACK to director_6570addd (m25311, rc0)
+1751576388: Received PUBLISH from director_6570addd (d0, q1, r0, m25312, 'motete/director/commands/osmo_sur', ... (145 bytes))
+1751576388: Sending PUBACK to director_6570addd (m25312, rc0)
+1751576392: Received PUBLISH from director_6570addd (d0, q1, r0, m25313, 'motete/director/commands/osmo_este', ... (145 bytes))
+1751576392: Sending PUBACK to director_6570addd (m25313, rc0)
+1751576452: Received PINGREQ from director_6570addd
+1751576452: Sending PINGRESP to director_6570addd
+1751576512: Received PINGREQ from director_6570addd
+1751576512: Sending PINGRESP to director_6570addd
+1751576573: Received PINGREQ from director_6570addd
+1751576573: Sending PINGRESP to director_6570addd
+1751576633: Received PINGREQ from director_6570addd
+1751576633: Sending PINGRESP to director_6570addd
+1751576693: Received PINGREQ from director_6570addd
+1751576693: Sending PINGRESP to director_6570addd
+1751576753: Received PINGREQ from director_6570addd
+1751576753: Sending PINGRESP to director_6570addd
+1751576768: Saving in-memory database to F:/Persona/Correspondencias Transmodales/local-test/data/\mosquitto.db.
+1751576813: Received PINGREQ from director_6570addd
+1751576813: Sending PINGRESP to director_6570addd
+1751576873: Received PINGREQ from director_6570addd
+1751576873: Sending PINGRESP to director_6570addd
+1751576933: Received PINGREQ from director_6570addd
+1751576933: Sending PINGRESP to director_6570addd
+1751576993: Received PINGREQ from director_6570addd
+1751576993: Sending PINGRESP to director_6570addd
+1751577053: Received PINGREQ from director_6570addd
+1751577053: Sending PINGRESP to director_6570addd
+1751577113: Received PINGREQ from director_6570addd
+1751577113: Sending PINGRESP to director_6570addd
+1751577173: Received PINGREQ from director_6570addd
+1751577173: Sending PINGRESP to director_6570addd
+1751577233: Received PINGREQ from director_6570addd
+1751577233: Sending PINGRESP to director_6570addd
+1751577293: Received PINGREQ from director_6570addd
+1751577293: Sending PINGRESP to director_6570addd
+1751577353: Received PINGREQ from director_6570addd
+1751577353: Sending PINGRESP to director_6570addd
+1751577413: Received PINGREQ from director_6570addd
+1751577413: Sending PINGRESP to director_6570addd
+1751577473: Received PINGREQ from director_6570addd
+1751577473: Sending PINGRESP to director_6570addd
+1751577533: Received PINGREQ from director_6570addd
+1751577533: Sending PINGRESP to director_6570addd
+1751577593: Received PINGREQ from director_6570addd
+1751577593: Sending PINGRESP to director_6570addd
+1751577653: Received PINGREQ from director_6570addd
+1751577653: Sending PINGRESP to director_6570addd
+1751577713: Received PINGREQ from director_6570addd
+1751577713: Sending PINGRESP to director_6570addd
+1751577773: Received PINGREQ from director_6570addd
+1751577773: Sending PINGRESP to director_6570addd
+1751577833: Received PINGREQ from director_6570addd
+1751577833: Sending PINGRESP to director_6570addd
+1751577881: Client director_6570addd closed its connection.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Control Motete Transensorial (Local)</title>
+        <style>
+            body { font-family: sans-serif; margin: 2em; }
+            .osmo-card { border: 1px solid #ccc; border-left: 5px solid green; padding: 1em; margin-bottom: 1em; }
+            button { margin-top: 10px; }
+        </style>
+    </head>
+    <body>
+        <h1>Control Motete Transensorial (Local)</h1>
+        <p>Estado MQTT: <b id="mqtt-status">...</b></p>
+        <div id="osmos-container"></div>
+    
+        <script>
+            async function loadStatus() {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                document.getElementById('mqtt-status').innerText = data.mqtt_connected ? '✅ Conectado' : '❌ Desconectado';
+                
+                const container = document.getElementById('osmos-container');
+                if (data.connected_osmos.length === 0) {
+                    container.innerHTML = '<p>Esperando Osmos...</p>';
+                    return;
+                }
+    
+                container.innerHTML = data.connected_osmos.map(osmo => `
+                    <div class="osmo-card">
+                        <h3>${osmo.unit_id}</h3>
+                        <p>Estado: ${osmo.status}</p>
+                        <p>Batería: ${osmo.battery}%</p>
+                        <button onclick="sendCommand('${osmo.unit_id}', 'aroma', { pump: 1, duration: 1000 })">Activar Bomba 1</button>
+                    </div>
+                `).join('');
+            }
+    
+            async function sendCommand(unitId, action, params) {
+                await fetch(`/api/command/${unitId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action, params })
+                });
+                alert(`Comando '${action}' enviado a ${unitId}`);
+            }
+    
+            setInterval(loadStatus, 2000);
+            loadStatus();
+        </script>
+    </body>
+    </html>
