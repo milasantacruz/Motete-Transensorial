@@ -5,9 +5,10 @@ https://nodejs.org/en/download
 ## Instalar Mosquitto
 https://mosquitto.org/download/
 
-## Instalacion del proyecto
+## Instalacion del proyecto node
 1. cd local-test
-2. npm install
+2. cd src
+3. npm install
 
 ## Iniciar el Sistema
 1. Actualizar el archivo de configuracion `mosquitto.conf`: Las rutas de los archivos deben usar `slashes` (`/`) incluso en Windows, ya que así lo requiere Mosquitto. Reemplaza `F:/Persona/Correspondencias Transmodales/local-test` con la ruta absoluta donde creaste la carpeta `local-test`.
