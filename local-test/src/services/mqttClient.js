@@ -2,17 +2,18 @@ const mqtt = require('mqtt');
 const { v4: uuidv4 } = require('uuid');
 
 class OsmoMQTTClient {
-  constructor() {
+  constructor(password) {
     this.client = null;
     this.connectedOsmos = new Map();
     this.isConnected = false;
+    this.password = password || 'director'; // Fallback por si no se provee
   }
 
   async connect() {
     return new Promise((resolve, reject) => {
       this.client = mqtt.connect('mqtt://localhost:1883', {
         username: 'director',
-        password: 'director', 
+        password: this.password, 
         clientId: 'director_' + Math.random().toString(16).substr(2, 8),
       });
 
@@ -37,6 +38,9 @@ class OsmoMQTTClient {
   subscribeToTopics() {
     const topics = [
       'motete/osmo/+/status',
+      'motete/osmo/+/actions',
+      'motete/osmo/+/errors',
+      'motete/osmo/+/sensors',
       'motete/osmo/discovery'
     ];
 
@@ -58,6 +62,21 @@ class OsmoMQTTClient {
           lastSeen: new Date()
         });
         console.log(`💚 Estado actualizado para ${unitId}`);
+      }
+
+      if (topic.includes('/actions')) {
+        const unitId = topic.split('/')[2];
+        console.log(`🎬 Acción recibida de ${unitId}:`, data);
+      }
+
+      if (topic.includes('/errors')) {
+        const unitId = topic.split('/')[2];
+        console.error(`❌ Error reportado por ${unitId}:`, data);
+      }
+
+      if (topic.includes('/sensors')) {
+        const unitId = topic.split('/')[2];
+        console.log(`🌡️ Datos de sensores de ${unitId}:`, data);
       }
     } catch (error) {
       console.error('❌ Error procesando mensaje:', error);

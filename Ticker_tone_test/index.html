@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secuenciador de Aromas</title>
+  <script src="https://unpkg.com/tone@14.8.39/build/Tone.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(8, 40px);
+      gap: 5px;
+    }
+    .row {
+      display: contents;
+    }
+    .cell {
+      width: 40px;
+      height: 40px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .cell.active {
+      background-color: #69f;
+    }
+    .cell.playing {
+      outline: 2px solid limegreen;
+    }
+    #startBtn {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Órgano de Aromas - Secuenciador</h2>
+  <div class="grid" id="grid"></div>
+  <button id="startBtn">▶️ Iniciar</button>
+
+  <script>
+    const steps = 8;
+    const aromas = 8;
+    const grid = document.getElementById('grid');
+    const matrix = [];
+
+    // Crear la grilla visual y lógica
+    for (let row = 0; row < aromas; row++) {
+      matrix[row] = [];
+      for (let col = 0; col < steps; col++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        grid.appendChild(cell);
+        matrix[row][col] = { el: cell, active: false };
+
+        cell.addEventListener('click', () => {
+          matrix[row][col].active = !matrix[row][col].active;
+          cell.classList.toggle('active');
+        });
+      }
+    }
+
+    // Bucle de reproducción
+    let currentStep = 0;
+    Tone.Transport.scheduleRepeat((time) => {
+      for (let row = 0; row < aromas; row++) {
+        const { active, el } = matrix[row][currentStep];
+
+        // Simula disparo de aroma
+        if (active) {
+          console.log(`Aroma ${row + 1} en paso ${currentStep + 1}`);
+          // Aquí podrías usar WebSocket o fetch() para enviar al NodeMCU
+        }
+
+        // Visual feedback
+        el.classList.add('playing');
+        setTimeout(() => el.classList.remove('playing'), 100);
+      }
+
+      currentStep = (currentStep + 1) % steps;
+    }, "8n"); // octavo de nota (ajustable)
+
+    // Botón de inicio
+    document.getElementById('startBtn').addEventListener('click', async () => {
+      await Tone.start(); // necesario para activar AudioContext
+      Tone.Transport.bpm.value = 90; // ajustá tempo si querés
+      Tone.Transport.start();
+    });
+  </script>
+
+</body>
+</html>

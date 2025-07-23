@@ -25,15 +25,23 @@
                     container.innerHTML = '<p>Esperando Osmos...</p>';
                     return;
                 }
-    
-                container.innerHTML = data.connected_osmos.map(osmo => `
-                    <div class="osmo-card">
-                        <h3>${osmo.unit_id}</h3>
-                        <p>Estado: ${osmo.status}</p>
-                        <p>Batería: ${osmo.battery}%</p>
-                        <button onclick="sendCommand('${osmo.unit_id}', 'aroma', { pump: 1, duration: 1000 })">Activar Bomba 1</button>
-                    </div>
-                `).join('');
+
+                // Generar una tarjeta por Osmo con botones dinámicos según las bombas detectadas
+                container.innerHTML = data.connected_osmos.map(osmo => {
+                    const pumpIds = osmo.pumps ? Object.keys(osmo.pumps) : [];
+                    const pumpButtons = pumpIds.map(pid => `
+                        <button onclick="sendCommand('${osmo.unit_id}', 'aroma', { pump: ${pid}, duration: 1000 })">Activar Bomba ${pid}</button>
+                    `).join('');
+
+                    return `
+                        <div class="osmo-card">
+                            <h3>${osmo.unit_id}</h3>
+                            <p>Estado: ${osmo.status}</p>
+                            <p>Batería: ${osmo.battery ?? '-'}%</p>
+                            ${pumpButtons}
+                        </div>
+                    `;
+                }).join('');
             }
     
             async function sendCommand(unitId, action, params) {
