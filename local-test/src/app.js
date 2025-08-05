@@ -11,9 +11,14 @@ app.use(express.static(path.join(__dirname, "public")));
 const mqttClient = new OsmoMQTTClient();
 
 app.get("/api/status", (req, res) => {
+  const simulate = req.query.simulate === 'true';
+  
+  // Si está en modo simulación, forzar que devuelva Osmos simulados
+  const osmos = simulate ? mqttClient.getSimulatedOsmos() : mqttClient.getConnectedOsmos();
+  
   res.json({
-    mqtt_connected: mqttClient.isConnected,
-    connected_osmos: mqttClient.getConnectedOsmos(),
+    mqtt_connected: mqttClient.isConnectionHealthy(),
+    connected_osmos: osmos,
   });
 });
 
@@ -21,8 +26,10 @@ app.post("/api/command/:unitId", (req, res) => {
   try {
     const { unitId } = req.params;
     const { action, params } = req.body;
-    const commandId = mqttClient.sendCommand(unitId, action, params);
-    res.json({ success: true, command_id: commandId });
+    const simulate = req.query.simulate === 'true';
+    
+    const commandId = mqttClient.sendCommand(unitId, action, params, simulate);
+    res.json({ success: true, command_id: commandId, simulated: simulate });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

@@ -15,6 +15,11 @@ PubSubClient client(espClient);
 
 // NUEVO: función para procesar los comandos recibidos
 void callback(char* topic, byte* payload, unsigned int length) {
+  // Enciende el LED incorporado (pin 2) al recibir mensaje
+  digitalWrite(2, LOW);  // LOW enciende el LED en ESP8266
+  delay(100);            // Mantiene encendido por 100ms
+  digitalWrite(2, HIGH); // Apaga el LED
+  
   Serial.print("Mensaje recibido en el topic: ");
   Serial.println(topic);
 
@@ -97,6 +102,11 @@ void reconnect() {
 
 void setup() {
   Serial.begin(115200);
+  
+  // Configurar el LED incorporado (pin 2)
+  pinMode(2, OUTPUT);
+  digitalWrite(2, HIGH); // Inicialmente apagado
+  
   setup_wifi();
   client.setServer(mqtt_server, mqtt_port);
   client.setCallback(callback); // NUEVO: establece la función de callback

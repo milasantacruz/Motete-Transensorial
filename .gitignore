@@ -3,3 +3,4 @@ node_modules
 mosquito.db
 mosquito.db.new
 mosquito.log
+data/

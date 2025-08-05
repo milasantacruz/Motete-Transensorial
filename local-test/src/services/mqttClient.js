@@ -15,6 +15,8 @@ class OsmoMQTTClient {
         username: 'director',
         password: this.password, 
         clientId: 'director_' + Math.random().toString(16).substr(2, 8),
+        connectTimeout: 5000, // 5 segundos de timeout
+        reconnectPeriod: 0, // No reconectar automáticamente
       });
 
       this.client.on('connect', () => {
@@ -26,7 +28,18 @@ class OsmoMQTTClient {
 
       this.client.on('error', (error) => {
         console.error('❌ Error de conexión MQTT:', error);
+        this.isConnected = false;
         reject(error);
+      });
+
+      this.client.on('close', () => {
+        console.log('🔌 Conexión MQTT cerrada');
+        this.isConnected = false;
+      });
+
+      this.client.on('offline', () => {
+        console.log('📴 Cliente MQTT offline');
+        this.isConnected = false;
       });
 
       this.client.on('message', (topic, message) => {
@@ -83,21 +96,66 @@ class OsmoMQTTClient {
     }
   }
 
-  sendCommand(unitId, action, params) {
-    if (!this.isConnected) throw new Error('MQTT no conectado');
+  sendCommand(unitId, action, params, simulate = false) {
     const command = {
       timestamp: new Date().toISOString(),
       command_id: uuidv4(),
       action: action,
       params: params
     };
+    
+    if (simulate) {
+      // Modo simulación: solo registrar en consola, no publicar al broker
+      console.log(`🎭 [SIMULACIÓN] Comando que se habría enviado a ${unitId}:`, command);
+      return command.command_id;
+    }
+    
+    // Modo real: verificar conexión saludable y publicar
+    if (!this.isConnectionHealthy()) {
+      throw new Error('MQTT no conectado o conexión no saludable');
+    }
+    
     const topic = `motete/director/commands/${unitId}`;
     this.client.publish(topic, JSON.stringify(command), { qos: 1 });
     console.log(`📤 Comando enviado a ${unitId}:`, command);
     return command.command_id;
   }
 
+  getSimulatedOsmos() {
+    console.log('🎭 Devolviendo Osmos simulados');
+    return [
+      {
+        unit_id: 'osmo_norte',
+        status: 'online',
+        battery: 85,
+        pumps: { 0: 'active', 1: 'active', 2: 'active', 3: 'active', 4: 'active', 5: 'active', 6: 'active', 7: 'active' },
+        lastSeen: new Date()
+      },
+      {
+        unit_id: 'osmo_sur',
+        status: 'online', 
+        battery: 92,
+        pumps: { 0: 'active', 1: 'active', 2: 'active', 3: 'active', 4: 'active', 5: 'active', 6: 'active', 7: 'active' },
+        lastSeen: new Date()
+      }
+    ];
+  }
+
+  isConnectionHealthy() {
+    // Verificar si la conexión es realmente funcional
+    return this.isConnected && this.client && this.client.connected;
+  }
+
   getConnectedOsmos() {
+    console.log('getConnectedOsmos', this.isConnected, 'Osmos reales:', this.connectedOsmos.size);
+    
+    // Solo devolver Osmos reales conectados si la conexión es saludable
+    if (!this.isConnectionHealthy()) {
+      console.log('⚠️ Conexión MQTT no saludable, no hay Osmos reales');
+      return [];
+    }
+    
+    console.log('📡 Devolviendo Osmos reales conectados');
     return Array.from(this.connectedOsmos.values());
   }
 }

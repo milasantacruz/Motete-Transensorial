@@ -1,0 +1,386 @@
+/* Timeline Progress - Estilos */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+nav {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #495057;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+h1 {
+  color: #212529;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Secciones principales */
+section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h3 {
+  margin-top: 0;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+/* === SECCIÓN 1: CONTROLES DE REPRODUCCIÓN === */
+.playback-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.time-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.time-controls label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.time-controls input[type="number"] {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.transport-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.transport-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.transport-buttons button:hover {
+  background: #0056b3;
+}
+
+.transport-buttons button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.time-display {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #495057;
+  background: #e9ecef;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tone-status {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+}
+
+.tone-status.active {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.scrubber-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+#scrubber {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #dee2e6;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+#scrubber::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  border: none;
+}
+
+.simulation-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* === SECCIÓN 2: GESTIÓN DE AROMAS === */
+.aroma-management {
+  min-height: 120px;
+}
+
+#aromasContainer {
+  margin-bottom: 15px;
+  min-height: 60px;
+  border: 2px dashed #dee2e6;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#aromasContainer:empty::before {
+  content: "No hay aromas configurados. Haz clic en 'Agregar Aroma' para comenzar.";
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.aroma-item {
+  display: grid;
+  grid-template-columns: 150px 120px 100px 80px auto 40px;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid;
+}
+
+.aroma-item.active {
+  border-left-color: #28a745;
+}
+
+.aroma-item.inactive {
+  border-left-color: #dc3545;
+  opacity: 0.7;
+}
+
+.aroma-item.offline {
+  border-left-color: #6c757d;
+  opacity: 0.5;
+}
+
+.aroma-name-input {
+  font-weight: 500;
+  color: #495057;
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aroma-name-input:focus {
+  outline: none;
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.aroma-name-input:disabled {
+  background: transparent;
+  color: #6c757d;
+}
+
+.aroma-item select {
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.aroma-item select:disabled {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+.toggle-status {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-status.active {
+  background: #28a745;
+  color: white;
+}
+
+.toggle-status.inactive {
+  background: #dc3545;
+  color: white;
+}
+
+.toggle-status:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.delete-aroma {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #dc3545;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.delete-aroma:hover {
+  background: #f8d7da;
+}
+
+#addAromaBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#addAromaBtn:hover {
+  background: #218838;
+}
+
+#addAromaBtn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* === SECCIÓN 3: TIMELINE === */
+.timeline-section {
+  min-height: 400px;
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.timeline-controls button {
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timeline-controls button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+#zoomLevel {
+  font-weight: 500;
+  color: #495057;
+}
+
+.timeline-container {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+#timelineCanvas {
+  display: block;
+  width: 100%;
+  height: 300px;
+  cursor: crosshair;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .playback-controls {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .time-controls {
+    justify-content: center;
+  }
+  
+  .aroma-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .timeline-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
