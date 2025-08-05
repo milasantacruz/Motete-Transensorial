@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piano de Aromas</title>
+  <link rel="stylesheet" href="/piano.css" />
+</head>
+<body>
+  <nav>
+    <a href="/">Estado general</a> |
+    <a href="/tickertone.html">Ticker-Tone</a> |
+    <a href="/piano.html">Piano</a> |
+    <a href="/timeline.html">Timeline</a>
+  </nav>
+
+  <h2>Piano de Aromas</h2>
+  <p>Estado MQTT: <b id="mqtt-status">...</b></p>
+
+  <div class="controls">
+    Duración (ms): <input type="number" id="durationInput" value="1000" min="100" max="5000" step="100" />
+    <label><input type="checkbox" id="simulateCheckbox" /> Modo simulación</label>
+  </div>
+
+  <div id="osmos-container"></div>
+
+  <script src="/piano.js"></script>
+</body>
+</html>
