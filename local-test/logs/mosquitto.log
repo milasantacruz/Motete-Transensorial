@@ -17720,3 +17720,47 @@
 1754365280: Sending PUBLISH to director_67a311fb (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (166 bytes))
 1754365282: Received PINGREQ from osmo_norte
 1754365282: Sending PINGRESP to osmo_norte
+1754945389: mosquitto version 2.0.21 starting
+1754945389: Config loaded from mosquitto.conf.
+1754945389: Opening ipv6 listen socket on port 1883.
+1754945389: Opening ipv4 listen socket on port 1883.
+1754945389: mosquitto version 2.0.21 running
+1754947189: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754947189: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754947189: Error: Bad file descriptor.
+1754948990: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754948990: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754948990: Error: Bad file descriptor.
+1754950791: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754950791: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754950791: Error: Bad file descriptor.
+1754952592: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754952592: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754952592: Error: Bad file descriptor.
+1754954393: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754954393: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754954393: Error: Bad file descriptor.
+1754956194: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754956194: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754956194: Error: Bad file descriptor.
+1754957995: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754957995: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754957995: Error: Bad file descriptor.
+1754959796: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754959796: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754959796: Error: Bad file descriptor.
+1754961597: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754961597: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754961597: Error: Bad file descriptor.
+1754963398: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754963398: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754963398: Error: Bad file descriptor.
+1754965199: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754965199: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754965199: Error: Bad file descriptor.
+1754967000: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754967000: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754967000: Error: Bad file descriptor.
+1754968801: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1754968801: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1754968801: Error: Bad file descriptor.
