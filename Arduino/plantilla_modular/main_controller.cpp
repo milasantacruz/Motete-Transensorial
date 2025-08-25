@@ -1,7 +1,13 @@
 #include "main_controller.h"
+#include <Arduino.h>
+
+// Inicializar la variable estática
+MainController* MainController::instancia = nullptr;
 
 MainController::MainController() 
     : statusPublisher(&pumpController), lastStatusPublish(0) {
+    // Guardar referencia a esta instancia
+    instancia = this;
 }
 
 void MainController::initialize() {
@@ -13,15 +19,25 @@ void MainController::initialize() {
     
     // Inicializar componentes
     pumpController.initialize();
-    networkManager.setCallback([this](char* topic, byte* payload, unsigned int length) {
-        this->messageCallback(topic, payload, length);
-    });
+    networkManager.setCallback(messageCallback);
     
     // Conectar a la red
     networkManager.connect();
 }
 
-void MainController::messageCallback(char* topic, byte* payload, unsigned int length) {
+// Método estático que redirige la llamada
+void MainController::messageCallback(char* topic, uint8_t* payload, unsigned int length) {
+    // Verificar que existe una instancia
+    if (instancia) {
+        // Redirigir a la instancia real
+        instancia->procesarMensaje(topic, payload, length);
+    } else {
+        Serial.println("ERROR: No hay instancia de MainController");
+    }
+}
+
+// Método de instancia que procesa el mensaje
+void MainController::procesarMensaje(char* topic, uint8_t* payload, unsigned int length) {
     // Indicador LED
     digitalWrite(2, LOW);
     delay(100);
@@ -35,6 +51,7 @@ void MainController::messageCallback(char* topic, byte* payload, unsigned int le
         message += (char)payload[i];
     }
     
+    // Ahora SÍ puede acceder a métodos de instancia
     handleCommand(topic, message.c_str());
 }
 

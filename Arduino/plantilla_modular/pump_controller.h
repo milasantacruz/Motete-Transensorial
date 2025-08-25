@@ -2,7 +2,7 @@
 #define PUMP_CONTROLLER_H
 
 #include "config.h"
-
+#include <Arduino.h>
 class PumpController {
 private:
     int pumpPins[2];

@@ -1,7 +1,8 @@
 #include "pump_controller.h"
+#include <Arduino.h>
 
 PumpController::PumpController() {
-    // Definir pines de las bombas (ajustar según tu hardware)
+    // Definir pines de las bombas (este parametro debe ser ajustable)
     pumpPins[0] = 5;  // GPIO5 para bomba 1
     pumpPins[1] = 4;  // GPIO4 para bomba 2
     

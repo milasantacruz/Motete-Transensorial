@@ -20,7 +20,10 @@ public:
     MainController();
     void initialize();
     void loop();
-    void messageCallback(char* topic, byte* payload, unsigned int length);
-};
+    // Método estático que redirige al método de instancia
+    static void messageCallback(char* topic, uint8_t* payload, unsigned int length);
+        
+    // Método de instancia que procesa el mensaje
+    void procesarMensaje(char* topic, uint8_t* payload, unsigned int length);};
 
 #endif

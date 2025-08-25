@@ -21,7 +21,7 @@ public:
     void loop();
     bool publish(const char* topic, const char* message);
     bool subscribe(const char* topic);
-    void setCallback(void (*callback)(char*, byte*, unsigned int));
+    void setCallback(void (*callback)(char*, uint8_t*, unsigned int));
 };
 
 #endif

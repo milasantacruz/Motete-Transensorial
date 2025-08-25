@@ -68,6 +68,6 @@ bool NetworkManager::subscribe(const char* topic) {
     return mqttClient.subscribe(topic);
 }
 
-void NetworkManager::setCallback(void (*callback)(char*, byte*, unsigned int)) {
+void NetworkManager::setCallback(void (*callback)(char*, uint8_t*, unsigned int)) {
     mqttClient.setCallback(callback);
 }
