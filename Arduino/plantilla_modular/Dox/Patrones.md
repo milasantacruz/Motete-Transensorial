@@ -3,6 +3,22 @@
 
 ---
 
+## 📊 TABLA COMPLETA DE COMPONENTES Y PATRONES
+
+### **Análisis Detallado de tu Arquitectura**
+
+| Componente | Archivo | Patrón de Diseño | ¿Por qué? | Estado | Calidad |
+|------------|---------|------------------|------------|---------|---------|
+| **MainController** | `main_controller.h/cpp` | **Composite** | Coordina múltiples componentes especializados 
+| **NetworkManager** | `network_manager.h/cpp` | **Adapter** | Adapta interfaz MQTT a tu sistema 
+| **PumpController** | `pump_controller.h/cpp` | **Command** | Encapsula operaciones de bombas 
+| **StatusPublisher** | `status_publisher.h/cpp` | **Observer** | Publica cambios de estado del sistema 
+| **Config** | `config.h/cpp` | **Singleton** | Configuración global única del sistema
+| **Arduino Sketch** | `plantilla_modular.ino` | **Template Method** | Define esqueleto del programa principal 
+
+
+---
+
 ## 📚 ¿Qué son los Patrones de Diseño?
 
 Los **patrones de diseño** son **soluciones probadas y reutilizables** para problemas comunes en programación. Son como **plantillas de construcción** que puedes usar una y otra vez.
@@ -280,7 +296,7 @@ void setup() {
 
 ---
 
-## �� Patrón 4: Strategy (Estrategia)
+## 🎯 Patrón 4: Strategy (Estrategia)
 
 ### **¿Qué hace?**
 Define una familia de algoritmos, encapsula cada uno y los hace intercambiables. Permite cambiar el algoritmo en tiempo de ejecución.
@@ -887,33 +903,6 @@ public:
 };
 ```
 
----
-
-## 💡 Consejos de Implementación
-
-### **1. Empieza simple**
-- No implementes todos los patrones de una vez
-- Comienza con el que resuelva tu problema más inmediato
-
-### **2. Usa patrones cuando sea necesario**
-- No fuerces patrones donde no se necesiten
-- Los patrones deben simplificar, no complicar
-
-### **3. Documenta tu implementación**
-- Explica por qué elegiste cada patrón
-- Documenta cómo se usa en tu código
-
-### **4. Prueba antes de implementar**
-- Verifica que el patrón realmente resuelve tu problema
-- Considera alternativas más simples
 
 ---
 
-## �� Recursos Adicionales
-
-- **Libro**: "Design Patterns" por Gang of Four
-- **Arduino**: Patrones específicos para microcontroladores
-- **C++**: Patrones modernos con características del lenguaje
-- **Práctica**: Implementa patrones en proyectos pequeños primero
-
----
