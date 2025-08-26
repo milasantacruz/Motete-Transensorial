@@ -7,7 +7,7 @@
 
 ### **Análisis Detallado de tu Arquitectura**
 
-| Componente | Archivo | Patrón de Diseño | ¿Por qué? | Estado | Calidad |
+| Componente | Archivo | Patrón de Diseño | ¿Por qué? |
 |------------|---------|------------------|------------|---------|---------|
 | **MainController** | `main_controller.h/cpp` | **Composite** | Coordina múltiples componentes especializados 
 | **NetworkManager** | `network_manager.h/cpp` | **Adapter** | Adapta interfaz MQTT a tu sistema 
@@ -869,40 +869,4 @@ void setup() {
 
 ---
 
-## 🚀 Aplicación en tu Proyecto Motete
-
-### **Patrones recomendados para tu sistema:**
-
-1. **Observer**: Para notificar cambios de estado de bombas
-2. **Strategy**: Para diferentes modos de riego (manual, automático, programado)
-3. **Command**: Para manejar comandos MQTT del broker
-4. **Factory**: Para crear diferentes tipos de sensores
-5. **Singleton**: Para configuración global y conexión WiFi
-
-### **Ejemplo de implementación:**
-```cpp
-// En tu MainController podrías usar:
-class MainController {
-private:
-    SistemaNotificaciones notificaciones;  // Observer
-    ControladorRiego controladorRiego;     // Strategy
-    ControladorComandos comandos;          // Command
-    
-public:
-    void setup() {
-        // Configurar observadores
-        notificaciones.agregarObservador(&display);
-        notificaciones.agregarObservador(&buzzer);
-        
-        // Configurar estrategia de riego
-        controladorRiego.setEstrategia(&riegoAutomatico);
-        
-        // Configurar callback MQTT
-        networkManager.setCallback(comandos.procesarComando);
-    }
-};
-```
-
-
----
 

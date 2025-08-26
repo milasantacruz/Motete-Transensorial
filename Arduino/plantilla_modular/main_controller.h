@@ -13,6 +13,9 @@ private:
     
     unsigned long lastStatusPublish;
     
+    // Variable estática para el callback wrapper
+    static MainController* instancia;
+    
     void handleCommand(const char* topic, const char* message);
     void publishStatus();
     
@@ -24,6 +27,7 @@ public:
     static void messageCallback(char* topic, uint8_t* payload, unsigned int length);
         
     // Método de instancia que procesa el mensaje
-    void procesarMensaje(char* topic, uint8_t* payload, unsigned int length);};
+    void procesarMensaje(char* topic, uint8_t* payload, unsigned int length);
+};
 
 #endif
