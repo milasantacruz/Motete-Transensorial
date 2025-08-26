@@ -18314,3 +18314,2685 @@
 1756177915: Received PINGREQ from osmo_norte
 1756177915: Sending PINGRESP to osmo_norte
 1756177923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177930: Received PINGREQ from osmo_norte
+1756177930: Sending PINGRESP to osmo_norte
+1756177933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756177945: Received PINGREQ from osmo_norte
+1756177945: Sending PINGRESP to osmo_norte
+1756177953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177960: Received PINGREQ from osmo_norte
+1756177960: Sending PINGRESP to osmo_norte
+1756177963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177975: Received PINGREQ from osmo_norte
+1756177975: Sending PINGRESP to osmo_norte
+1756177983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756177990: Received PINGREQ from osmo_norte
+1756177990: Sending PINGRESP to osmo_norte
+1756177993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178005: Received PINGREQ from osmo_norte
+1756178005: Sending PINGRESP to osmo_norte
+1756178013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178020: Received PINGREQ from osmo_norte
+1756178020: Sending PINGRESP to osmo_norte
+1756178023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178035: Received PINGREQ from osmo_norte
+1756178035: Sending PINGRESP to osmo_norte
+1756178043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178050: Received PINGREQ from osmo_norte
+1756178050: Sending PINGRESP to osmo_norte
+1756178053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178065: Received PINGREQ from osmo_norte
+1756178065: Sending PINGRESP to osmo_norte
+1756178073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178080: Received PINGREQ from osmo_norte
+1756178080: Sending PINGRESP to osmo_norte
+1756178083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178095: Received PINGREQ from osmo_norte
+1756178095: Sending PINGRESP to osmo_norte
+1756178103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178110: Received PINGREQ from osmo_norte
+1756178110: Sending PINGRESP to osmo_norte
+1756178113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178125: Received PINGREQ from osmo_norte
+1756178125: Sending PINGRESP to osmo_norte
+1756178133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178140: Received PINGREQ from osmo_norte
+1756178140: Sending PINGRESP to osmo_norte
+1756178143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178155: Received PINGREQ from osmo_norte
+1756178155: Sending PINGRESP to osmo_norte
+1756178163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178170: Received PINGREQ from osmo_norte
+1756178170: Sending PINGRESP to osmo_norte
+1756178173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178185: Received PINGREQ from osmo_norte
+1756178185: Sending PINGRESP to osmo_norte
+1756178193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178200: Received PINGREQ from osmo_norte
+1756178200: Sending PINGRESP to osmo_norte
+1756178203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178215: Received PINGREQ from osmo_norte
+1756178215: Sending PINGRESP to osmo_norte
+1756178223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178230: Received PINGREQ from osmo_norte
+1756178230: Sending PINGRESP to osmo_norte
+1756178233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178245: Received PINGREQ from osmo_norte
+1756178245: Sending PINGRESP to osmo_norte
+1756178253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178260: Received PINGREQ from osmo_norte
+1756178260: Sending PINGRESP to osmo_norte
+1756178263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178275: Received PINGREQ from osmo_norte
+1756178275: Sending PINGRESP to osmo_norte
+1756178283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178290: Received PINGREQ from osmo_norte
+1756178290: Sending PINGRESP to osmo_norte
+1756178293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178305: Received PINGREQ from osmo_norte
+1756178305: Sending PINGRESP to osmo_norte
+1756178313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178320: Received PINGREQ from osmo_norte
+1756178320: Sending PINGRESP to osmo_norte
+1756178323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178335: Received PINGREQ from osmo_norte
+1756178335: Sending PINGRESP to osmo_norte
+1756178343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178350: Received PINGREQ from osmo_norte
+1756178350: Sending PINGRESP to osmo_norte
+1756178353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178365: Received PINGREQ from osmo_norte
+1756178365: Sending PINGRESP to osmo_norte
+1756178373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178380: Received PINGREQ from osmo_norte
+1756178380: Sending PINGRESP to osmo_norte
+1756178383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178395: Received PINGREQ from osmo_norte
+1756178395: Sending PINGRESP to osmo_norte
+1756178403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178410: Received PINGREQ from osmo_norte
+1756178410: Sending PINGRESP to osmo_norte
+1756178413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178425: Received PINGREQ from osmo_norte
+1756178425: Sending PINGRESP to osmo_norte
+1756178433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178440: Received PINGREQ from osmo_norte
+1756178440: Sending PINGRESP to osmo_norte
+1756178443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178455: Received PINGREQ from osmo_norte
+1756178455: Sending PINGRESP to osmo_norte
+1756178463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178470: Received PINGREQ from osmo_norte
+1756178470: Sending PINGRESP to osmo_norte
+1756178473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178485: Received PINGREQ from osmo_norte
+1756178485: Sending PINGRESP to osmo_norte
+1756178493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178500: Received PINGREQ from osmo_norte
+1756178500: Sending PINGRESP to osmo_norte
+1756178503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178515: Received PINGREQ from osmo_norte
+1756178515: Sending PINGRESP to osmo_norte
+1756178523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178530: Received PINGREQ from osmo_norte
+1756178530: Sending PINGRESP to osmo_norte
+1756178533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178545: Received PINGREQ from osmo_norte
+1756178545: Sending PINGRESP to osmo_norte
+1756178553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178560: Received PINGREQ from osmo_norte
+1756178560: Sending PINGRESP to osmo_norte
+1756178563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178575: Received PINGREQ from osmo_norte
+1756178575: Sending PINGRESP to osmo_norte
+1756178583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178590: Received PINGREQ from osmo_norte
+1756178590: Sending PINGRESP to osmo_norte
+1756178593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178605: Received PINGREQ from osmo_norte
+1756178605: Sending PINGRESP to osmo_norte
+1756178613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178620: Received PINGREQ from osmo_norte
+1756178620: Sending PINGRESP to osmo_norte
+1756178623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178635: Received PINGREQ from osmo_norte
+1756178635: Sending PINGRESP to osmo_norte
+1756178643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178651: Received PINGREQ from osmo_norte
+1756178651: Sending PINGRESP to osmo_norte
+1756178653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178666: Received PINGREQ from osmo_norte
+1756178666: Sending PINGRESP to osmo_norte
+1756178673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178681: Received PINGREQ from osmo_norte
+1756178681: Sending PINGRESP to osmo_norte
+1756178683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178696: Received PINGREQ from osmo_norte
+1756178696: Sending PINGRESP to osmo_norte
+1756178703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178711: Received PINGREQ from osmo_norte
+1756178711: Sending PINGRESP to osmo_norte
+1756178713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178726: Received PINGREQ from osmo_norte
+1756178726: Sending PINGRESP to osmo_norte
+1756178733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178741: Received PINGREQ from osmo_norte
+1756178741: Sending PINGRESP to osmo_norte
+1756178743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178756: Received PINGREQ from osmo_norte
+1756178756: Sending PINGRESP to osmo_norte
+1756178763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178771: Received PINGREQ from osmo_norte
+1756178771: Sending PINGRESP to osmo_norte
+1756178773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178786: Received PINGREQ from osmo_norte
+1756178786: Sending PINGRESP to osmo_norte
+1756178793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178801: Received PINGREQ from osmo_norte
+1756178801: Sending PINGRESP to osmo_norte
+1756178803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178816: Received PINGREQ from osmo_norte
+1756178816: Sending PINGRESP to osmo_norte
+1756178823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178831: Received PINGREQ from osmo_norte
+1756178831: Sending PINGRESP to osmo_norte
+1756178833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178846: Received PINGREQ from osmo_norte
+1756178846: Sending PINGRESP to osmo_norte
+1756178853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178861: Received PINGREQ from osmo_norte
+1756178861: Sending PINGRESP to osmo_norte
+1756178863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178876: Received PINGREQ from osmo_norte
+1756178876: Sending PINGRESP to osmo_norte
+1756178883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178891: Received PINGREQ from osmo_norte
+1756178891: Sending PINGRESP to osmo_norte
+1756178893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178906: Received PINGREQ from osmo_norte
+1756178906: Sending PINGRESP to osmo_norte
+1756178913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178921: Received PINGREQ from osmo_norte
+1756178921: Sending PINGRESP to osmo_norte
+1756178923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178936: Received PINGREQ from osmo_norte
+1756178936: Sending PINGRESP to osmo_norte
+1756178943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178951: Received PINGREQ from osmo_norte
+1756178951: Sending PINGRESP to osmo_norte
+1756178953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756178963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178966: Received PINGREQ from osmo_norte
+1756178966: Sending PINGRESP to osmo_norte
+1756178973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178981: Received PINGREQ from osmo_norte
+1756178981: Sending PINGRESP to osmo_norte
+1756178983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756178996: Received PINGREQ from osmo_norte
+1756178996: Sending PINGRESP to osmo_norte
+1756179003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179011: Received PINGREQ from osmo_norte
+1756179011: Sending PINGRESP to osmo_norte
+1756179013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179026: Received PINGREQ from osmo_norte
+1756179026: Sending PINGRESP to osmo_norte
+1756179033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179041: Received PINGREQ from osmo_norte
+1756179041: Sending PINGRESP to osmo_norte
+1756179043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179054: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179056: Received PINGREQ from osmo_norte
+1756179056: Sending PINGRESP to osmo_norte
+1756179064: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179071: Received PINGREQ from osmo_norte
+1756179071: Sending PINGRESP to osmo_norte
+1756179074: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179084: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756179086: Received PINGREQ from osmo_norte
+1756179086: Sending PINGRESP to osmo_norte
+1756179094: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179101: Received PINGREQ from osmo_norte
+1756179101: Sending PINGRESP to osmo_norte
+1756179104: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179114: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179116: Received PINGREQ from osmo_norte
+1756179116: Sending PINGRESP to osmo_norte
+1756179124: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179131: Received PINGREQ from osmo_norte
+1756179131: Sending PINGRESP to osmo_norte
+1756179134: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179144: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179147: Received PINGREQ from osmo_norte
+1756179147: Sending PINGRESP to osmo_norte
+1756179154: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179162: Received PINGREQ from osmo_norte
+1756179162: Sending PINGRESP to osmo_norte
+1756179164: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756179174: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179177: Received PINGREQ from osmo_norte
+1756179177: Sending PINGRESP to osmo_norte
+1756179184: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179192: Received PINGREQ from osmo_norte
+1756179192: Sending PINGRESP to osmo_norte
+1756179194: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179204: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179207: Received PINGREQ from osmo_norte
+1756179207: Sending PINGRESP to osmo_norte
+1756179214: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179222: Received PINGREQ from osmo_norte
+1756179222: Sending PINGRESP to osmo_norte
+1756179224: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179229: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756179229: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756179229: Error: Bad file descriptor.
+1756179234: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179237: Received PINGREQ from osmo_norte
+1756179237: Sending PINGRESP to osmo_norte
+1756179244: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179252: Received PINGREQ from osmo_norte
+1756179252: Sending PINGRESP to osmo_norte
+1756179254: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179264: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179267: Received PINGREQ from osmo_norte
+1756179267: Sending PINGRESP to osmo_norte
+1756179274: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179282: Received PINGREQ from osmo_norte
+1756179282: Sending PINGRESP to osmo_norte
+1756179284: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179294: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179297: Received PINGREQ from osmo_norte
+1756179297: Sending PINGRESP to osmo_norte
+1756179304: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179312: Received PINGREQ from osmo_norte
+1756179312: Sending PINGRESP to osmo_norte
+1756179314: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179324: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179327: Received PINGREQ from osmo_norte
+1756179327: Sending PINGRESP to osmo_norte
+1756179334: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179342: Received PINGREQ from osmo_norte
+1756179342: Sending PINGRESP to osmo_norte
+1756179344: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756179354: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179357: Received PINGREQ from osmo_norte
+1756179357: Sending PINGRESP to osmo_norte
+1756179364: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179372: Received PINGREQ from osmo_norte
+1756179372: Sending PINGRESP to osmo_norte
+1756179374: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179384: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179387: Received PINGREQ from osmo_norte
+1756179387: Sending PINGRESP to osmo_norte
+1756179394: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179402: Received PINGREQ from osmo_norte
+1756179402: Sending PINGRESP to osmo_norte
+1756179404: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179414: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179417: Received PINGREQ from osmo_norte
+1756179417: Sending PINGRESP to osmo_norte
+1756179424: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179432: Received PINGREQ from osmo_norte
+1756179432: Sending PINGRESP to osmo_norte
+1756179434: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179444: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179447: Received PINGREQ from osmo_norte
+1756179447: Sending PINGRESP to osmo_norte
+1756179454: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179462: Received PINGREQ from osmo_norte
+1756179462: Sending PINGRESP to osmo_norte
+1756179464: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179474: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179477: Received PINGREQ from osmo_norte
+1756179477: Sending PINGRESP to osmo_norte
+1756179484: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179492: Received PINGREQ from osmo_norte
+1756179492: Sending PINGRESP to osmo_norte
+1756179494: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179504: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179507: Received PINGREQ from osmo_norte
+1756179507: Sending PINGRESP to osmo_norte
+1756179514: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179522: Received PINGREQ from osmo_norte
+1756179522: Sending PINGRESP to osmo_norte
+1756179524: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179534: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179537: Received PINGREQ from osmo_norte
+1756179537: Sending PINGRESP to osmo_norte
+1756179544: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179552: Received PINGREQ from osmo_norte
+1756179552: Sending PINGRESP to osmo_norte
+1756179554: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179564: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179567: Received PINGREQ from osmo_norte
+1756179567: Sending PINGRESP to osmo_norte
+1756179574: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179582: Received PINGREQ from osmo_norte
+1756179582: Sending PINGRESP to osmo_norte
+1756179584: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179594: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756179597: Received PINGREQ from osmo_norte
+1756179597: Sending PINGRESP to osmo_norte
+1756179604: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216561: mosquitto version 2.0.21 starting
+1756216561: Config loaded from mosquitto.conf.
+1756216561: Opening ipv6 listen socket on port 1883.
+1756216561: Opening ipv4 listen socket on port 1883.
+1756216561: mosquitto version 2.0.21 running
+1756216562: New connection from 192.168.1.48:63170 on port 1883.
+1756216562: New client connected from 192.168.1.48:63170 as osmo_norte (p2, c1, k15, u'osmo_norte').
+1756216562: No will message specified.
+1756216562: Sending CONNACK to osmo_norte (0, 0)
+1756216562: Received SUBSCRIBE from osmo_norte
+1756216562: 	motete/director/commands/osmo_norte (QoS 0)
+1756216562: osmo_norte 0 motete/director/commands/osmo_norte
+1756216562: Sending SUBACK to osmo_norte
+1756216562: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216572: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216577: Received PINGREQ from osmo_norte
+1756216577: Sending PINGRESP to osmo_norte
+1756216582: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216592: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216592: Received PINGREQ from osmo_norte
+1756216592: Sending PINGRESP to osmo_norte
+1756216602: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216607: Received PINGREQ from osmo_norte
+1756216607: Sending PINGRESP to osmo_norte
+1756216612: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216622: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756216622: Received PINGREQ from osmo_norte
+1756216622: Sending PINGRESP to osmo_norte
+1756216632: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216637: Received PINGREQ from osmo_norte
+1756216637: Sending PINGRESP to osmo_norte
+1756216642: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756216652: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216652: Received PINGREQ from osmo_norte
+1756216652: Sending PINGRESP to osmo_norte
+1756216662: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216667: Received PINGREQ from osmo_norte
+1756216667: Sending PINGRESP to osmo_norte
+1756216672: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216682: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216682: Received PINGREQ from osmo_norte
+1756216682: Sending PINGRESP to osmo_norte
+1756216692: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756216697: Received PINGREQ from osmo_norte
+1756216697: Sending PINGRESP to osmo_norte
+1756216702: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216712: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216712: Received PINGREQ from osmo_norte
+1756216712: Sending PINGRESP to osmo_norte
+1756216722: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216727: Received PINGREQ from osmo_norte
+1756216727: Sending PINGRESP to osmo_norte
+1756216732: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216742: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216742: Received PINGREQ from osmo_norte
+1756216742: Sending PINGRESP to osmo_norte
+1756216752: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216757: Received PINGREQ from osmo_norte
+1756216757: Sending PINGRESP to osmo_norte
+1756216762: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216772: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216772: Received PINGREQ from osmo_norte
+1756216772: Sending PINGRESP to osmo_norte
+1756216782: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216787: Received PINGREQ from osmo_norte
+1756216787: Sending PINGRESP to osmo_norte
+1756216792: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216802: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216802: Received PINGREQ from osmo_norte
+1756216802: Sending PINGRESP to osmo_norte
+1756216812: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216817: Received PINGREQ from osmo_norte
+1756216817: Sending PINGRESP to osmo_norte
+1756216822: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216832: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216832: Received PINGREQ from osmo_norte
+1756216832: Sending PINGRESP to osmo_norte
+1756216842: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216847: Received PINGREQ from osmo_norte
+1756216847: Sending PINGRESP to osmo_norte
+1756216852: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216862: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216862: Received PINGREQ from osmo_norte
+1756216862: Sending PINGRESP to osmo_norte
+1756216872: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216877: Received PINGREQ from osmo_norte
+1756216877: Sending PINGRESP to osmo_norte
+1756216882: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216892: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216892: Received PINGREQ from osmo_norte
+1756216892: Sending PINGRESP to osmo_norte
+1756216902: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216907: Received PINGREQ from osmo_norte
+1756216907: Sending PINGRESP to osmo_norte
+1756216912: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216922: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216922: Received PINGREQ from osmo_norte
+1756216922: Sending PINGRESP to osmo_norte
+1756216932: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216937: Received PINGREQ from osmo_norte
+1756216937: Sending PINGRESP to osmo_norte
+1756216942: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216952: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216952: Received PINGREQ from osmo_norte
+1756216952: Sending PINGRESP to osmo_norte
+1756216962: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216967: Received PINGREQ from osmo_norte
+1756216967: Sending PINGRESP to osmo_norte
+1756216972: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216982: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756216982: Received PINGREQ from osmo_norte
+1756216982: Sending PINGRESP to osmo_norte
+1756216992: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756216997: Received PINGREQ from osmo_norte
+1756216997: Sending PINGRESP to osmo_norte
+1756217002: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217012: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217012: Received PINGREQ from osmo_norte
+1756217012: Sending PINGRESP to osmo_norte
+1756217022: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217027: Received PINGREQ from osmo_norte
+1756217027: Sending PINGRESP to osmo_norte
+1756217032: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217042: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217042: Received PINGREQ from osmo_norte
+1756217042: Sending PINGRESP to osmo_norte
+1756217052: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217057: Received PINGREQ from osmo_norte
+1756217057: Sending PINGRESP to osmo_norte
+1756217062: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217072: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217072: Received PINGREQ from osmo_norte
+1756217072: Sending PINGRESP to osmo_norte
+1756217082: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217087: Received PINGREQ from osmo_norte
+1756217087: Sending PINGRESP to osmo_norte
+1756217092: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217102: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217102: Received PINGREQ from osmo_norte
+1756217102: Sending PINGRESP to osmo_norte
+1756217112: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217117: Received PINGREQ from osmo_norte
+1756217117: Sending PINGRESP to osmo_norte
+1756217122: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217132: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217132: Received PINGREQ from osmo_norte
+1756217132: Sending PINGRESP to osmo_norte
+1756217142: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217147: Received PINGREQ from osmo_norte
+1756217147: Sending PINGRESP to osmo_norte
+1756217152: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217162: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217162: Received PINGREQ from osmo_norte
+1756217162: Sending PINGRESP to osmo_norte
+1756217172: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217177: Received PINGREQ from osmo_norte
+1756217177: Sending PINGRESP to osmo_norte
+1756217182: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217192: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217192: Received PINGREQ from osmo_norte
+1756217192: Sending PINGRESP to osmo_norte
+1756217202: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217207: Received PINGREQ from osmo_norte
+1756217207: Sending PINGRESP to osmo_norte
+1756217212: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217222: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217222: Received PINGREQ from osmo_norte
+1756217222: Sending PINGRESP to osmo_norte
+1756217232: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217237: Received PINGREQ from osmo_norte
+1756217237: Sending PINGRESP to osmo_norte
+1756217242: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217252: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217252: Received PINGREQ from osmo_norte
+1756217252: Sending PINGRESP to osmo_norte
+1756217262: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217267: Received PINGREQ from osmo_norte
+1756217267: Sending PINGRESP to osmo_norte
+1756217272: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217282: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217282: Received PINGREQ from osmo_norte
+1756217282: Sending PINGRESP to osmo_norte
+1756217292: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217297: Received PINGREQ from osmo_norte
+1756217297: Sending PINGRESP to osmo_norte
+1756217302: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217312: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217312: Received PINGREQ from osmo_norte
+1756217312: Sending PINGRESP to osmo_norte
+1756217322: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217327: Received PINGREQ from osmo_norte
+1756217327: Sending PINGRESP to osmo_norte
+1756217332: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217342: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217342: Received PINGREQ from osmo_norte
+1756217342: Sending PINGRESP to osmo_norte
+1756217352: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217357: Received PINGREQ from osmo_norte
+1756217357: Sending PINGRESP to osmo_norte
+1756217362: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217372: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217372: Received PINGREQ from osmo_norte
+1756217372: Sending PINGRESP to osmo_norte
+1756217382: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217387: Received PINGREQ from osmo_norte
+1756217387: Sending PINGRESP to osmo_norte
+1756217392: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217402: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217402: Received PINGREQ from osmo_norte
+1756217402: Sending PINGRESP to osmo_norte
+1756217412: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217417: Received PINGREQ from osmo_norte
+1756217417: Sending PINGRESP to osmo_norte
+1756217422: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217432: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217432: Received PINGREQ from osmo_norte
+1756217432: Sending PINGRESP to osmo_norte
+1756217442: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217447: Received PINGREQ from osmo_norte
+1756217447: Sending PINGRESP to osmo_norte
+1756217452: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217462: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217462: Received PINGREQ from osmo_norte
+1756217462: Sending PINGRESP to osmo_norte
+1756217472: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217477: Received PINGREQ from osmo_norte
+1756217477: Sending PINGRESP to osmo_norte
+1756217482: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217492: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217492: Received PINGREQ from osmo_norte
+1756217492: Sending PINGRESP to osmo_norte
+1756217502: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217507: Received PINGREQ from osmo_norte
+1756217507: Sending PINGRESP to osmo_norte
+1756217512: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217522: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217522: Received PINGREQ from osmo_norte
+1756217522: Sending PINGRESP to osmo_norte
+1756217532: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217537: Received PINGREQ from osmo_norte
+1756217537: Sending PINGRESP to osmo_norte
+1756217542: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217552: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217552: Received PINGREQ from osmo_norte
+1756217552: Sending PINGRESP to osmo_norte
+1756217562: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217567: Received PINGREQ from osmo_norte
+1756217567: Sending PINGRESP to osmo_norte
+1756217572: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217582: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217582: Received PINGREQ from osmo_norte
+1756217582: Sending PINGRESP to osmo_norte
+1756217592: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217597: Received PINGREQ from osmo_norte
+1756217597: Sending PINGRESP to osmo_norte
+1756217602: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217612: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217612: Received PINGREQ from osmo_norte
+1756217612: Sending PINGRESP to osmo_norte
+1756217622: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217627: Received PINGREQ from osmo_norte
+1756217627: Sending PINGRESP to osmo_norte
+1756217632: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217642: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217642: Received PINGREQ from osmo_norte
+1756217642: Sending PINGRESP to osmo_norte
+1756217652: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217657: Received PINGREQ from osmo_norte
+1756217657: Sending PINGRESP to osmo_norte
+1756217662: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217672: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217672: Received PINGREQ from osmo_norte
+1756217672: Sending PINGRESP to osmo_norte
+1756217682: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217687: Received PINGREQ from osmo_norte
+1756217687: Sending PINGRESP to osmo_norte
+1756217692: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217702: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217702: Received PINGREQ from osmo_norte
+1756217702: Sending PINGRESP to osmo_norte
+1756217712: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217717: Received PINGREQ from osmo_norte
+1756217717: Sending PINGRESP to osmo_norte
+1756217722: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217732: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217732: Received PINGREQ from osmo_norte
+1756217732: Sending PINGRESP to osmo_norte
+1756217742: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217747: Received PINGREQ from osmo_norte
+1756217747: Sending PINGRESP to osmo_norte
+1756217752: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217762: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217762: Received PINGREQ from osmo_norte
+1756217762: Sending PINGRESP to osmo_norte
+1756217772: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217777: Received PINGREQ from osmo_norte
+1756217777: Sending PINGRESP to osmo_norte
+1756217782: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217792: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217792: Received PINGREQ from osmo_norte
+1756217792: Sending PINGRESP to osmo_norte
+1756217802: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217807: Received PINGREQ from osmo_norte
+1756217807: Sending PINGRESP to osmo_norte
+1756217812: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217822: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217822: Received PINGREQ from osmo_norte
+1756217822: Sending PINGRESP to osmo_norte
+1756217832: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217837: Received PINGREQ from osmo_norte
+1756217837: Sending PINGRESP to osmo_norte
+1756217842: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217852: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217852: Received PINGREQ from osmo_norte
+1756217852: Sending PINGRESP to osmo_norte
+1756217862: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217867: Received PINGREQ from osmo_norte
+1756217867: Sending PINGRESP to osmo_norte
+1756217872: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217882: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217882: Received PINGREQ from osmo_norte
+1756217882: Sending PINGRESP to osmo_norte
+1756217892: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217897: Received PINGREQ from osmo_norte
+1756217897: Sending PINGRESP to osmo_norte
+1756217902: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217912: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217912: Received PINGREQ from osmo_norte
+1756217912: Sending PINGRESP to osmo_norte
+1756217922: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756217927: Received PINGREQ from osmo_norte
+1756217927: Sending PINGRESP to osmo_norte
+1756217932: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217942: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217942: Received PINGREQ from osmo_norte
+1756217942: Sending PINGRESP to osmo_norte
+1756217952: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217957: Received PINGREQ from osmo_norte
+1756217957: Sending PINGRESP to osmo_norte
+1756217962: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217972: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217972: Received PINGREQ from osmo_norte
+1756217972: Sending PINGRESP to osmo_norte
+1756217982: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756217987: Received PINGREQ from osmo_norte
+1756217987: Sending PINGRESP to osmo_norte
+1756217992: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218002: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218002: Received PINGREQ from osmo_norte
+1756218002: Sending PINGRESP to osmo_norte
+1756218012: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218017: Received PINGREQ from osmo_norte
+1756218017: Sending PINGRESP to osmo_norte
+1756218022: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218032: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218032: Received PINGREQ from osmo_norte
+1756218032: Sending PINGRESP to osmo_norte
+1756218042: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218047: Received PINGREQ from osmo_norte
+1756218047: Sending PINGRESP to osmo_norte
+1756218052: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218062: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218064: Received PINGREQ from osmo_norte
+1756218064: Sending PINGRESP to osmo_norte
+1756218072: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218079: Received PINGREQ from osmo_norte
+1756218079: Sending PINGRESP to osmo_norte
+1756218082: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218092: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218094: Received PINGREQ from osmo_norte
+1756218094: Sending PINGRESP to osmo_norte
+1756218102: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218109: Received PINGREQ from osmo_norte
+1756218109: Sending PINGRESP to osmo_norte
+1756218112: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218122: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218124: Received PINGREQ from osmo_norte
+1756218124: Sending PINGRESP to osmo_norte
+1756218132: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218139: Received PINGREQ from osmo_norte
+1756218139: Sending PINGRESP to osmo_norte
+1756218142: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218152: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218154: Received PINGREQ from osmo_norte
+1756218154: Sending PINGRESP to osmo_norte
+1756218162: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218169: Received PINGREQ from osmo_norte
+1756218169: Sending PINGRESP to osmo_norte
+1756218172: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218182: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218184: Received PINGREQ from osmo_norte
+1756218184: Sending PINGRESP to osmo_norte
+1756218192: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218199: Received PINGREQ from osmo_norte
+1756218199: Sending PINGRESP to osmo_norte
+1756218202: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218212: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218214: Received PINGREQ from osmo_norte
+1756218214: Sending PINGRESP to osmo_norte
+1756218222: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218229: Received PINGREQ from osmo_norte
+1756218229: Sending PINGRESP to osmo_norte
+1756218232: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218242: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218244: Received PINGREQ from osmo_norte
+1756218244: Sending PINGRESP to osmo_norte
+1756218252: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218259: Received PINGREQ from osmo_norte
+1756218259: Sending PINGRESP to osmo_norte
+1756218262: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218272: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218274: Received PINGREQ from osmo_norte
+1756218274: Sending PINGRESP to osmo_norte
+1756218282: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218289: Received PINGREQ from osmo_norte
+1756218289: Sending PINGRESP to osmo_norte
+1756218292: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218302: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218304: Received PINGREQ from osmo_norte
+1756218304: Sending PINGRESP to osmo_norte
+1756218312: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218319: Received PINGREQ from osmo_norte
+1756218319: Sending PINGRESP to osmo_norte
+1756218322: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218332: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218334: Received PINGREQ from osmo_norte
+1756218334: Sending PINGRESP to osmo_norte
+1756218342: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218349: Received PINGREQ from osmo_norte
+1756218349: Sending PINGRESP to osmo_norte
+1756218352: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218361: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756218361: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756218361: Error: Bad file descriptor.
+1756218362: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218364: Received PINGREQ from osmo_norte
+1756218364: Sending PINGRESP to osmo_norte
+1756218372: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218379: Received PINGREQ from osmo_norte
+1756218379: Sending PINGRESP to osmo_norte
+1756218382: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218392: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218394: Received PINGREQ from osmo_norte
+1756218394: Sending PINGRESP to osmo_norte
+1756218402: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218409: Received PINGREQ from osmo_norte
+1756218409: Sending PINGRESP to osmo_norte
+1756218412: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218422: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218424: Received PINGREQ from osmo_norte
+1756218424: Sending PINGRESP to osmo_norte
+1756218432: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218439: Received PINGREQ from osmo_norte
+1756218439: Sending PINGRESP to osmo_norte
+1756218442: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218452: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218454: Received PINGREQ from osmo_norte
+1756218454: Sending PINGRESP to osmo_norte
+1756218462: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218469: Received PINGREQ from osmo_norte
+1756218469: Sending PINGRESP to osmo_norte
+1756218472: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218482: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218484: Received PINGREQ from osmo_norte
+1756218484: Sending PINGRESP to osmo_norte
+1756218492: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218499: Received PINGREQ from osmo_norte
+1756218499: Sending PINGRESP to osmo_norte
+1756218502: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218512: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218514: Received PINGREQ from osmo_norte
+1756218514: Sending PINGRESP to osmo_norte
+1756218522: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218529: Received PINGREQ from osmo_norte
+1756218529: Sending PINGRESP to osmo_norte
+1756218532: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218542: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218544: Received PINGREQ from osmo_norte
+1756218544: Sending PINGRESP to osmo_norte
+1756218552: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218559: Received PINGREQ from osmo_norte
+1756218559: Sending PINGRESP to osmo_norte
+1756218562: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218572: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218574: Received PINGREQ from osmo_norte
+1756218574: Sending PINGRESP to osmo_norte
+1756218582: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218589: Received PINGREQ from osmo_norte
+1756218589: Sending PINGRESP to osmo_norte
+1756218592: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218602: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218604: Received PINGREQ from osmo_norte
+1756218604: Sending PINGRESP to osmo_norte
+1756218612: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218619: Received PINGREQ from osmo_norte
+1756218619: Sending PINGRESP to osmo_norte
+1756218622: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218632: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218634: Received PINGREQ from osmo_norte
+1756218634: Sending PINGRESP to osmo_norte
+1756218642: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218649: Received PINGREQ from osmo_norte
+1756218649: Sending PINGRESP to osmo_norte
+1756218652: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218662: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218664: Received PINGREQ from osmo_norte
+1756218664: Sending PINGRESP to osmo_norte
+1756218672: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218679: Received PINGREQ from osmo_norte
+1756218679: Sending PINGRESP to osmo_norte
+1756218682: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218692: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218694: Received PINGREQ from osmo_norte
+1756218694: Sending PINGRESP to osmo_norte
+1756218702: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218709: Received PINGREQ from osmo_norte
+1756218709: Sending PINGRESP to osmo_norte
+1756218712: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218722: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218724: Received PINGREQ from osmo_norte
+1756218724: Sending PINGRESP to osmo_norte
+1756218732: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218739: Received PINGREQ from osmo_norte
+1756218739: Sending PINGRESP to osmo_norte
+1756218742: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218752: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218754: Received PINGREQ from osmo_norte
+1756218754: Sending PINGRESP to osmo_norte
+1756218762: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218769: Received PINGREQ from osmo_norte
+1756218769: Sending PINGRESP to osmo_norte
+1756218772: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218782: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218784: Received PINGREQ from osmo_norte
+1756218784: Sending PINGRESP to osmo_norte
+1756218792: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218799: Received PINGREQ from osmo_norte
+1756218799: Sending PINGRESP to osmo_norte
+1756218802: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218812: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218814: Received PINGREQ from osmo_norte
+1756218814: Sending PINGRESP to osmo_norte
+1756218822: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218829: Received PINGREQ from osmo_norte
+1756218829: Sending PINGRESP to osmo_norte
+1756218832: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218842: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218844: Received PINGREQ from osmo_norte
+1756218844: Sending PINGRESP to osmo_norte
+1756218852: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218859: Received PINGREQ from osmo_norte
+1756218859: Sending PINGRESP to osmo_norte
+1756218862: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218872: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218874: Received PINGREQ from osmo_norte
+1756218874: Sending PINGRESP to osmo_norte
+1756218882: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218889: Received PINGREQ from osmo_norte
+1756218889: Sending PINGRESP to osmo_norte
+1756218892: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218902: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218904: Received PINGREQ from osmo_norte
+1756218904: Sending PINGRESP to osmo_norte
+1756218912: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218919: Received PINGREQ from osmo_norte
+1756218919: Sending PINGRESP to osmo_norte
+1756218922: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218932: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218934: Received PINGREQ from osmo_norte
+1756218934: Sending PINGRESP to osmo_norte
+1756218942: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218949: Received PINGREQ from osmo_norte
+1756218949: Sending PINGRESP to osmo_norte
+1756218952: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218962: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218964: Received PINGREQ from osmo_norte
+1756218964: Sending PINGRESP to osmo_norte
+1756218972: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218979: Received PINGREQ from osmo_norte
+1756218979: Sending PINGRESP to osmo_norte
+1756218982: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756218992: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756218994: Received PINGREQ from osmo_norte
+1756218994: Sending PINGRESP to osmo_norte
+1756219002: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219009: Received PINGREQ from osmo_norte
+1756219009: Sending PINGRESP to osmo_norte
+1756219012: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219022: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219024: Received PINGREQ from osmo_norte
+1756219024: Sending PINGRESP to osmo_norte
+1756219032: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219039: Received PINGREQ from osmo_norte
+1756219039: Sending PINGRESP to osmo_norte
+1756219043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219054: Received PINGREQ from osmo_norte
+1756219054: Sending PINGRESP to osmo_norte
+1756219063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219069: Received PINGREQ from osmo_norte
+1756219069: Sending PINGRESP to osmo_norte
+1756219073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219084: Received PINGREQ from osmo_norte
+1756219084: Sending PINGRESP to osmo_norte
+1756219093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219099: Received PINGREQ from osmo_norte
+1756219099: Sending PINGRESP to osmo_norte
+1756219103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219112: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219114: Received PINGREQ from osmo_norte
+1756219114: Sending PINGRESP to osmo_norte
+1756219123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219129: Received PINGREQ from osmo_norte
+1756219129: Sending PINGRESP to osmo_norte
+1756219133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219144: Received PINGREQ from osmo_norte
+1756219144: Sending PINGRESP to osmo_norte
+1756219153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219159: Received PINGREQ from osmo_norte
+1756219159: Sending PINGRESP to osmo_norte
+1756219163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219174: Received PINGREQ from osmo_norte
+1756219174: Sending PINGRESP to osmo_norte
+1756219183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219189: Received PINGREQ from osmo_norte
+1756219189: Sending PINGRESP to osmo_norte
+1756219193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219204: Received PINGREQ from osmo_norte
+1756219204: Sending PINGRESP to osmo_norte
+1756219213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219219: Received PINGREQ from osmo_norte
+1756219219: Sending PINGRESP to osmo_norte
+1756219223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219234: Received PINGREQ from osmo_norte
+1756219234: Sending PINGRESP to osmo_norte
+1756219243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219249: Received PINGREQ from osmo_norte
+1756219249: Sending PINGRESP to osmo_norte
+1756219253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219264: Received PINGREQ from osmo_norte
+1756219264: Sending PINGRESP to osmo_norte
+1756219273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219279: Received PINGREQ from osmo_norte
+1756219279: Sending PINGRESP to osmo_norte
+1756219283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219294: Received PINGREQ from osmo_norte
+1756219294: Sending PINGRESP to osmo_norte
+1756219303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219309: Received PINGREQ from osmo_norte
+1756219309: Sending PINGRESP to osmo_norte
+1756219313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219324: Received PINGREQ from osmo_norte
+1756219324: Sending PINGRESP to osmo_norte
+1756219333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219339: Received PINGREQ from osmo_norte
+1756219339: Sending PINGRESP to osmo_norte
+1756219343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219354: Received PINGREQ from osmo_norte
+1756219354: Sending PINGRESP to osmo_norte
+1756219363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219369: Received PINGREQ from osmo_norte
+1756219369: Sending PINGRESP to osmo_norte
+1756219373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219384: Received PINGREQ from osmo_norte
+1756219384: Sending PINGRESP to osmo_norte
+1756219393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219399: Received PINGREQ from osmo_norte
+1756219399: Sending PINGRESP to osmo_norte
+1756219403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219415: Received PINGREQ from osmo_norte
+1756219415: Sending PINGRESP to osmo_norte
+1756219423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219430: Received PINGREQ from osmo_norte
+1756219430: Sending PINGRESP to osmo_norte
+1756219433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219445: Received PINGREQ from osmo_norte
+1756219445: Sending PINGRESP to osmo_norte
+1756219453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219460: Received PINGREQ from osmo_norte
+1756219460: Sending PINGRESP to osmo_norte
+1756219463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219475: Received PINGREQ from osmo_norte
+1756219475: Sending PINGRESP to osmo_norte
+1756219483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219490: Received PINGREQ from osmo_norte
+1756219490: Sending PINGRESP to osmo_norte
+1756219493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219505: Received PINGREQ from osmo_norte
+1756219505: Sending PINGRESP to osmo_norte
+1756219513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219520: Received PINGREQ from osmo_norte
+1756219520: Sending PINGRESP to osmo_norte
+1756219523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219535: Received PINGREQ from osmo_norte
+1756219535: Sending PINGRESP to osmo_norte
+1756219543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219550: Received PINGREQ from osmo_norte
+1756219550: Sending PINGRESP to osmo_norte
+1756219553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219565: Received PINGREQ from osmo_norte
+1756219565: Sending PINGRESP to osmo_norte
+1756219573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219580: Received PINGREQ from osmo_norte
+1756219580: Sending PINGRESP to osmo_norte
+1756219583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219595: Received PINGREQ from osmo_norte
+1756219595: Sending PINGRESP to osmo_norte
+1756219603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219610: Received PINGREQ from osmo_norte
+1756219610: Sending PINGRESP to osmo_norte
+1756219613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219625: Received PINGREQ from osmo_norte
+1756219625: Sending PINGRESP to osmo_norte
+1756219633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219640: Received PINGREQ from osmo_norte
+1756219640: Sending PINGRESP to osmo_norte
+1756219643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219655: Received PINGREQ from osmo_norte
+1756219655: Sending PINGRESP to osmo_norte
+1756219663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219670: Received PINGREQ from osmo_norte
+1756219670: Sending PINGRESP to osmo_norte
+1756219673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219685: Received PINGREQ from osmo_norte
+1756219685: Sending PINGRESP to osmo_norte
+1756219693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219700: Received PINGREQ from osmo_norte
+1756219700: Sending PINGRESP to osmo_norte
+1756219703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219715: Received PINGREQ from osmo_norte
+1756219715: Sending PINGRESP to osmo_norte
+1756219723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219730: Received PINGREQ from osmo_norte
+1756219730: Sending PINGRESP to osmo_norte
+1756219733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756219743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219745: Received PINGREQ from osmo_norte
+1756219745: Sending PINGRESP to osmo_norte
+1756219753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219760: Received PINGREQ from osmo_norte
+1756219760: Sending PINGRESP to osmo_norte
+1756219763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219775: Received PINGREQ from osmo_norte
+1756219775: Sending PINGRESP to osmo_norte
+1756219783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219790: Received PINGREQ from osmo_norte
+1756219790: Sending PINGRESP to osmo_norte
+1756219793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219805: Received PINGREQ from osmo_norte
+1756219805: Sending PINGRESP to osmo_norte
+1756219813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219820: Received PINGREQ from osmo_norte
+1756219820: Sending PINGRESP to osmo_norte
+1756219823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219835: Received PINGREQ from osmo_norte
+1756219835: Sending PINGRESP to osmo_norte
+1756219843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219850: Received PINGREQ from osmo_norte
+1756219850: Sending PINGRESP to osmo_norte
+1756219853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219865: Received PINGREQ from osmo_norte
+1756219865: Sending PINGRESP to osmo_norte
+1756219873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219880: Received PINGREQ from osmo_norte
+1756219880: Sending PINGRESP to osmo_norte
+1756219883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219895: Received PINGREQ from osmo_norte
+1756219895: Sending PINGRESP to osmo_norte
+1756219903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219910: Received PINGREQ from osmo_norte
+1756219910: Sending PINGRESP to osmo_norte
+1756219913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219925: Received PINGREQ from osmo_norte
+1756219925: Sending PINGRESP to osmo_norte
+1756219933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219940: Received PINGREQ from osmo_norte
+1756219940: Sending PINGRESP to osmo_norte
+1756219943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219955: Received PINGREQ from osmo_norte
+1756219955: Sending PINGRESP to osmo_norte
+1756219963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219970: Received PINGREQ from osmo_norte
+1756219970: Sending PINGRESP to osmo_norte
+1756219973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756219985: Received PINGREQ from osmo_norte
+1756219985: Sending PINGRESP to osmo_norte
+1756219993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220000: Received PINGREQ from osmo_norte
+1756220000: Sending PINGRESP to osmo_norte
+1756220003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220015: Received PINGREQ from osmo_norte
+1756220015: Sending PINGRESP to osmo_norte
+1756220023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220030: Received PINGREQ from osmo_norte
+1756220030: Sending PINGRESP to osmo_norte
+1756220033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220045: Received PINGREQ from osmo_norte
+1756220045: Sending PINGRESP to osmo_norte
+1756220053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220060: Received PINGREQ from osmo_norte
+1756220060: Sending PINGRESP to osmo_norte
+1756220063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220075: Received PINGREQ from osmo_norte
+1756220075: Sending PINGRESP to osmo_norte
+1756220083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220090: Received PINGREQ from osmo_norte
+1756220090: Sending PINGRESP to osmo_norte
+1756220093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220105: Received PINGREQ from osmo_norte
+1756220105: Sending PINGRESP to osmo_norte
+1756220113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220120: Received PINGREQ from osmo_norte
+1756220120: Sending PINGRESP to osmo_norte
+1756220123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220135: Received PINGREQ from osmo_norte
+1756220135: Sending PINGRESP to osmo_norte
+1756220143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220150: Received PINGREQ from osmo_norte
+1756220150: Sending PINGRESP to osmo_norte
+1756220153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220162: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756220162: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756220162: Error: Bad file descriptor.
+1756220163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220165: Received PINGREQ from osmo_norte
+1756220165: Sending PINGRESP to osmo_norte
+1756220173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220180: Received PINGREQ from osmo_norte
+1756220180: Sending PINGRESP to osmo_norte
+1756220183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220195: Received PINGREQ from osmo_norte
+1756220195: Sending PINGRESP to osmo_norte
+1756220203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220210: Received PINGREQ from osmo_norte
+1756220210: Sending PINGRESP to osmo_norte
+1756220213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220225: Received PINGREQ from osmo_norte
+1756220225: Sending PINGRESP to osmo_norte
+1756220233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220240: Received PINGREQ from osmo_norte
+1756220240: Sending PINGRESP to osmo_norte
+1756220243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220255: Received PINGREQ from osmo_norte
+1756220255: Sending PINGRESP to osmo_norte
+1756220263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220270: Received PINGREQ from osmo_norte
+1756220270: Sending PINGRESP to osmo_norte
+1756220273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220285: Received PINGREQ from osmo_norte
+1756220285: Sending PINGRESP to osmo_norte
+1756220293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220300: Received PINGREQ from osmo_norte
+1756220300: Sending PINGRESP to osmo_norte
+1756220303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220315: Received PINGREQ from osmo_norte
+1756220315: Sending PINGRESP to osmo_norte
+1756220323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220330: Received PINGREQ from osmo_norte
+1756220330: Sending PINGRESP to osmo_norte
+1756220333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220345: Received PINGREQ from osmo_norte
+1756220345: Sending PINGRESP to osmo_norte
+1756220353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220360: Received PINGREQ from osmo_norte
+1756220360: Sending PINGRESP to osmo_norte
+1756220363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220375: Received PINGREQ from osmo_norte
+1756220375: Sending PINGRESP to osmo_norte
+1756220383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220390: Received PINGREQ from osmo_norte
+1756220390: Sending PINGRESP to osmo_norte
+1756220393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220405: Received PINGREQ from osmo_norte
+1756220405: Sending PINGRESP to osmo_norte
+1756220413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220420: Received PINGREQ from osmo_norte
+1756220420: Sending PINGRESP to osmo_norte
+1756220423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220435: Received PINGREQ from osmo_norte
+1756220435: Sending PINGRESP to osmo_norte
+1756220443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220450: Received PINGREQ from osmo_norte
+1756220450: Sending PINGRESP to osmo_norte
+1756220453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220465: Received PINGREQ from osmo_norte
+1756220465: Sending PINGRESP to osmo_norte
+1756220473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220480: Received PINGREQ from osmo_norte
+1756220480: Sending PINGRESP to osmo_norte
+1756220483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220495: Received PINGREQ from osmo_norte
+1756220495: Sending PINGRESP to osmo_norte
+1756220503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220510: Received PINGREQ from osmo_norte
+1756220510: Sending PINGRESP to osmo_norte
+1756220513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220525: Received PINGREQ from osmo_norte
+1756220525: Sending PINGRESP to osmo_norte
+1756220533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220540: Received PINGREQ from osmo_norte
+1756220540: Sending PINGRESP to osmo_norte
+1756220543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220555: Received PINGREQ from osmo_norte
+1756220555: Sending PINGRESP to osmo_norte
+1756220563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220570: Received PINGREQ from osmo_norte
+1756220570: Sending PINGRESP to osmo_norte
+1756220573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220585: Received PINGREQ from osmo_norte
+1756220585: Sending PINGRESP to osmo_norte
+1756220593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220600: Received PINGREQ from osmo_norte
+1756220600: Sending PINGRESP to osmo_norte
+1756220603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220615: Received PINGREQ from osmo_norte
+1756220615: Sending PINGRESP to osmo_norte
+1756220623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220630: Received PINGREQ from osmo_norte
+1756220630: Sending PINGRESP to osmo_norte
+1756220633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220645: Received PINGREQ from osmo_norte
+1756220645: Sending PINGRESP to osmo_norte
+1756220653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220660: Received PINGREQ from osmo_norte
+1756220660: Sending PINGRESP to osmo_norte
+1756220663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220675: Received PINGREQ from osmo_norte
+1756220675: Sending PINGRESP to osmo_norte
+1756220683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220690: Received PINGREQ from osmo_norte
+1756220690: Sending PINGRESP to osmo_norte
+1756220693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220705: Received PINGREQ from osmo_norte
+1756220705: Sending PINGRESP to osmo_norte
+1756220713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220720: Received PINGREQ from osmo_norte
+1756220720: Sending PINGRESP to osmo_norte
+1756220723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220735: Received PINGREQ from osmo_norte
+1756220735: Sending PINGRESP to osmo_norte
+1756220743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220750: Received PINGREQ from osmo_norte
+1756220750: Sending PINGRESP to osmo_norte
+1756220753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220765: Received PINGREQ from osmo_norte
+1756220765: Sending PINGRESP to osmo_norte
+1756220773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220780: Received PINGREQ from osmo_norte
+1756220780: Sending PINGRESP to osmo_norte
+1756220783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220795: Received PINGREQ from osmo_norte
+1756220795: Sending PINGRESP to osmo_norte
+1756220803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220810: Received PINGREQ from osmo_norte
+1756220810: Sending PINGRESP to osmo_norte
+1756220813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220825: Received PINGREQ from osmo_norte
+1756220825: Sending PINGRESP to osmo_norte
+1756220833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220840: Received PINGREQ from osmo_norte
+1756220840: Sending PINGRESP to osmo_norte
+1756220843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220855: Received PINGREQ from osmo_norte
+1756220855: Sending PINGRESP to osmo_norte
+1756220863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220870: Received PINGREQ from osmo_norte
+1756220870: Sending PINGRESP to osmo_norte
+1756220873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220885: Received PINGREQ from osmo_norte
+1756220885: Sending PINGRESP to osmo_norte
+1756220893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220900: Received PINGREQ from osmo_norte
+1756220900: Sending PINGRESP to osmo_norte
+1756220903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220915: Received PINGREQ from osmo_norte
+1756220915: Sending PINGRESP to osmo_norte
+1756220923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220930: Received PINGREQ from osmo_norte
+1756220930: Sending PINGRESP to osmo_norte
+1756220933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756220943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220945: Received PINGREQ from osmo_norte
+1756220945: Sending PINGRESP to osmo_norte
+1756220953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220960: Received PINGREQ from osmo_norte
+1756220960: Sending PINGRESP to osmo_norte
+1756220963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220975: Received PINGREQ from osmo_norte
+1756220975: Sending PINGRESP to osmo_norte
+1756220983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756220990: Received PINGREQ from osmo_norte
+1756220990: Sending PINGRESP to osmo_norte
+1756220993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221005: Received PINGREQ from osmo_norte
+1756221005: Sending PINGRESP to osmo_norte
+1756221013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221020: Received PINGREQ from osmo_norte
+1756221020: Sending PINGRESP to osmo_norte
+1756221023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221035: Received PINGREQ from osmo_norte
+1756221035: Sending PINGRESP to osmo_norte
+1756221043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221050: Received PINGREQ from osmo_norte
+1756221050: Sending PINGRESP to osmo_norte
+1756221053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221065: Received PINGREQ from osmo_norte
+1756221065: Sending PINGRESP to osmo_norte
+1756221073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221080: Received PINGREQ from osmo_norte
+1756221080: Sending PINGRESP to osmo_norte
+1756221083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221095: Received PINGREQ from osmo_norte
+1756221095: Sending PINGRESP to osmo_norte
+1756221103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221110: Received PINGREQ from osmo_norte
+1756221110: Sending PINGRESP to osmo_norte
+1756221113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221125: Received PINGREQ from osmo_norte
+1756221125: Sending PINGRESP to osmo_norte
+1756221133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221140: Received PINGREQ from osmo_norte
+1756221140: Sending PINGRESP to osmo_norte
+1756221143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221155: Received PINGREQ from osmo_norte
+1756221155: Sending PINGRESP to osmo_norte
+1756221163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221170: Received PINGREQ from osmo_norte
+1756221170: Sending PINGRESP to osmo_norte
+1756221173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221185: Received PINGREQ from osmo_norte
+1756221185: Sending PINGRESP to osmo_norte
+1756221193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221200: Received PINGREQ from osmo_norte
+1756221200: Sending PINGRESP to osmo_norte
+1756221203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221215: Received PINGREQ from osmo_norte
+1756221215: Sending PINGRESP to osmo_norte
+1756221223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221230: Received PINGREQ from osmo_norte
+1756221230: Sending PINGRESP to osmo_norte
+1756221233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221245: Received PINGREQ from osmo_norte
+1756221245: Sending PINGRESP to osmo_norte
+1756221253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221260: Received PINGREQ from osmo_norte
+1756221260: Sending PINGRESP to osmo_norte
+1756221263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221275: Received PINGREQ from osmo_norte
+1756221275: Sending PINGRESP to osmo_norte
+1756221283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221290: Received PINGREQ from osmo_norte
+1756221290: Sending PINGRESP to osmo_norte
+1756221293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221305: Received PINGREQ from osmo_norte
+1756221305: Sending PINGRESP to osmo_norte
+1756221313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221320: Received PINGREQ from osmo_norte
+1756221320: Sending PINGRESP to osmo_norte
+1756221323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221335: Received PINGREQ from osmo_norte
+1756221335: Sending PINGRESP to osmo_norte
+1756221343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221350: Received PINGREQ from osmo_norte
+1756221350: Sending PINGRESP to osmo_norte
+1756221353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221365: Received PINGREQ from osmo_norte
+1756221365: Sending PINGRESP to osmo_norte
+1756221373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221380: Received PINGREQ from osmo_norte
+1756221380: Sending PINGRESP to osmo_norte
+1756221383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221395: Received PINGREQ from osmo_norte
+1756221395: Sending PINGRESP to osmo_norte
+1756221403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221410: Received PINGREQ from osmo_norte
+1756221410: Sending PINGRESP to osmo_norte
+1756221413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221425: Received PINGREQ from osmo_norte
+1756221425: Sending PINGRESP to osmo_norte
+1756221433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221440: Received PINGREQ from osmo_norte
+1756221440: Sending PINGRESP to osmo_norte
+1756221443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221455: Received PINGREQ from osmo_norte
+1756221455: Sending PINGRESP to osmo_norte
+1756221463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221470: Received PINGREQ from osmo_norte
+1756221470: Sending PINGRESP to osmo_norte
+1756221473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221485: Received PINGREQ from osmo_norte
+1756221485: Sending PINGRESP to osmo_norte
+1756221493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221500: Received PINGREQ from osmo_norte
+1756221500: Sending PINGRESP to osmo_norte
+1756221503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221515: Received PINGREQ from osmo_norte
+1756221515: Sending PINGRESP to osmo_norte
+1756221523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221530: Received PINGREQ from osmo_norte
+1756221530: Sending PINGRESP to osmo_norte
+1756221533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221545: Received PINGREQ from osmo_norte
+1756221545: Sending PINGRESP to osmo_norte
+1756221553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221560: Received PINGREQ from osmo_norte
+1756221560: Sending PINGRESP to osmo_norte
+1756221563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221575: Received PINGREQ from osmo_norte
+1756221575: Sending PINGRESP to osmo_norte
+1756221583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221590: Received PINGREQ from osmo_norte
+1756221590: Sending PINGRESP to osmo_norte
+1756221593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221605: Received PINGREQ from osmo_norte
+1756221605: Sending PINGRESP to osmo_norte
+1756221613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221620: Received PINGREQ from osmo_norte
+1756221620: Sending PINGRESP to osmo_norte
+1756221623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221635: Received PINGREQ from osmo_norte
+1756221635: Sending PINGRESP to osmo_norte
+1756221643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221650: Received PINGREQ from osmo_norte
+1756221650: Sending PINGRESP to osmo_norte
+1756221653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221665: Received PINGREQ from osmo_norte
+1756221665: Sending PINGRESP to osmo_norte
+1756221673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221680: Received PINGREQ from osmo_norte
+1756221680: Sending PINGRESP to osmo_norte
+1756221683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221695: Received PINGREQ from osmo_norte
+1756221695: Sending PINGRESP to osmo_norte
+1756221703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221710: Received PINGREQ from osmo_norte
+1756221710: Sending PINGRESP to osmo_norte
+1756221713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221725: Received PINGREQ from osmo_norte
+1756221725: Sending PINGRESP to osmo_norte
+1756221733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221740: Received PINGREQ from osmo_norte
+1756221740: Sending PINGRESP to osmo_norte
+1756221743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221755: Received PINGREQ from osmo_norte
+1756221755: Sending PINGRESP to osmo_norte
+1756221763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756221770: Received PINGREQ from osmo_norte
+1756221770: Sending PINGRESP to osmo_norte
+1756221773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221785: Received PINGREQ from osmo_norte
+1756221785: Sending PINGRESP to osmo_norte
+1756221793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221800: Received PINGREQ from osmo_norte
+1756221800: Sending PINGRESP to osmo_norte
+1756221803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221815: Received PINGREQ from osmo_norte
+1756221815: Sending PINGRESP to osmo_norte
+1756221823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221830: Received PINGREQ from osmo_norte
+1756221830: Sending PINGRESP to osmo_norte
+1756221833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221845: Received PINGREQ from osmo_norte
+1756221845: Sending PINGRESP to osmo_norte
+1756221853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221860: Received PINGREQ from osmo_norte
+1756221860: Sending PINGRESP to osmo_norte
+1756221863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221875: Received PINGREQ from osmo_norte
+1756221875: Sending PINGRESP to osmo_norte
+1756221883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221890: Received PINGREQ from osmo_norte
+1756221890: Sending PINGRESP to osmo_norte
+1756221893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221905: Received PINGREQ from osmo_norte
+1756221905: Sending PINGRESP to osmo_norte
+1756221913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221920: Received PINGREQ from osmo_norte
+1756221920: Sending PINGRESP to osmo_norte
+1756221923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221935: Received PINGREQ from osmo_norte
+1756221935: Sending PINGRESP to osmo_norte
+1756221943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221950: Received PINGREQ from osmo_norte
+1756221950: Sending PINGRESP to osmo_norte
+1756221953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221963: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756221963: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756221963: Error: Bad file descriptor.
+1756221965: Received PINGREQ from osmo_norte
+1756221965: Sending PINGRESP to osmo_norte
+1756221973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221980: Received PINGREQ from osmo_norte
+1756221980: Sending PINGRESP to osmo_norte
+1756221983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756221995: Received PINGREQ from osmo_norte
+1756221995: Sending PINGRESP to osmo_norte
+1756222003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222010: Received PINGREQ from osmo_norte
+1756222010: Sending PINGRESP to osmo_norte
+1756222013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222025: Received PINGREQ from osmo_norte
+1756222025: Sending PINGRESP to osmo_norte
+1756222033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222040: Received PINGREQ from osmo_norte
+1756222040: Sending PINGRESP to osmo_norte
+1756222043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222055: Received PINGREQ from osmo_norte
+1756222055: Sending PINGRESP to osmo_norte
+1756222063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222070: Received PINGREQ from osmo_norte
+1756222070: Sending PINGRESP to osmo_norte
+1756222073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222085: Received PINGREQ from osmo_norte
+1756222085: Sending PINGRESP to osmo_norte
+1756222093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222100: Received PINGREQ from osmo_norte
+1756222100: Sending PINGRESP to osmo_norte
+1756222103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222115: Received PINGREQ from osmo_norte
+1756222115: Sending PINGRESP to osmo_norte
+1756222123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222130: Received PINGREQ from osmo_norte
+1756222130: Sending PINGRESP to osmo_norte
+1756222133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222145: Received PINGREQ from osmo_norte
+1756222145: Sending PINGRESP to osmo_norte
+1756222153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222160: Received PINGREQ from osmo_norte
+1756222160: Sending PINGRESP to osmo_norte
+1756222163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222175: Received PINGREQ from osmo_norte
+1756222175: Sending PINGRESP to osmo_norte
+1756222183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222190: Received PINGREQ from osmo_norte
+1756222190: Sending PINGRESP to osmo_norte
+1756222193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222205: Received PINGREQ from osmo_norte
+1756222205: Sending PINGRESP to osmo_norte
+1756222213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222220: Received PINGREQ from osmo_norte
+1756222220: Sending PINGRESP to osmo_norte
+1756222223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222235: Received PINGREQ from osmo_norte
+1756222235: Sending PINGRESP to osmo_norte
+1756222243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222250: Received PINGREQ from osmo_norte
+1756222250: Sending PINGRESP to osmo_norte
+1756222253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222265: Received PINGREQ from osmo_norte
+1756222265: Sending PINGRESP to osmo_norte
+1756222273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222280: Received PINGREQ from osmo_norte
+1756222280: Sending PINGRESP to osmo_norte
+1756222283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222295: Received PINGREQ from osmo_norte
+1756222295: Sending PINGRESP to osmo_norte
+1756222303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222310: Received PINGREQ from osmo_norte
+1756222310: Sending PINGRESP to osmo_norte
+1756222313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222325: Received PINGREQ from osmo_norte
+1756222325: Sending PINGRESP to osmo_norte
+1756222333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222340: Received PINGREQ from osmo_norte
+1756222340: Sending PINGRESP to osmo_norte
+1756222343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222355: Received PINGREQ from osmo_norte
+1756222355: Sending PINGRESP to osmo_norte
+1756222363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222370: Received PINGREQ from osmo_norte
+1756222370: Sending PINGRESP to osmo_norte
+1756222373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222385: Received PINGREQ from osmo_norte
+1756222385: Sending PINGRESP to osmo_norte
+1756222393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222400: Received PINGREQ from osmo_norte
+1756222400: Sending PINGRESP to osmo_norte
+1756222403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222415: Received PINGREQ from osmo_norte
+1756222415: Sending PINGRESP to osmo_norte
+1756222423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222430: Received PINGREQ from osmo_norte
+1756222430: Sending PINGRESP to osmo_norte
+1756222433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222445: Received PINGREQ from osmo_norte
+1756222445: Sending PINGRESP to osmo_norte
+1756222453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222460: Received PINGREQ from osmo_norte
+1756222460: Sending PINGRESP to osmo_norte
+1756222463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222475: Received PINGREQ from osmo_norte
+1756222475: Sending PINGRESP to osmo_norte
+1756222483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222490: Received PINGREQ from osmo_norte
+1756222490: Sending PINGRESP to osmo_norte
+1756222493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222505: Received PINGREQ from osmo_norte
+1756222505: Sending PINGRESP to osmo_norte
+1756222513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222520: Received PINGREQ from osmo_norte
+1756222520: Sending PINGRESP to osmo_norte
+1756222523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222535: Received PINGREQ from osmo_norte
+1756222535: Sending PINGRESP to osmo_norte
+1756222543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222550: Received PINGREQ from osmo_norte
+1756222550: Sending PINGRESP to osmo_norte
+1756222553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222565: Received PINGREQ from osmo_norte
+1756222565: Sending PINGRESP to osmo_norte
+1756222573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222580: Received PINGREQ from osmo_norte
+1756222580: Sending PINGRESP to osmo_norte
+1756222583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222595: Received PINGREQ from osmo_norte
+1756222595: Sending PINGRESP to osmo_norte
+1756222603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222610: Received PINGREQ from osmo_norte
+1756222610: Sending PINGRESP to osmo_norte
+1756222613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222625: Received PINGREQ from osmo_norte
+1756222625: Sending PINGRESP to osmo_norte
+1756222633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222640: Received PINGREQ from osmo_norte
+1756222640: Sending PINGRESP to osmo_norte
+1756222643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222655: Received PINGREQ from osmo_norte
+1756222655: Sending PINGRESP to osmo_norte
+1756222663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222670: Received PINGREQ from osmo_norte
+1756222670: Sending PINGRESP to osmo_norte
+1756222673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222685: Received PINGREQ from osmo_norte
+1756222685: Sending PINGRESP to osmo_norte
+1756222693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222700: Received PINGREQ from osmo_norte
+1756222700: Sending PINGRESP to osmo_norte
+1756222703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222715: Received PINGREQ from osmo_norte
+1756222715: Sending PINGRESP to osmo_norte
+1756222723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222730: Received PINGREQ from osmo_norte
+1756222730: Sending PINGRESP to osmo_norte
+1756222733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222745: Received PINGREQ from osmo_norte
+1756222745: Sending PINGRESP to osmo_norte
+1756222753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222760: Received PINGREQ from osmo_norte
+1756222760: Sending PINGRESP to osmo_norte
+1756222763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222775: Received PINGREQ from osmo_norte
+1756222775: Sending PINGRESP to osmo_norte
+1756222783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222790: Received PINGREQ from osmo_norte
+1756222790: Sending PINGRESP to osmo_norte
+1756222793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222805: Received PINGREQ from osmo_norte
+1756222805: Sending PINGRESP to osmo_norte
+1756222813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222820: Received PINGREQ from osmo_norte
+1756222820: Sending PINGRESP to osmo_norte
+1756222823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222835: Received PINGREQ from osmo_norte
+1756222835: Sending PINGRESP to osmo_norte
+1756222843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222850: Received PINGREQ from osmo_norte
+1756222850: Sending PINGRESP to osmo_norte
+1756222853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222865: Received PINGREQ from osmo_norte
+1756222865: Sending PINGRESP to osmo_norte
+1756222873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222880: Received PINGREQ from osmo_norte
+1756222880: Sending PINGRESP to osmo_norte
+1756222883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222895: Received PINGREQ from osmo_norte
+1756222895: Sending PINGRESP to osmo_norte
+1756222903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222910: Received PINGREQ from osmo_norte
+1756222910: Sending PINGRESP to osmo_norte
+1756222913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222925: Received PINGREQ from osmo_norte
+1756222925: Sending PINGRESP to osmo_norte
+1756222933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222940: Received PINGREQ from osmo_norte
+1756222940: Sending PINGRESP to osmo_norte
+1756222943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756222955: Received PINGREQ from osmo_norte
+1756222955: Sending PINGRESP to osmo_norte
+1756222963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222970: Received PINGREQ from osmo_norte
+1756222970: Sending PINGRESP to osmo_norte
+1756222973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756222985: Received PINGREQ from osmo_norte
+1756222985: Sending PINGRESP to osmo_norte
+1756222993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223000: Received PINGREQ from osmo_norte
+1756223000: Sending PINGRESP to osmo_norte
+1756223003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223015: Received PINGREQ from osmo_norte
+1756223015: Sending PINGRESP to osmo_norte
+1756223023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223030: Received PINGREQ from osmo_norte
+1756223030: Sending PINGRESP to osmo_norte
+1756223033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223045: Received PINGREQ from osmo_norte
+1756223045: Sending PINGRESP to osmo_norte
+1756223053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223060: Received PINGREQ from osmo_norte
+1756223060: Sending PINGRESP to osmo_norte
+1756223063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223075: Received PINGREQ from osmo_norte
+1756223075: Sending PINGRESP to osmo_norte
+1756223083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223090: Received PINGREQ from osmo_norte
+1756223090: Sending PINGRESP to osmo_norte
+1756223093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756223105: Received PINGREQ from osmo_norte
+1756223105: Sending PINGRESP to osmo_norte
+1756223113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223120: Received PINGREQ from osmo_norte
+1756223120: Sending PINGRESP to osmo_norte
+1756223123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223135: Received PINGREQ from osmo_norte
+1756223135: Sending PINGRESP to osmo_norte
+1756223143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223150: Received PINGREQ from osmo_norte
+1756223150: Sending PINGRESP to osmo_norte
+1756223153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223165: Received PINGREQ from osmo_norte
+1756223165: Sending PINGRESP to osmo_norte
+1756223173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223180: Received PINGREQ from osmo_norte
+1756223180: Sending PINGRESP to osmo_norte
+1756223183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223195: Received PINGREQ from osmo_norte
+1756223195: Sending PINGRESP to osmo_norte
+1756223203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223210: Received PINGREQ from osmo_norte
+1756223210: Sending PINGRESP to osmo_norte
+1756223213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223225: Received PINGREQ from osmo_norte
+1756223225: Sending PINGRESP to osmo_norte
+1756223233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223240: Received PINGREQ from osmo_norte
+1756223240: Sending PINGRESP to osmo_norte
+1756223243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223255: Received PINGREQ from osmo_norte
+1756223255: Sending PINGRESP to osmo_norte
+1756223263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223270: Received PINGREQ from osmo_norte
+1756223270: Sending PINGRESP to osmo_norte
+1756223273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223285: Received PINGREQ from osmo_norte
+1756223285: Sending PINGRESP to osmo_norte
+1756223293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756223300: Received PINGREQ from osmo_norte
+1756223300: Sending PINGRESP to osmo_norte
+1756223303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223315: Received PINGREQ from osmo_norte
+1756223315: Sending PINGRESP to osmo_norte
+1756223323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223330: Received PINGREQ from osmo_norte
+1756223330: Sending PINGRESP to osmo_norte
+1756223333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756223345: Received PINGREQ from osmo_norte
+1756223345: Sending PINGRESP to osmo_norte
+1756223353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223360: Received PINGREQ from osmo_norte
+1756223360: Sending PINGRESP to osmo_norte
+1756223363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223375: Received PINGREQ from osmo_norte
+1756223375: Sending PINGRESP to osmo_norte
+1756223383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223390: Received PINGREQ from osmo_norte
+1756223390: Sending PINGRESP to osmo_norte
+1756223393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223405: Received PINGREQ from osmo_norte
+1756223405: Sending PINGRESP to osmo_norte
+1756223413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223420: Received PINGREQ from osmo_norte
+1756223420: Sending PINGRESP to osmo_norte
+1756223423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223435: Received PINGREQ from osmo_norte
+1756223435: Sending PINGRESP to osmo_norte
+1756223443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223450: Received PINGREQ from osmo_norte
+1756223450: Sending PINGRESP to osmo_norte
+1756223453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223465: Received PINGREQ from osmo_norte
+1756223465: Sending PINGRESP to osmo_norte
+1756223473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223480: Received PINGREQ from osmo_norte
+1756223480: Sending PINGRESP to osmo_norte
+1756223483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223495: Received PINGREQ from osmo_norte
+1756223495: Sending PINGRESP to osmo_norte
+1756223503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223510: Received PINGREQ from osmo_norte
+1756223510: Sending PINGRESP to osmo_norte
+1756223513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756223523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223525: Received PINGREQ from osmo_norte
+1756223525: Sending PINGRESP to osmo_norte
+1756223533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223540: Received PINGREQ from osmo_norte
+1756223540: Sending PINGRESP to osmo_norte
+1756223543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223555: Received PINGREQ from osmo_norte
+1756223555: Sending PINGRESP to osmo_norte
+1756223563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223570: Received PINGREQ from osmo_norte
+1756223570: Sending PINGRESP to osmo_norte
+1756223573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223585: Received PINGREQ from osmo_norte
+1756223585: Sending PINGRESP to osmo_norte
+1756223593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223600: Received PINGREQ from osmo_norte
+1756223600: Sending PINGRESP to osmo_norte
+1756223603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223615: Received PINGREQ from osmo_norte
+1756223615: Sending PINGRESP to osmo_norte
+1756223623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223630: Received PINGREQ from osmo_norte
+1756223630: Sending PINGRESP to osmo_norte
+1756223633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223645: Received PINGREQ from osmo_norte
+1756223645: Sending PINGRESP to osmo_norte
+1756223653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223660: Received PINGREQ from osmo_norte
+1756223660: Sending PINGRESP to osmo_norte
+1756223663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223675: Received PINGREQ from osmo_norte
+1756223675: Sending PINGRESP to osmo_norte
+1756223683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223690: Received PINGREQ from osmo_norte
+1756223690: Sending PINGRESP to osmo_norte
+1756223693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223705: Received PINGREQ from osmo_norte
+1756223705: Sending PINGRESP to osmo_norte
+1756223713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223721: Received PINGREQ from osmo_norte
+1756223721: Sending PINGRESP to osmo_norte
+1756223723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223736: Received PINGREQ from osmo_norte
+1756223736: Sending PINGRESP to osmo_norte
+1756223743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223751: Received PINGREQ from osmo_norte
+1756223751: Sending PINGRESP to osmo_norte
+1756223753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223764: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756223764: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756223764: Error: Bad file descriptor.
+1756223766: Received PINGREQ from osmo_norte
+1756223766: Sending PINGRESP to osmo_norte
+1756223773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223781: Received PINGREQ from osmo_norte
+1756223781: Sending PINGRESP to osmo_norte
+1756223783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223796: Received PINGREQ from osmo_norte
+1756223796: Sending PINGRESP to osmo_norte
+1756223803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223811: Received PINGREQ from osmo_norte
+1756223811: Sending PINGRESP to osmo_norte
+1756223813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756223823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223826: Received PINGREQ from osmo_norte
+1756223826: Sending PINGRESP to osmo_norte
+1756223833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223841: Received PINGREQ from osmo_norte
+1756223841: Sending PINGRESP to osmo_norte
+1756223843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223856: Received PINGREQ from osmo_norte
+1756223856: Sending PINGRESP to osmo_norte
+1756223863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223871: Received PINGREQ from osmo_norte
+1756223871: Sending PINGRESP to osmo_norte
+1756223873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223886: Received PINGREQ from osmo_norte
+1756223886: Sending PINGRESP to osmo_norte
+1756223893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223901: Received PINGREQ from osmo_norte
+1756223901: Sending PINGRESP to osmo_norte
+1756223903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223916: Received PINGREQ from osmo_norte
+1756223916: Sending PINGRESP to osmo_norte
+1756223923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223931: Received PINGREQ from osmo_norte
+1756223931: Sending PINGRESP to osmo_norte
+1756223933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223946: Received PINGREQ from osmo_norte
+1756223946: Sending PINGRESP to osmo_norte
+1756223953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223961: Received PINGREQ from osmo_norte
+1756223961: Sending PINGRESP to osmo_norte
+1756223963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223976: Received PINGREQ from osmo_norte
+1756223976: Sending PINGRESP to osmo_norte
+1756223983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756223991: Received PINGREQ from osmo_norte
+1756223991: Sending PINGRESP to osmo_norte
+1756223993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224006: Received PINGREQ from osmo_norte
+1756224006: Sending PINGRESP to osmo_norte
+1756224013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224021: Received PINGREQ from osmo_norte
+1756224021: Sending PINGRESP to osmo_norte
+1756224023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224036: Received PINGREQ from osmo_norte
+1756224036: Sending PINGRESP to osmo_norte
+1756224043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224051: Received PINGREQ from osmo_norte
+1756224051: Sending PINGRESP to osmo_norte
+1756224053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224066: Received PINGREQ from osmo_norte
+1756224066: Sending PINGRESP to osmo_norte
+1756224073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224081: Received PINGREQ from osmo_norte
+1756224081: Sending PINGRESP to osmo_norte
+1756224083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224096: Received PINGREQ from osmo_norte
+1756224096: Sending PINGRESP to osmo_norte
+1756224103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224111: Received PINGREQ from osmo_norte
+1756224111: Sending PINGRESP to osmo_norte
+1756224113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224126: Received PINGREQ from osmo_norte
+1756224126: Sending PINGRESP to osmo_norte
+1756224133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224141: Received PINGREQ from osmo_norte
+1756224141: Sending PINGRESP to osmo_norte
+1756224143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224156: Received PINGREQ from osmo_norte
+1756224156: Sending PINGRESP to osmo_norte
+1756224163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224171: Received PINGREQ from osmo_norte
+1756224171: Sending PINGRESP to osmo_norte
+1756224173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224186: Received PINGREQ from osmo_norte
+1756224186: Sending PINGRESP to osmo_norte
+1756224193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224201: Received PINGREQ from osmo_norte
+1756224201: Sending PINGRESP to osmo_norte
+1756224203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224216: Received PINGREQ from osmo_norte
+1756224216: Sending PINGRESP to osmo_norte
+1756224223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224231: Received PINGREQ from osmo_norte
+1756224231: Sending PINGRESP to osmo_norte
+1756224233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224246: Received PINGREQ from osmo_norte
+1756224246: Sending PINGRESP to osmo_norte
+1756224253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224261: Received PINGREQ from osmo_norte
+1756224261: Sending PINGRESP to osmo_norte
+1756224263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224276: Received PINGREQ from osmo_norte
+1756224276: Sending PINGRESP to osmo_norte
+1756224283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224291: Received PINGREQ from osmo_norte
+1756224291: Sending PINGRESP to osmo_norte
+1756224293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224306: Received PINGREQ from osmo_norte
+1756224306: Sending PINGRESP to osmo_norte
+1756224313: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224321: Received PINGREQ from osmo_norte
+1756224321: Sending PINGRESP to osmo_norte
+1756224323: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224333: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224336: Received PINGREQ from osmo_norte
+1756224336: Sending PINGRESP to osmo_norte
+1756224343: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224351: Received PINGREQ from osmo_norte
+1756224351: Sending PINGRESP to osmo_norte
+1756224353: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224363: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224366: Received PINGREQ from osmo_norte
+1756224366: Sending PINGRESP to osmo_norte
+1756224373: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224381: Received PINGREQ from osmo_norte
+1756224381: Sending PINGRESP to osmo_norte
+1756224383: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224393: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224396: Received PINGREQ from osmo_norte
+1756224396: Sending PINGRESP to osmo_norte
+1756224403: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224411: Received PINGREQ from osmo_norte
+1756224411: Sending PINGRESP to osmo_norte
+1756224413: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224423: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224426: Received PINGREQ from osmo_norte
+1756224426: Sending PINGRESP to osmo_norte
+1756224433: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224441: Received PINGREQ from osmo_norte
+1756224441: Sending PINGRESP to osmo_norte
+1756224443: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224453: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224456: Received PINGREQ from osmo_norte
+1756224456: Sending PINGRESP to osmo_norte
+1756224463: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224471: Received PINGREQ from osmo_norte
+1756224471: Sending PINGRESP to osmo_norte
+1756224473: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224483: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224486: Received PINGREQ from osmo_norte
+1756224486: Sending PINGRESP to osmo_norte
+1756224493: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224501: Received PINGREQ from osmo_norte
+1756224501: Sending PINGRESP to osmo_norte
+1756224503: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224513: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224516: Received PINGREQ from osmo_norte
+1756224516: Sending PINGRESP to osmo_norte
+1756224523: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224531: Received PINGREQ from osmo_norte
+1756224531: Sending PINGRESP to osmo_norte
+1756224533: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224543: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224546: Received PINGREQ from osmo_norte
+1756224546: Sending PINGRESP to osmo_norte
+1756224553: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224561: Received PINGREQ from osmo_norte
+1756224561: Sending PINGRESP to osmo_norte
+1756224563: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224573: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224576: Received PINGREQ from osmo_norte
+1756224576: Sending PINGRESP to osmo_norte
+1756224583: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224591: Received PINGREQ from osmo_norte
+1756224591: Sending PINGRESP to osmo_norte
+1756224593: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224603: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224606: Received PINGREQ from osmo_norte
+1756224606: Sending PINGRESP to osmo_norte
+1756224613: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224621: Received PINGREQ from osmo_norte
+1756224621: Sending PINGRESP to osmo_norte
+1756224623: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224633: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224636: Received PINGREQ from osmo_norte
+1756224636: Sending PINGRESP to osmo_norte
+1756224643: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224651: Received PINGREQ from osmo_norte
+1756224651: Sending PINGRESP to osmo_norte
+1756224653: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224663: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224666: Received PINGREQ from osmo_norte
+1756224666: Sending PINGRESP to osmo_norte
+1756224673: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224681: Received PINGREQ from osmo_norte
+1756224681: Sending PINGRESP to osmo_norte
+1756224683: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224693: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224696: Received PINGREQ from osmo_norte
+1756224696: Sending PINGRESP to osmo_norte
+1756224703: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224711: Received PINGREQ from osmo_norte
+1756224711: Sending PINGRESP to osmo_norte
+1756224713: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224723: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224726: Received PINGREQ from osmo_norte
+1756224726: Sending PINGRESP to osmo_norte
+1756224733: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224741: Received PINGREQ from osmo_norte
+1756224741: Sending PINGRESP to osmo_norte
+1756224743: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224753: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224756: Received PINGREQ from osmo_norte
+1756224756: Sending PINGRESP to osmo_norte
+1756224763: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224771: Received PINGREQ from osmo_norte
+1756224771: Sending PINGRESP to osmo_norte
+1756224773: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224783: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224786: Received PINGREQ from osmo_norte
+1756224786: Sending PINGRESP to osmo_norte
+1756224793: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224801: Received PINGREQ from osmo_norte
+1756224801: Sending PINGRESP to osmo_norte
+1756224803: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224813: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224816: Received PINGREQ from osmo_norte
+1756224816: Sending PINGRESP to osmo_norte
+1756224823: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224831: Received PINGREQ from osmo_norte
+1756224831: Sending PINGRESP to osmo_norte
+1756224833: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224843: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224846: Received PINGREQ from osmo_norte
+1756224846: Sending PINGRESP to osmo_norte
+1756224853: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224861: Received PINGREQ from osmo_norte
+1756224861: Sending PINGRESP to osmo_norte
+1756224863: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224873: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224876: Received PINGREQ from osmo_norte
+1756224876: Sending PINGRESP to osmo_norte
+1756224883: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224891: Received PINGREQ from osmo_norte
+1756224891: Sending PINGRESP to osmo_norte
+1756224893: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224903: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224906: Received PINGREQ from osmo_norte
+1756224906: Sending PINGRESP to osmo_norte
+1756224913: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224921: Received PINGREQ from osmo_norte
+1756224921: Sending PINGRESP to osmo_norte
+1756224923: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224933: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224936: Received PINGREQ from osmo_norte
+1756224936: Sending PINGRESP to osmo_norte
+1756224943: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224951: Received PINGREQ from osmo_norte
+1756224951: Sending PINGRESP to osmo_norte
+1756224953: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224963: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756224966: Received PINGREQ from osmo_norte
+1756224966: Sending PINGRESP to osmo_norte
+1756224973: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224981: Received PINGREQ from osmo_norte
+1756224981: Sending PINGRESP to osmo_norte
+1756224983: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224993: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756224996: Received PINGREQ from osmo_norte
+1756224996: Sending PINGRESP to osmo_norte
+1756225003: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225011: Received PINGREQ from osmo_norte
+1756225011: Sending PINGRESP to osmo_norte
+1756225013: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225023: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225026: Received PINGREQ from osmo_norte
+1756225026: Sending PINGRESP to osmo_norte
+1756225033: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225041: Received PINGREQ from osmo_norte
+1756225041: Sending PINGRESP to osmo_norte
+1756225043: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225053: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225056: Received PINGREQ from osmo_norte
+1756225056: Sending PINGRESP to osmo_norte
+1756225063: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225071: Received PINGREQ from osmo_norte
+1756225071: Sending PINGRESP to osmo_norte
+1756225073: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225083: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225086: Received PINGREQ from osmo_norte
+1756225086: Sending PINGRESP to osmo_norte
+1756225093: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225101: Received PINGREQ from osmo_norte
+1756225101: Sending PINGRESP to osmo_norte
+1756225103: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225113: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225116: Received PINGREQ from osmo_norte
+1756225116: Sending PINGRESP to osmo_norte
+1756225123: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225131: Received PINGREQ from osmo_norte
+1756225131: Sending PINGRESP to osmo_norte
+1756225133: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225143: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225146: Received PINGREQ from osmo_norte
+1756225146: Sending PINGRESP to osmo_norte
+1756225153: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225161: Received PINGREQ from osmo_norte
+1756225161: Sending PINGRESP to osmo_norte
+1756225163: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225173: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225176: Received PINGREQ from osmo_norte
+1756225176: Sending PINGRESP to osmo_norte
+1756225183: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225191: Received PINGREQ from osmo_norte
+1756225191: Sending PINGRESP to osmo_norte
+1756225193: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225203: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225206: Received PINGREQ from osmo_norte
+1756225206: Sending PINGRESP to osmo_norte
+1756225213: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225221: Received PINGREQ from osmo_norte
+1756225221: Sending PINGRESP to osmo_norte
+1756225223: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225233: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225236: Received PINGREQ from osmo_norte
+1756225236: Sending PINGRESP to osmo_norte
+1756225243: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225251: Received PINGREQ from osmo_norte
+1756225251: Sending PINGRESP to osmo_norte
+1756225253: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225263: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225266: Received PINGREQ from osmo_norte
+1756225266: Sending PINGRESP to osmo_norte
+1756225273: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225281: Received PINGREQ from osmo_norte
+1756225281: Sending PINGRESP to osmo_norte
+1756225283: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225293: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225296: Received PINGREQ from osmo_norte
+1756225296: Sending PINGRESP to osmo_norte
+1756225303: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225311: Received PINGREQ from osmo_norte
+1756225311: Sending PINGRESP to osmo_norte
+1756225314: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225324: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225326: Received PINGREQ from osmo_norte
+1756225326: Sending PINGRESP to osmo_norte
+1756225334: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225341: Received PINGREQ from osmo_norte
+1756225341: Sending PINGRESP to osmo_norte
+1756225344: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225354: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225356: Received PINGREQ from osmo_norte
+1756225356: Sending PINGRESP to osmo_norte
+1756225364: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225371: Received PINGREQ from osmo_norte
+1756225371: Sending PINGRESP to osmo_norte
+1756225374: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225384: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225386: Received PINGREQ from osmo_norte
+1756225386: Sending PINGRESP to osmo_norte
+1756225394: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225401: Received PINGREQ from osmo_norte
+1756225401: Sending PINGRESP to osmo_norte
+1756225404: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225414: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225416: Received PINGREQ from osmo_norte
+1756225416: Sending PINGRESP to osmo_norte
+1756225424: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225431: Received PINGREQ from osmo_norte
+1756225431: Sending PINGRESP to osmo_norte
+1756225434: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225444: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225446: Received PINGREQ from osmo_norte
+1756225446: Sending PINGRESP to osmo_norte
+1756225454: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225461: Received PINGREQ from osmo_norte
+1756225461: Sending PINGRESP to osmo_norte
+1756225464: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225474: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225476: Received PINGREQ from osmo_norte
+1756225476: Sending PINGRESP to osmo_norte
+1756225484: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225491: Received PINGREQ from osmo_norte
+1756225491: Sending PINGRESP to osmo_norte
+1756225494: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225504: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225506: Received PINGREQ from osmo_norte
+1756225506: Sending PINGRESP to osmo_norte
+1756225514: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225521: Received PINGREQ from osmo_norte
+1756225521: Sending PINGRESP to osmo_norte
+1756225524: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225534: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225536: Received PINGREQ from osmo_norte
+1756225536: Sending PINGRESP to osmo_norte
+1756225544: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225551: Received PINGREQ from osmo_norte
+1756225551: Sending PINGRESP to osmo_norte
+1756225554: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225564: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225565: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756225565: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756225565: Error: Bad file descriptor.
+1756225566: Received PINGREQ from osmo_norte
+1756225566: Sending PINGRESP to osmo_norte
+1756225574: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225581: Received PINGREQ from osmo_norte
+1756225581: Sending PINGRESP to osmo_norte
+1756225584: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225594: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225596: Received PINGREQ from osmo_norte
+1756225596: Sending PINGRESP to osmo_norte
+1756225604: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225611: Received PINGREQ from osmo_norte
+1756225611: Sending PINGRESP to osmo_norte
+1756225614: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225624: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225626: Received PINGREQ from osmo_norte
+1756225626: Sending PINGRESP to osmo_norte
+1756225634: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225641: Received PINGREQ from osmo_norte
+1756225641: Sending PINGRESP to osmo_norte
+1756225644: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225654: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225656: Received PINGREQ from osmo_norte
+1756225656: Sending PINGRESP to osmo_norte
+1756225664: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225671: Received PINGREQ from osmo_norte
+1756225671: Sending PINGRESP to osmo_norte
+1756225674: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225684: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225686: Received PINGREQ from osmo_norte
+1756225686: Sending PINGRESP to osmo_norte
+1756225694: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225701: Received PINGREQ from osmo_norte
+1756225701: Sending PINGRESP to osmo_norte
+1756225704: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225714: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225716: Received PINGREQ from osmo_norte
+1756225716: Sending PINGRESP to osmo_norte
+1756225724: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225731: Received PINGREQ from osmo_norte
+1756225731: Sending PINGRESP to osmo_norte
+1756225734: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225744: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225746: Received PINGREQ from osmo_norte
+1756225746: Sending PINGRESP to osmo_norte
+1756225754: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225761: Received PINGREQ from osmo_norte
+1756225761: Sending PINGRESP to osmo_norte
+1756225764: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225774: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225776: Received PINGREQ from osmo_norte
+1756225776: Sending PINGRESP to osmo_norte
+1756225784: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225791: Received PINGREQ from osmo_norte
+1756225791: Sending PINGRESP to osmo_norte
+1756225794: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225804: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225806: Received PINGREQ from osmo_norte
+1756225806: Sending PINGRESP to osmo_norte
+1756225814: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225821: Received PINGREQ from osmo_norte
+1756225821: Sending PINGRESP to osmo_norte
+1756225824: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225834: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225836: Received PINGREQ from osmo_norte
+1756225836: Sending PINGRESP to osmo_norte
+1756225844: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225851: Received PINGREQ from osmo_norte
+1756225851: Sending PINGRESP to osmo_norte
+1756225854: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225864: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225866: Received PINGREQ from osmo_norte
+1756225866: Sending PINGRESP to osmo_norte
+1756225874: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225881: Received PINGREQ from osmo_norte
+1756225881: Sending PINGRESP to osmo_norte
+1756225884: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225894: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225896: Received PINGREQ from osmo_norte
+1756225896: Sending PINGRESP to osmo_norte
+1756225904: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225911: Received PINGREQ from osmo_norte
+1756225911: Sending PINGRESP to osmo_norte
+1756225914: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225924: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225926: Received PINGREQ from osmo_norte
+1756225926: Sending PINGRESP to osmo_norte
+1756225934: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225941: Received PINGREQ from osmo_norte
+1756225941: Sending PINGRESP to osmo_norte
+1756225944: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225954: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756225956: Received PINGREQ from osmo_norte
+1756225956: Sending PINGRESP to osmo_norte
+1756225964: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225971: Received PINGREQ from osmo_norte
+1756225971: Sending PINGRESP to osmo_norte
+1756225974: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225984: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756225986: Received PINGREQ from osmo_norte
+1756225986: Sending PINGRESP to osmo_norte
+1756225994: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226001: Received PINGREQ from osmo_norte
+1756226001: Sending PINGRESP to osmo_norte
+1756226004: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226014: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226016: Received PINGREQ from osmo_norte
+1756226016: Sending PINGRESP to osmo_norte
+1756226024: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226031: Received PINGREQ from osmo_norte
+1756226031: Sending PINGRESP to osmo_norte
+1756226034: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226044: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226046: Received PINGREQ from osmo_norte
+1756226046: Sending PINGRESP to osmo_norte
+1756226054: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226061: Received PINGREQ from osmo_norte
+1756226061: Sending PINGRESP to osmo_norte
+1756226064: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756226074: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756226076: Received PINGREQ from osmo_norte
+1756226076: Sending PINGRESP to osmo_norte
+1756226084: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226091: Received PINGREQ from osmo_norte
+1756226091: Sending PINGRESP to osmo_norte
+1756226094: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226104: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226106: Received PINGREQ from osmo_norte
+1756226106: Sending PINGRESP to osmo_norte
+1756226114: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226121: Received PINGREQ from osmo_norte
+1756226121: Sending PINGRESP to osmo_norte
+1756226124: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756226134: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226136: Received PINGREQ from osmo_norte
+1756226136: Sending PINGRESP to osmo_norte
+1756226144: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226151: Received PINGREQ from osmo_norte
+1756226151: Sending PINGRESP to osmo_norte
+1756226154: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226164: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226166: Received PINGREQ from osmo_norte
+1756226166: Sending PINGRESP to osmo_norte
+1756226174: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (164 bytes))
+1756226181: Received PINGREQ from osmo_norte
+1756226181: Sending PINGRESP to osmo_norte
+1756226184: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226194: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226196: Received PINGREQ from osmo_norte
+1756226196: Sending PINGRESP to osmo_norte
+1756226204: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (165 bytes))
+1756226226: Client osmo_norte has exceeded timeout, disconnecting.
+1756227366: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756227366: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756227366: Error: Bad file descriptor.
+1756229167: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756229167: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756229167: Error: Bad file descriptor.
+1756230968: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1756230968: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1756230968: Error: Bad file descriptor.

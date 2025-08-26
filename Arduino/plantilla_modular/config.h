@@ -14,6 +14,9 @@ struct MQTTConfig {
     const char* user;
     const char* password;
     const char* clientId;
+    int qos; // (0=sin garantía, 1=al menos una vez, 2=exactamente una vez)           
+    int keepAlive;   //Tiempo en segundos entre mensajes de "estoy vivo"   
+    bool cleanSession; //Si es true, el broker olvida la sesión anterior al reconectar
 };
 
 // Configuración del dispositivo
@@ -21,6 +24,7 @@ struct DeviceConfig {
     const char* unitId;
     int pumpCount;
     int statusInterval;
+    int pumpPins[4];
 };
 
 // Configuración global

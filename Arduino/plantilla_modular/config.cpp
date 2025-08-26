@@ -10,11 +10,15 @@ MQTTConfig mqttConfig = {
     .port = 1883,
     .user = "osmo_norte",
     .password = "norte",
-    .clientId = "osmo_norte"
+    .clientId = "osmo_norte",
+    .qos = 1, // QoS 1 para garantizar entrega
+    .keepAlive = 60,   
+    .cleanSession = true
 };
 
 DeviceConfig deviceConfig = {
     .unitId = "osmo_norte",
     .pumpCount = 2,
-    .statusInterval = 10000
+    .statusInterval = 10000,
+    .pumpPins = {5,6,7,8}
 };

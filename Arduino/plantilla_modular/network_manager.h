@@ -5,6 +5,8 @@
 #include <PubSubClient.h>
 #include "config.h"
 
+
+
 class NetworkManager {
 private:
     WiFiClient espClient;
@@ -22,6 +24,11 @@ public:
     bool publish(const char* topic, const char* message);
     bool subscribe(const char* topic);
     void setCallback(void (*callback)(char*, uint8_t*, unsigned int));
+
+    bool publishWithQoS(const char* topic, const char* message, int qos = 1);
+    void publishError(const char* errorType, const char* message);
+    bool testConnection();
+    void sendHeartbeat();
 };
 
 #endif

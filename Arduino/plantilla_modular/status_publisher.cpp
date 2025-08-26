@@ -1,7 +1,8 @@
 #include "status_publisher.h"
 
-StatusPublisher::StatusPublisher(PumpController* pumpCtrl) : pumpController(pumpCtrl) {}
-
+StatusPublisher::StatusPublisher(PumpController* pumpCtrl, NetworkManager* netMgr) 
+    : pumpController(pumpCtrl), networkManager(netMgr) {}
+    
 String StatusPublisher::createStatusJSON() {
     StaticJsonDocument<512> doc;
     
@@ -25,11 +26,13 @@ String StatusPublisher::createStatusJSON() {
 
 void StatusPublisher::publishStatus() {
     String statusJSON = createStatusJSON();
-    Serial.printf("Longitud JSON = %u bytes\n", statusJSON.length());
-    
     char topic[50];
     sprintf(topic, "motete/osmo/%s/status", deviceConfig.unitId);
     
-    // La publicación se hará desde el NetworkManager
-    // Esta función solo prepara el JSON
+    // Publicar con QoS 1 para garantizar entrega
+    if (networkManager->publishWithQoS(topic, statusJSON.c_str(), 1)) {
+        Serial.println("✅ Estado publicado correctamente");
+    } else {
+        Serial.println("❌ Error al publicar estado");
+    }
 }

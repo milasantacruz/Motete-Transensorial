@@ -15,12 +15,20 @@ private:
     
     // Variable estática para el callback wrapper
     static MainController* instancia;
+    struct MQTTCommand {
+        String commandId;
+        String action;
+        String params;
+        unsigned long timestamp;
+    };
     
     void handleCommand(const char* topic, const char* message);
+    void processCommand(const MQTTCommand& cmd);
     void publishStatus();
     
 public:
     MainController();
+    ~MainController();
     void initialize();
     void loop();
     // Método estático que redirige al método de instancia
