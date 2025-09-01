@@ -12,14 +12,18 @@ const mqttClient = new OsmoMQTTClient();
 
 app.get("/api/status", (req, res) => {
   const simulate = req.query.simulate === 'true';
+  console.log('📡 GET /api/status llamado, simulate:', simulate);
   
   // Si está en modo simulación, forzar que devuelva Osmos simulados
   const osmos = simulate ? mqttClient.getSimulatedOsmos() : mqttClient.getConnectedOsmos();
   
-  res.json({
+  const response = {
     mqtt_connected: mqttClient.isConnectionHealthy(),
     connected_osmos: osmos,
-  });
+  };
+  
+  console.log('📊 Respuesta /api/status:', response);
+  res.json(response);
 });
 
 app.post("/api/command/:unitId", (req, res) => {

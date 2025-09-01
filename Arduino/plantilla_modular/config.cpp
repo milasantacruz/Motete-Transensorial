@@ -20,5 +20,5 @@ DeviceConfig deviceConfig = {
     .unitId = "osmo_norte",
     .pumpCount = 2,
     .statusInterval = 10000,
-    .pumpPins = {5,6,7,8}
+    .pumpPins = {12,13,14,15}  // Pines más seguros para ESP8266
 };

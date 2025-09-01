@@ -1,0 +1,16 @@
+# Archivo ACL simple para Mosquitto
+# Usuario director puede leer todo
+user director
+topic readwrite #
+
+# Usuario osmo_norte puede escribir en su topic
+user osmo_norte
+topic write motete/osmo/osmo_norte/#
+
+# Usuario osmo_sur puede escribir en su topic
+user osmo_sur
+topic write motete/osmo/osmo_sur/#
+
+# Usuario osmo_este puede escribir en su topic
+user osmo_este
+topic write motete/osmo/osmo_este/# 

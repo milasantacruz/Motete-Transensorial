@@ -1,5 +1,6 @@
 {
     "unit_id": "osmo_este",
     "status": "error",
-    "battery": 23
-  }
+    "battery": 23,
+    "pumps":{"1":{"active":false,"level":0}}
+}

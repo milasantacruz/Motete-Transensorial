@@ -7,13 +7,21 @@ class OsmoMQTTClient {
     this.connectedOsmos = new Map();
     this.isConnected = false;
     this.password = password || 'director'; // Fallback por si no se provee
+    console.log('🔧 Constructor OsmoMQTTClient iniciado');
+    console.log('🔧 Password configurado:', this.password);
   }
 
   async connect() {
     return new Promise((resolve, reject) => {
+      console.log('🔌 Intentando conectar a MQTT con credenciales...');
+      console.log('🔌 URL:', 'mqtt://localhost:1883');
+      console.log('🔌 Username:', 'director');
+      console.log('🔌 Password:', this.password);
+      
       this.client = mqtt.connect('mqtt://localhost:1883', {
+        // Usar credenciales del director
         username: 'director',
-        password: this.password, 
+        password: this.password,
         clientId: 'director_' + Math.random().toString(16).substr(2, 8),
         connectTimeout: 5000, // 5 segundos de timeout
         reconnectPeriod: 0, // No reconectar automáticamente
@@ -61,20 +69,32 @@ class OsmoMQTTClient {
       this.client.subscribe(topic, { qos: 1 });
       console.log(`📡 Suscrito a: ${topic}`);
     });
+    
+    // Suscribirse también al topic específico del ESP8266
+    this.client.subscribe('motete/osmo/osmo_norte/status', { qos: 1 });
+    console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/status`);
+    
+    console.log('✅ Todas las suscripciones configuradas');
   }
 
   handleMessage(topic, message) {
     try {
+      console.log(`📩 Mensaje MQTT recibido en topic: ${topic}`);
+      console.log(`📩 Contenido del mensaje:`, message.toString());
+      
       const data = JSON.parse(message.toString());
-      console.log(`📩 Mensaje recibido en ${topic}:`, data);
+      console.log(`📩 Mensaje parseado:`, data);
 
       if (topic.includes('/status')) {
         const unitId = topic.split('/')[2];
+        console.log(`🔍 Procesando status para unitId: ${unitId}`);
+        
         this.connectedOsmos.set(unitId, {
           ...data,
           lastSeen: new Date()
         });
         console.log(`💚 Estado actualizado para ${unitId}`);
+        console.log(`📊 Total de Osmos conectados: ${this.connectedOsmos.size}`);
       }
 
       if (topic.includes('/actions')) {
@@ -147,7 +167,11 @@ class OsmoMQTTClient {
   }
 
   getConnectedOsmos() {
-    console.log('getConnectedOsmos', this.isConnected, 'Osmos reales:', this.connectedOsmos.size);
+    console.log('🔍 getConnectedOsmos llamado');
+    console.log('📊 Estado de conexión:', this.isConnected);
+    console.log('📊 Cliente MQTT:', this.client ? 'existe' : 'no existe');
+    console.log('📊 Cliente conectado:', this.client?.connected ? 'sí' : 'no');
+    console.log('📊 Total de Osmos en Map:', this.connectedOsmos.size);
     
     // Solo devolver Osmos reales conectados si la conexión es saludable
     if (!this.isConnectionHealthy()) {
@@ -156,7 +180,9 @@ class OsmoMQTTClient {
     }
     
     console.log('📡 Devolviendo Osmos reales conectados');
-    return Array.from(this.connectedOsmos.values());
+    const osmos = Array.from(this.connectedOsmos.values());
+    console.log('📊 Osmos a devolver:', osmos);
+    return osmos;
   }
 }
 

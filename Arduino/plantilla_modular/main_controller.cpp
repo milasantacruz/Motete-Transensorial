@@ -16,7 +16,7 @@ MainController::MainController()
 
 void MainController::initialize() {
     Serial.begin(115200);
-    delay(1000);
+    delay(8000);
     Serial.println("🚀 Iniciando sistema...");
     Serial.println("📌 Paso 1: Configurando LED...");
     // Configurar LED indicador
@@ -54,7 +54,7 @@ void MainController::messageCallback(char* topic, uint8_t* payload, unsigned int
 void MainController::procesarMensaje(char* topic, uint8_t* payload, unsigned int length) {
     // Indicador LED
     digitalWrite(2, LOW);
-    delay(100);
+    delay(500);
     digitalWrite(2, HIGH);
     
     Serial.print("Mensaje recibido en: ");
@@ -72,36 +72,46 @@ void MainController::procesarMensaje(char* topic, uint8_t* payload, unsigned int
 //TODO: terminar de implementar Activa/Desactivar
 //TODO: agregar cambiar niveles, obtener estado, reiniciar
 void MainController::processCommand(const MQTTCommand& cmd) {
-    Serial.printf("�� Procesando comando: %s\n", cmd.action.c_str());
+    Serial.print("🔧 Procesando comando: ");
+    Serial.println(cmd.action);
     
     if (cmd.action == "activate_pump") {
         int pumpId = cmd.params.toInt();
         if (pumpId >= 0 && pumpId < pumpController.getPumpCount()) {  // ✅ CORRECTO
             pumpController.setPumpState(pumpId, true);
-            Serial.printf("✅ Bomba %d activada\n", pumpId);
+            Serial.print("✅ Bomba ");
+            Serial.print(pumpId);
+            Serial.println(" activada");
         }
     }
     else if (cmd.action == "deactivate_pump") {
         int pumpId = cmd.params.toInt();
         if (pumpId >= 0 && pumpId < pumpController.getPumpCount()) {  // ✅ CORRECTO
             pumpController.setPumpState(pumpId, false);
-            Serial.printf("✅ Bomba %d desactivada\n", pumpId);
+            Serial.print("✅ Bomba ");
+            Serial.print(pumpId);
+            Serial.println(" desactivada");
         }
     }
     else {
-        Serial.printf("❌ Comando desconocido: %s\n", cmd.action.c_str());
+        Serial.print("❌ Comando desconocido: ");
+        Serial.println(cmd.action);
     }
 }
 
 void MainController::handleCommand(const char* topic, const char* message) {
-    Serial.printf("📩 Comando recibido en %s: %s\n", topic, message);
+    Serial.print("📩 Comando recibido en ");
+    Serial.print(topic);
+    Serial.print(": ");
+    Serial.println(message);
     
     // Parsear JSON del comando
     StaticJsonDocument<512> doc;
     DeserializationError error = deserializeJson(doc, message);
     
     if (error) {
-        Serial.printf("❌ Error parseando JSON: %s\n", error.c_str());
+        Serial.print("❌ Error parseando JSON: ");
+        Serial.println(error.c_str());
         return;
     }
     
@@ -149,6 +159,6 @@ void MainController::loop() {
         lastStatusPublish = millis();
     }
 
-    delay(100);  // ← CAMBIAR a 100ms (más responsivo)
+    delay(500);  // ← CAMBIAR a 100ms (más responsivo)
     yield();  
 }

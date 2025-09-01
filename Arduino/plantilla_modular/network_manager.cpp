@@ -74,8 +74,8 @@ void NetworkManager::loop() {
     // Log de estado cada 30 segundos
     static unsigned long lastLog = 0;
     if (millis() - lastLog > 30000) {
-        Serial.printf("📡 Estado MQTT: %s\n", 
-            mqttClient.connected() ? "Conectado" : "Desconectado");
+        Serial.print("📡 Estado MQTT: ");
+        Serial.println(mqttClient.connected() ? "Conectado" : "Desconectado");
         lastLog = millis();
     }
 }
@@ -89,9 +89,11 @@ bool NetworkManager::subscribe(const char* topic) {
     if (mqttClient.connected()) {
         bool result = mqttClient.subscribe(topic);
         if (result) {
-            Serial.printf("✅ Suscrito a: %s\n", topic);
+            Serial.print("✅ Suscrito a: ");
+            Serial.println(topic);
         } else {
-            Serial.printf("❌ Error suscribiéndose a: %s\n", topic);
+            Serial.print("❌ Error suscribiéndose a: ");
+            Serial.println(topic);
         }
         return result;
     }
@@ -103,9 +105,17 @@ bool NetworkManager::publishWithQoS(const char* topic, const char* message, int 
     if (mqttClient.connected()) {
         bool result = mqttClient.publish(topic, message, qos);
         if (result) {
-            Serial.printf("✅ Publicado (QoS %d) en %s: %s\n", qos, topic, message);
+            Serial.print("✅ Publicado (QoS ");
+            Serial.print(qos);
+            Serial.print(") en ");
+            Serial.print(topic);
+            Serial.print(": ");
+            Serial.println(message);
         } else {
-            Serial.printf("❌ Error publicando (QoS %d) en %s\n", qos, topic);
+            Serial.print("❌ Error publicando (QoS ");
+            Serial.print(qos);
+            Serial.print(") en ");
+            Serial.println(topic);
         }
         return result;
     }
