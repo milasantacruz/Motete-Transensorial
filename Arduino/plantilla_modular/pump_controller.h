@@ -8,6 +8,9 @@ private:
     int* pumpPins;        
     bool* pumpStates;     
     int* pumpLevels;      
+    int* pumpActivationTimes;  // Tiempo de activación por bomba
+    int* pumpCooldownTimes;    // Tiempo de cooldown por bomba
+    unsigned long* pumpLastActivation; // Última activación por bomba
     int pumpCount;  // Número real de bombas
     
 public:
@@ -20,6 +23,15 @@ public:
     int getPumpLevel(int pumpId);
     int getPumpCount() const { return pumpCount; }
     void updatePumps();
+    bool isPumpAvailable(int pumpId);
+    
+    // Métodos para configuración de bombas
+    void setPumpConfig(int pumpId, int activationTime, int cooldownTime);
+    int getPumpActivationTime(int pumpId);
+    int getPumpCooldownTime(int pumpId);
+    unsigned long getPumpLastActivation(int pumpId);
+    void resetPumpConfig(int pumpId);
+    void resetAllPumpConfigs();
 };
 
 #endif

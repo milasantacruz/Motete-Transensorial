@@ -29,19 +29,51 @@ nav a:hover {
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(8, 80px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
   margin-top: 10px;
 }
 
-.button-grid button {
-  padding: 10px;
+.piano-key {
+  padding: 15px;
   cursor: pointer;
-  background: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.button-grid button:hover {
-  background: #cfe3ff;
+.piano-key:hover {
+  background: linear-gradient(145deg, #cfe3ff, #b3d9ff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.piano-key:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.piano-key.deactivate {
+  background: linear-gradient(145deg, #ffebee, #ffcdd2);
+  border-color: #f44336;
+  color: #d32f2f;
+}
+
+.piano-key.deactivate:hover {
+  background: linear-gradient(145deg, #ffcdd2, #ef9a9a);
+}
+
+.controls {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.controls input, .controls label {
+  margin-right: 15px;
 }

@@ -1,6 +1,7 @@
 #include "main_controller.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
+#include "command_definition.h"
 // Inicializar la variable estática
 MainController* MainController::instancia = nullptr;
 
@@ -31,8 +32,8 @@ void MainController::initialize() {
     networkManager.setCallback(messageCallback);
     Serial.println("✅ Callback MQTT configurado");
     Serial.println("✅ Sistema iniciado completamente"); 
-    // Conectar a la red
-   // networkManager.connect();
+    
+    
 }
 
 MainController::~MainController() {
@@ -54,7 +55,7 @@ void MainController::messageCallback(char* topic, uint8_t* payload, unsigned int
 void MainController::procesarMensaje(char* topic, uint8_t* payload, unsigned int length) {
     // Indicador LED
     digitalWrite(2, LOW);
-    delay(500);
+    delay(100);
     digitalWrite(2, HIGH);
     
     Serial.print("Mensaje recibido en: ");
@@ -69,33 +70,109 @@ void MainController::procesarMensaje(char* topic, uint8_t* payload, unsigned int
     handleCommand(topic, message.c_str());
 }
 
-//TODO: terminar de implementar Activa/Desactivar
-//TODO: agregar cambiar niveles, obtener estado, reiniciar
 void MainController::processCommand(const MQTTCommand& cmd) {
     Serial.print("🔧 Procesando comando: ");
     Serial.println(cmd.action);
     
-    if (cmd.action == "activate_pump") {
-        int pumpId = cmd.params.toInt();
-        if (pumpId >= 0 && pumpId < pumpController.getPumpCount()) {  // ✅ CORRECTO
-            pumpController.setPumpState(pumpId, true);
-            Serial.print("✅ Bomba ");
-            Serial.print(pumpId);
-            Serial.println(" activada");
-        }
+    // Validar parámetros primero
+    if (!validateCommandParams(cmd)) {
+        Serial.print("❌ Parámetros inválidos para comando: ");
+        Serial.println(cmd.action);
+        CommandResponse errorResponse = createResponse(ResponseCodes::INVALID_PARAMS, ErrorMessages::INVALID_PARAMS, cmd.commandId);
+        sendCommandResponse(errorResponse);
+        return;
     }
-    else if (cmd.action == "deactivate_pump") {
-        int pumpId = cmd.params.toInt();
-        if (pumpId >= 0 && pumpId < pumpController.getPumpCount()) {  // ✅ CORRECTO
-            pumpController.setPumpState(pumpId, false);
-            Serial.print("✅ Bomba ");
-            Serial.print(pumpId);
-            Serial.println(" desactivada");
+    
+    // Procesar comando según la acción
+    if (cmd.action == Commands::ACTIVATE_PUMP) {
+        PumpActivationParams params = extractPumpActivationParams(cmd.params);
+        Serial.print("🔧 Activando bomba ");
+        Serial.print(params.pumpId);
+        Serial.print(" por ");
+        Serial.print(params.duration);
+        Serial.println(" ms");
+        
+        // Verificar si la bomba está disponible
+        if (!pumpController.isPumpAvailable(params.pumpId) && !params.force) {
+            Serial.print("❌ Bomba ");
+            Serial.print(params.pumpId);
+            Serial.println(" en cooldown");
+            CommandResponse errorResponse = createResponse(ResponseCodes::PUMP_BUSY, ErrorMessages::PUMP_BUSY, cmd.commandId);
+            sendCommandResponse(errorResponse);
+            return;
         }
+        
+        // Activar bomba
+        pumpController.setPumpState(params.pumpId, true);
+        Serial.print("✅ Bomba ");
+        Serial.print(params.pumpId);
+        Serial.println(" activada");
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::PUMP_ACTIVATED, cmd.commandId);
+        sendCommandResponse(successResponse);
+    }
+    else if (cmd.action == Commands::DEACTIVATE_PUMP) {
+        PumpActivationParams params = extractPumpActivationParams(cmd.params);
+        Serial.print("🔧 Desactivando bomba ");
+        Serial.println(params.pumpId);
+        
+        // Desactivar bomba
+        pumpController.setPumpState(params.pumpId, false);
+        Serial.print("✅ Bomba ");
+        Serial.print(params.pumpId);
+        Serial.println(" desactivada");
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::PUMP_DEACTIVATED, cmd.commandId);
+        sendCommandResponse(successResponse);
+    }
+    else if (cmd.action == Commands::GET_STATUS) {
+        Serial.println("🔧 Obteniendo estado del dispositivo");
+        
+        // Publicar estado actual
+        publishStatus();
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::STATUS_RETRIEVED, cmd.commandId);
+        sendCommandResponse(successResponse);
+    }
+    else if (cmd.action == Commands::SET_PUMP_CONFIG) {
+        PumpConfigParams params = extractPumpConfigParams(cmd.params);
+        Serial.print("🔧 Configurando bomba ");
+        Serial.print(params.pumpId);
+        Serial.print(" - Activación: ");
+        Serial.print(params.activationTime);
+        Serial.print(" ms, Cooldown: ");
+        Serial.print(params.cooldownTime);
+        Serial.println(" ms");
+        
+        // Integrar configuración de parámetros de bomba
+        pumpController.setPumpConfig(params.pumpId, params.activationTime, params.cooldownTime);
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::CONFIG_UPDATED, cmd.commandId);
+        sendCommandResponse(successResponse);
+    }
+    else if (cmd.action == Commands::REBOOT) {
+        Serial.println("🔧 Reiniciando dispositivo...");
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::REBOOT_INITIATED, cmd.commandId);
+        sendCommandResponse(successResponse);
+        
+        delay(1000);
+        ESP.restart();
+    }
+    else if (cmd.action == Commands::RESET_CONFIG) {
+        Serial.println("🔧 Restableciendo configuración...");
+        
+        // Implementar reset de configuración
+        resetDeviceConfig();
+        
+        CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::CONFIG_RESET, cmd.commandId);
+        sendCommandResponse(successResponse);
     }
     else {
-        Serial.print("❌ Comando desconocido: ");
+        Serial.print("❌ Comando no reconocido: ");
         Serial.println(cmd.action);
+        CommandResponse errorResponse = createResponse(ResponseCodes::INVALID_COMMAND, ErrorMessages::INVALID_COMMAND, cmd.commandId);
+        sendCommandResponse(errorResponse);
     }
 }
 
@@ -105,41 +182,58 @@ void MainController::handleCommand(const char* topic, const char* message) {
     Serial.print(": ");
     Serial.println(message);
     
-    // Parsear JSON del comando
-    StaticJsonDocument<512> doc;
-    DeserializationError error = deserializeJson(doc, message);
+    // Parsear comando usando la función de command_definition
+    MQTTCommand cmd = parseCommandFromJSON(String(message));
     
-    if (error) {
-        Serial.print("❌ Error parseando JSON: ");
-        Serial.println(error.c_str());
+    if (cmd.action == "") {
+        Serial.println("❌ Error parseando comando JSON");
+        CommandResponse errorResponse = createResponse(ResponseCodes::INVALID_PARAMS, ErrorMessages::INVALID_PARAMS);
+        sendCommandResponse(errorResponse);
         return;
     }
-    
-    // Extraer datos del comando
-    MQTTCommand cmd;
-    cmd.commandId = doc["command_id"].as<String>();
-    cmd.action = doc["action"].as<String>();
-    cmd.params = doc["params"].as<String>();
-    cmd.timestamp = doc["timestamp"].as<unsigned long>();
     
     // Procesar comando
     processCommand(cmd);
 }
 
 void MainController::publishStatus() {
-    String statusJSON = statusPublisher.createStatusJSON();
-    char topic[50];
-    sprintf(topic, "motete/osmo/%s/status", deviceConfig.unitId);
+    Serial.println("📊 Publicando estado...");
     
-    if (networkManager.publishWithQoS(topic, statusJSON.c_str(), 1)) {
-        Serial.println("✅ Estado publicado correctamente (QoS 1)");
+    // Verificar conexión MQTT antes de publicar
+    if (!networkManager.isMQTTConnected()) {
+        Serial.println("❌ MQTT desconectado, no se puede publicar estado");
+        return;
+    }
+    
+    // Usar el método del StatusPublisher que ya maneja todo
+    statusPublisher.publishStatus();
+}
+
+void MainController::sendCommandResponse(const CommandResponse& response) {
+    String responseJSON = createResponseJSON(response);
+    char topic[50];
+    sprintf(topic, "motete/osmo/%s/response", deviceConfig.unitId);
+    
+    Serial.print("📤 Intentando enviar respuesta: ");
+    Serial.println(response.message);
+    
+    // Probar con método simple primero
+    if (networkManager.publish(topic, responseJSON.c_str())) {
+        Serial.print("✅ Respuesta enviada (método simple): ");
+        Serial.println(response.message);
     } else {
-        Serial.println("❌ Error al publicar estado");
+        Serial.println("❌ Error con método simple, intentando QoS 0...");
+        if (networkManager.publishWithQoS(topic, responseJSON.c_str(), 0)) {
+            Serial.print("✅ Respuesta enviada (QoS 0): ");
+            Serial.println(response.message);
+        } else {
+            Serial.println("❌ Error al enviar respuesta con todos los métodos");
+        }
     }
 }
 
 void MainController::loop() {
-    static bool firstConnection = true;  // ← AGREGAR ESTA LÍNEA
+    static bool firstConnection = true;  
     
     if (firstConnection) {
         Serial.println(" Intentando primera conexión...");
@@ -153,12 +247,27 @@ void MainController::loop() {
     
     networkManager.loop();
     
+    // Actualizar estado de bombas (cooldown, desactivación automática)
+    pumpController.updatePumps();
+    
     // Publicar estado periódicamente
     if (millis() - lastStatusPublish > deviceConfig.statusInterval) {
         publishStatus();
         lastStatusPublish = millis();
     }
 
-    delay(500);  // ← CAMBIAR a 100ms (más responsivo)
+    delay(100);  
     yield();  
+}
+
+void MainController::resetDeviceConfig() {
+    Serial.println("🔄 Restableciendo configuración del dispositivo...");
+    
+    // Reset todas las configuraciones de bombas
+    pumpController.resetAllPumpConfigs();
+    
+    // Reset otras configuraciones si es necesario
+    // Por ejemplo: WiFi, MQTT, etc.
+    
+    Serial.println("✅ Configuración restablecida correctamente");
 }

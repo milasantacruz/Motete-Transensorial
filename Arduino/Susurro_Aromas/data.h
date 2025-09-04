@@ -1,0 +1,313 @@
+const char* ssid_1     = "Wifi2025";
+const char* password_1 = "santamaria3033";
+const char* ssid_2     = "####";
+const char* password_2 = "####";
+
+//const
+String Pagina =  R"====(<!DOCTYPE html>
+<html>
+  <head>
+    <title>El Susurro de los Aromas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+          background-color: #424242;
+        }
+        h1, h2, h3 {
+          background-color: rgb(47, 47, 47);
+          color: white;
+          padding: 10px;
+        }
+        .pollo {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+          background-color: #ccc;
+          border-radius: 34px;
+        }
+        .vivo1 .pollo {
+          background-color: #2196f3;
+        }
+        .vivo2 .pollo {
+          background-color: #2196f3;
+        }
+        .vivo3 .pollo {
+          background-color: #2196f3;
+        }
+        .muerto .pollo {
+          background-color: #912c2c;
+        }
+        /*
+        .pollo:hover {
+          background-color: #072a46;
+        }
+        */
+        .huevo {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          border-radius: 34px;
+          background-color: white;
+        }
+        .vivo1 .huevo {
+          left: 28px;
+        }
+        .vivo2 .huevo {
+          left: 28px;
+        }
+        .vivo3 .huevo {
+          left: 28px;
+        }
+        /* NUEVO: Clase para alinear el contador y el campo de entrada al lado del botón */
+        .contenedorBoton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+        }
+        .contador {
+          color: white;
+          font-size: 25px;
+          background-color: #333;
+          padding: 5px;
+          border-radius: 5px;
+          min-width: 35px;
+          text-align: center;
+        }
+        .inputTiempo {
+          width: 60px;
+          padding: 5px;
+          text-align: center;
+          background-color: #333;
+          color: white;
+          border-radius: 5px;
+          font-size: 25px;
+        }
+      </style>
+  </head>
+
+  <body>
+    <center>
+      <h1>El Susurro de los Aromas</h1>
+      <h3>AROMA 1</h3>
+      <div class="contenedorBoton">
+        <div id="botonEstado1" class="vivo1">
+          <span class="pollo">
+            <span class="huevo"></span>
+          </span>
+        </div>
+        <!-- Contador y campo de entrada -->
+        <div id="contador1" class="contador">0</div>
+        <input type="number" id="tiempo1" class="inputTiempo" min="0" max="10" value="10">
+      </div>
+      <h3>AROMA 2</h3>
+      <div class="contenedorBoton">
+        <div id="botonEstado2" class="vivo2">
+          <span class="pollo">
+            <span class="huevo"></span>
+          </span>
+        </div>
+        <!-- Contador y campo de entrada -->
+        <div id="contador2" class="contador">0</div>
+        <input type="number" id="tiempo2" class="inputTiempo" min="0" max="10" value="10">
+      </div>
+      <h3>AROMA 3</h3>
+      <div class="contenedorBoton">
+        <div id="botonEstado3" class="vivo3">
+          <span class="pollo">
+            <span class="huevo"></span>
+          </span>
+        </div>
+        <!-- Contador y campo de entrada -->
+        <div id="contador3" class="contador">0</div>
+        <input type="number" id="tiempo3" class="inputTiempo" min="0" max="10" value="10">
+      </div>
+    </center>
+
+    <script>
+        // Establecer una variable de estado para controlar si el contador está activo
+        let contadorActivo1 = false;
+        let contadorActivo2 = false;
+        let contadorActivo3 = false;
+      
+        /* AROMA 1 */
+        const elementoEstado1 = document.getElementById("botonEstado1");
+        const contador1 = document.getElementById("contador1");
+        const inputTiempo1 = document.getElementById("tiempo1");
+      
+        elementoEstado1.className = "muerto";
+        elementoEstado1.addEventListener("click", cambiarEstado1);
+      
+        function cambiarEstado1() {
+          if (contadorActivo1) return; // Si el contador ya está activo, no hacemos nada
+      
+          console.log("%ip");
+          elementoEstado1.className = "vivo1";
+          console.log("Estado actual: " + elementoEstado1.className);
+      
+          let tiempoRestante1 = Math.max(0, Math.min(10, parseInt(inputTiempo1.value)));  // Asegura que el valor esté entre 0 y 10
+          contador1.innerText = tiempoRestante1;
+          
+          // Enviar el nuevo tiempo al Arduino
+          configurarTiempo1(tiempoRestante1);
+      
+          // Desactivar el botón mientras está activo
+          contadorActivo1 = true;
+      
+          const intervalo1 = setInterval(() => {
+            if (tiempoRestante1 > 0) {
+              tiempoRestante1--;
+              contador1.innerText = tiempoRestante1;
+            } else {
+              clearInterval(intervalo1);
+              // Al finalizar, se desactiva el botón
+              elementoEstado1.className = "muerto";
+              console.log("Estado actual: " + elementoEstado1.className);
+              contadorActivo1 = false;
+              consultaGET("http://%ip/" + elementoEstado1.className);
+            }
+          }, 1000); // Actualiza cada segundo
+      
+          consultaGET("http://%ip/" + elementoEstado1.className);
+        }
+      
+        /* AROMA 2 */
+        const elementoEstado2 = document.getElementById("botonEstado2");
+        const contador2 = document.getElementById("contador2");
+        const inputTiempo2 = document.getElementById("tiempo2");
+      
+        elementoEstado2.className = "muerto";
+        elementoEstado2.addEventListener("click", cambiarEstado2);
+      
+        function cambiarEstado2() {
+          if (contadorActivo2) return; // Si el contador ya está activo, no hacemos nada
+      
+          console.log("%ip");
+          elementoEstado2.className = "vivo2";
+          console.log("Estado actual: " + elementoEstado2.className);
+      
+          let tiempoRestante2 = Math.max(0, Math.min(10, parseInt(inputTiempo2.value)));  // Asegura que el valor esté entre 0 y 10
+          contador2.innerText = tiempoRestante2;
+          
+          // Enviar el nuevo tiempo al Arduino
+          configurarTiempo2(tiempoRestante2);
+      
+          // Desactivar el botón mientras está activo
+          contadorActivo2 = true;
+      
+          const intervalo2 = setInterval(() => {
+            if (tiempoRestante2 > 0) {
+              tiempoRestante2--;
+              contador2.innerText = tiempoRestante2;
+            } else {
+              clearInterval(intervalo2);
+              // Al finalizar, se desactiva el botón
+              elementoEstado2.className = "muerto";
+              console.log("Estado actual: " + elementoEstado2.className);
+              contadorActivo2 = false;
+              consultaGET("http://%ip/" + elementoEstado2.className);
+            }
+          }, 1000); // Actualiza cada segundo
+      
+          consultaGET("http://%ip/" + elementoEstado2.className);
+        }
+      
+        /* AROMA 3 */
+        const elementoEstado3 = document.getElementById("botonEstado3");
+        const contador3 = document.getElementById("contador3");
+        const inputTiempo3 = document.getElementById("tiempo3");
+      
+        elementoEstado3.className = "muerto";
+        elementoEstado3.addEventListener("click", cambiarEstado3);
+      
+        function cambiarEstado3() {
+          if (contadorActivo3) return; // Si el contador ya está activo, no hacemos nada
+      
+          console.log("%ip");
+          elementoEstado3.className = "vivo3";
+          console.log("Estado actual: " + elementoEstado3.className);
+      
+          let tiempoRestante3 = Math.max(0, Math.min(10, parseInt(inputTiempo3.value)));  // Asegura que el valor esté entre 0 y 10
+          contador3.innerText = tiempoRestante3;
+          
+          // Enviar el nuevo tiempo al Arduino
+          configurarTiempo3(tiempoRestante3);
+      
+          // Desactivar el botón mientras está activo
+          contadorActivo3 = true;
+      
+          const intervalo3 = setInterval(() => {
+            if (tiempoRestante3 > 0) {
+              tiempoRestante3--;
+              contador3.innerText = tiempoRestante3;
+            } else {
+              clearInterval(intervalo3);
+              // Al finalizar, se desactiva el botón
+              elementoEstado3.className = "muerto";
+              console.log("Estado actual: " + elementoEstado3.className);
+              contadorActivo3 = false;
+              consultaGET("http://%ip/" + elementoEstado3.className);
+            }
+          }, 1000); // Actualiza cada segundo
+      
+          consultaGET("http://%ip/" + elementoEstado3.className);
+        }
+      
+        // Funciones para configurar tiempos en el Arduino
+        function configurarTiempo1(tiempo) {
+          const Http = new XMLHttpRequest();
+          const url = `http://%ip/setTiempo1?tiempo=${tiempo}`;
+          console.log(`Configurando tiempo AROMA 1: ${url}`);
+          Http.open("GET", url);
+          Http.send();
+          Http.onreadystatechange = (e) => {
+            if (Http.readyState === 4 && Http.status === 200) {
+              console.log("Tiempo AROMA 1 configurado:", Http.responseText);
+            }
+          };
+        }
+
+        function configurarTiempo2(tiempo) {
+          const Http = new XMLHttpRequest();
+          const url = `http://%ip/setTiempo2?tiempo=${tiempo}`;
+          console.log(`Configurando tiempo AROMA 2: ${url}`);
+          Http.open("GET", url);
+          Http.send();
+          Http.onreadystatechange = (e) => {
+            if (Http.readyState === 4 && Http.status === 200) {
+              console.log("Tiempo AROMA 2 configurado:", Http.responseText);
+            }
+          };
+        }
+
+        function configurarTiempo3(tiempo) {
+          const Http = new XMLHttpRequest();
+          const url = `http://%ip/setTiempo3?tiempo=${tiempo}`;
+          console.log(`Configurando tiempo AROMA 3: ${url}`);
+          Http.open("GET", url);
+          Http.send();
+          Http.onreadystatechange = (e) => {
+            if (Http.readyState === 4 && Http.status === 200) {
+              console.log("Tiempo AROMA 3 configurado:", Http.responseText);
+            }
+          };
+        }
+
+        // Función de consulta GET (sin cambios)
+        function consultaGET(consulta) {
+          const Http = new XMLHttpRequest();
+          console.log(`Consultando  ${consulta}`)
+          Http.open("GET", consulta);
+          Http.send();
+          Http.onreadystatechange = (e) => {
+            console.log(Http.status );
+          };
+        };
+      </script>
+  </body>
+</html>
+)====";

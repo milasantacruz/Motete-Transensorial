@@ -29,15 +29,27 @@ async function loadStatus() {
         container.innerHTML = data.connected_osmos.map(osmo => {
             const pumpIds = osmo.pumps ? Object.keys(osmo.pumps) : [];
             const pumpButtons = pumpIds.map(pid => `
-                <button onclick="sendCommand('${osmo.unit_id}', 'aroma', { pump: ${pid}, duration: 1000 })">Activar Bomba ${pid}</button>
+                <div class="pump-control">
+                    <button onclick="sendCommand('${osmo.unit_id}', 'activate_pump', { pump_id: ${pid}, duration: 5000 })" class="activate-btn">
+                        Activar Bomba ${pid}
+                    </button>
+                    <button onclick="sendCommand('${osmo.unit_id}', 'deactivate_pump', { pump_id: ${pid} })" class="deactivate-btn">
+                        Desactivar Bomba ${pid}
+                    </button>
+                    <span class="pump-status" id="pump-${osmo.unit_id}-${pid}">⚪</span>
+                </div>
             `).join('');
 
             return `
                 <div class="osmo-card">
                     <h3>${osmo.unit_id}</h3>
                     <p>Estado: ${osmo.status}</p>
-                    <p>Batería: ${osmo.battery ?? '-'}%</p>
-                    ${pumpButtons}
+                    <div class="pump-controls">
+                        ${pumpButtons}
+                    </div>
+                    <button onclick="sendCommand('${osmo.unit_id}', 'get_status', {})" class="status-btn">
+                        Obtener Estado
+                    </button>
                 </div>
             `;
         }).join('');
@@ -54,14 +66,55 @@ async function sendCommand(unitId, action, params) {
     const isSimulationMode = simulateCheckbox ? simulateCheckbox.checked : false;
     const simulateParam = isSimulationMode ? '?simulate=true' : '';
     
-    await fetch(`/api/command/${unitId}${simulateParam}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action, params })
-    });
+    // Crear comando con estructura correcta para Arduino
+    const command = {
+        command_id: `cmd_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        action: action,
+        params: params,
+        timestamp: Date.now()
+    };
     
-    const mode = isSimulationMode ? '[SIMULACIÓN] ' : '';
-    alert(`${mode}Comando '${action}' enviado a ${unitId}`);
+    console.log('📤 Enviando comando:', command);
+    
+    try {
+        const response = await fetch(`/api/command/${unitId}${simulateParam}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(command)
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const result = await response.json();
+        console.log('✅ Respuesta del servidor:', result);
+        
+        const mode = isSimulationMode ? '[SIMULACIÓN] ' : '';
+        alert(`${mode}Comando '${action}' enviado a ${unitId}\nID: ${command.command_id}`);
+        
+        // Actualizar estado visual de la bomba si es comando de activación/desactivación
+        if (action === 'activate_pump' || action === 'deactivate_pump') {
+            updatePumpStatus(unitId, params.pump_id, action);
+        }
+        
+    } catch (error) {
+        console.error('❌ Error enviando comando:', error);
+        alert(`❌ Error enviando comando: ${error.message}`);
+    }
+}
+
+function updatePumpStatus(unitId, pumpId, action) {
+    const statusElement = document.getElementById(`pump-${unitId}-${pumpId}`);
+    if (statusElement) {
+        if (action === 'activate_pump') {
+            statusElement.textContent = '🔴';
+            statusElement.title = 'Bomba activada';
+        } else if (action === 'deactivate_pump') {
+            statusElement.textContent = '⚪';
+            statusElement.title = 'Bomba desactivada';
+        }
+    }
 }
 
 // Inicializar polling y controles

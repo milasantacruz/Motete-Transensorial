@@ -4,20 +4,28 @@ StatusPublisher::StatusPublisher(PumpController* pumpCtrl, NetworkManager* netMg
     : pumpController(pumpCtrl), networkManager(netMgr) {}
     
 String StatusPublisher::createStatusJSON() {
-    StaticJsonDocument<512> doc;
+    // JSON con información completa de bombas
+    StaticJsonDocument<300> doc;
     
-    doc["timestamp"] = "2025-01-14T10:30:01.000Z"; // TODO: Implementar timestamp real
     doc["unit_id"] = deviceConfig.unitId;
     doc["status"] = "ready";
     
+    // Incluir todas las bombas con su estado
     JsonObject pumps = doc.createNestedObject("pumps");
-    for (int i = 1; i <= deviceConfig.pumpCount; i++) {
+    for (int i = 0; i < deviceConfig.pumpCount; i++) {
         JsonObject pump = pumps.createNestedObject(String(i));
-        pump["active"] = pumpController->getPumpState(i-1);
-        pump["level"] = pumpController->getPumpLevel(i-1);
+        bool pumpState = pumpController->getPumpState(i);
+        pump["active"] = pumpState;
+        pump["available"] = pumpController->isPumpAvailable(i);
+        
+        // Debug: mostrar estado de cada bomba
+        Serial.print("🔍 Bomba ");
+        Serial.print(i);
+        Serial.print(": active=");
+        Serial.print(pumpState ? "true" : "false");
+        Serial.print(", available=");
+        Serial.println(pumpController->isPumpAvailable(i) ? "true" : "false");
     }
-    
-    doc["battery"] = random(0, 100); // TODO: Implementar lectura real de batería
     
     String jsonString;
     serializeJson(doc, jsonString);

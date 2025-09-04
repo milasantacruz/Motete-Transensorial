@@ -38,6 +38,11 @@ void NetworkManager::setupMQTT() {
         if (mqttClient.connect(mqttConfig.clientId, mqttConfig.user, mqttConfig.password)) {
             Serial.println("✅ MQTT conectado");
             isConnected = true;
+            // Suscribirse a comandos del director
+            char commandTopic[50];
+            sprintf(commandTopic, "motete/director/commands/%s", deviceConfig.unitId);
+            subscribe(commandTopic);
+            
             return;
         } else {
             Serial.print("❌ MQTT falló, rc=");
@@ -84,7 +89,6 @@ bool NetworkManager::publish(const char* topic, const char* message) {
     return mqttClient.publish(topic, message);
 }
 
-
 bool NetworkManager::subscribe(const char* topic) {
     if (mqttClient.connected()) {
         bool result = mqttClient.subscribe(topic);
@@ -103,6 +107,26 @@ bool NetworkManager::subscribe(const char* topic) {
 
 bool NetworkManager::publishWithQoS(const char* topic, const char* message, int qos) {
     if (mqttClient.connected()) {
+        // Verificar longitud del mensaje
+        int messageLength = strlen(message);
+        if (messageLength > 512) {
+            Serial.print("⚠️ Mensaje muy largo (");
+            Serial.print(messageLength);
+            Serial.println(" bytes), truncando...");
+        }
+        
+        Serial.print("📤 Intentando publicar en ");
+        Serial.print(topic);
+        Serial.print(" (");
+        Serial.print(messageLength);
+        Serial.println(" bytes)");
+        
+        // Procesar mensajes pendientes antes de publicar
+        if (mqttClient.loop()) {
+            Serial.println("🔄 Procesando mensaje pendiente...");
+            delay(10); // Pequeña pausa para procesar
+        }
+        
         bool result = mqttClient.publish(topic, message, qos);
         if (result) {
             Serial.print("✅ Publicado (QoS ");
@@ -116,10 +140,25 @@ bool NetworkManager::publishWithQoS(const char* topic, const char* message, int 
             Serial.print(qos);
             Serial.print(") en ");
             Serial.println(topic);
+            Serial.print("📊 Estado MQTT: ");
+            Serial.println(mqttClient.state());
+            Serial.print("📊 Buffer disponible: ");
+            Serial.println(mqttClient.getBufferSize());
+            Serial.print("📊 Mensaje pendiente: ");
+            Serial.println(mqttClient.loop() ? "Sí" : "No");
+            
+            // Intentar limpiar el buffer
+            Serial.println("🧹 Limpiando buffer MQTT...");
+            for (int i = 0; i < 5; i++) {
+                mqttClient.loop();
+                delay(10);
+            }
         }
         return result;
     }
     Serial.println("❌ MQTT no conectado para publicar");
+    Serial.print("📊 Estado MQTT: ");
+    Serial.println(mqttClient.state());
     return false;
 }
 

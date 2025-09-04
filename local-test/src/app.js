@@ -29,13 +29,32 @@ app.get("/api/status", (req, res) => {
 app.post("/api/command/:unitId", (req, res) => {
   try {
     const { unitId } = req.params;
-    const { action, params } = req.body;
+    const command = req.body;  // ✅ Recibir comando completo
     const simulate = req.query.simulate === 'true';
     
-    const commandId = mqttClient.sendCommand(unitId, action, params, simulate);
-    res.json({ success: true, command_id: commandId, simulated: simulate });
+    console.log(`📤 Comando recibido para ${unitId}:`, command);
+    
+    // Validar estructura del comando
+    if (!command.action) {
+      return res.status(400).json({ 
+        success: false, 
+        error: "Comando debe incluir 'action'" 
+      });
+    }
+    
+    const commandId = mqttClient.sendCommand(unitId, command.action, command.params, simulate);
+    res.json({ 
+      success: true, 
+      command_id: commandId, 
+      simulated: simulate,
+      message: `Comando '${command.action}' enviado a ${unitId}`
+    });
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    console.error(`❌ Error procesando comando para ${req.params.unitId}:`, error);
+    res.status(500).json({ 
+      success: false, 
+      error: error.message 
+    });
   }
 });
 

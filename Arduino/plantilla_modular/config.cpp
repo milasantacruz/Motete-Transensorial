@@ -18,7 +18,7 @@ MQTTConfig mqttConfig = {
 
 DeviceConfig deviceConfig = {
     .unitId = "osmo_norte",
-    .pumpCount = 2,
+    .pumpCount = 4,  // ✅ Cambiado a 4 para tener bombas 0, 1, 2, 3
     .statusInterval = 10000,
     .pumpPins = {12,13,14,15}  // Pines más seguros para ESP8266
 };

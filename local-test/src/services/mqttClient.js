@@ -62,6 +62,7 @@ class OsmoMQTTClient {
       'motete/osmo/+/actions',
       'motete/osmo/+/errors',
       'motete/osmo/+/sensors',
+      'motete/osmo/+/response',  // ✅ Agregado para respuestas de comandos
       'motete/osmo/discovery'
     ];
 
@@ -72,7 +73,9 @@ class OsmoMQTTClient {
     
     // Suscribirse también al topic específico del ESP8266
     this.client.subscribe('motete/osmo/osmo_norte/status', { qos: 1 });
+    this.client.subscribe('motete/osmo/osmo_norte/response', { qos: 1 });  // ✅ Agregado
     console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/status`);
+    console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/response`);
     
     console.log('✅ Todas las suscripciones configuradas');
   }
@@ -107,6 +110,26 @@ class OsmoMQTTClient {
         console.error(`❌ Error reportado por ${unitId}:`, data);
       }
 
+      if (topic.includes('/response')) {
+        const unitId = topic.split('/')[2];
+        console.log(`📨 Respuesta de comando recibida de ${unitId}:`, data);
+        
+        // Actualizar estado del Osmo con la respuesta
+        if (this.connectedOsmos.has(unitId)) {
+          const osmo = this.connectedOsmos.get(unitId);
+          osmo.lastResponse = data;
+          osmo.lastResponseTime = new Date();
+          this.connectedOsmos.set(unitId, osmo);
+          
+          // Log de respuesta exitosa o error
+          if (data.success) {
+            console.log(`✅ Comando exitoso para ${unitId}: ${data.message}`);
+          } else {
+            console.log(`❌ Comando falló para ${unitId}: ${data.message} (Código: ${data.code})`);
+          }
+        }
+      }
+
       if (topic.includes('/sensors')) {
         const unitId = topic.split('/')[2];
         console.log(`🌡️ Datos de sensores de ${unitId}:`, data);
@@ -117,11 +140,12 @@ class OsmoMQTTClient {
   }
 
   sendCommand(unitId, action, params, simulate = false) {
+    // ✅ Usar la estructura de comando que espera el Arduino
     const command = {
-      timestamp: new Date().toISOString(),
-      command_id: uuidv4(),
+      command_id: `cmd_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       action: action,
-      params: params
+      params: params,
+      timestamp: Date.now()
     };
     
     if (simulate) {

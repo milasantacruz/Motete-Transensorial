@@ -1,0 +1,92 @@
+{
+    "version": "1.0",
+    "commands": {
+      "activate_pump": {
+        "description": "Activa una bomba específica",
+        "params": {
+          "pump_id": {
+            "type": "integer",
+            "required": true,
+            "min": 0,
+            "max": 3,
+            "description": "ID de la bomba (0-3)"
+          },
+          "duration": {
+            "type": "integer",
+            "required": false,
+            "default": 10000,
+            "description": "Duración en milisegundos"
+          }
+        },
+        "response": {
+          "success": "boolean",
+          "message": "string",
+          "pump_id": "integer",
+          "duration": "integer"
+        }
+      },
+      "deactivate_pump": {
+        "description": "Desactiva una bomba específica",
+        "params": {
+          "pump_id": {
+            "type": "integer",
+            "required": true,
+            "min": 0,
+            "max": 3,
+            "description": "ID de la bomba (0-3)"
+          }
+        },
+        "response": {
+          "success": "boolean",
+          "message": "string",
+          "pump_id": "integer"
+        }
+      },
+      "get_status": {
+        "description": "Obtiene el estado actual del dispositivo",
+        "params": {},
+        "response": {
+          "unit_id": "string",
+          "status": "string",
+          "pumps": [
+            {
+              "id": "integer",
+              "active": "boolean",
+              "cooldown_remaining": "integer"
+            }
+          ],
+          "timestamp": "integer"
+        }
+      },
+      "set_pump_config": {
+        "description": "Configura parámetros de una bomba",
+        "params": {
+          "pump_id": {
+            "type": "integer",
+            "required": true,
+            "min": 0,
+            "max": 3
+          },
+          "activation_time": {
+            "type": "integer",
+            "required": false,
+            "default": 10000,
+            "description": "Tiempo de activación en ms"
+          },
+          "cooldown_time": {
+            "type": "integer",
+            "required": false,
+            "default": 30000,
+            "description": "Tiempo de cooldown en ms"
+          }
+        },
+        "response": {
+          "success": "boolean",
+          "message": "string",
+          "pump_id": "integer",
+          "activation_time": "integer",
+          "cooldown_time": "integer"
+        }
+      }
+    }
+  }

@@ -4,6 +4,7 @@
 #include "network_manager.h"
 #include "pump_controller.h"
 #include "status_publisher.h"
+#include "command_definition.h"
 
 class MainController {
 private:
@@ -15,16 +16,12 @@ private:
     
     // Variable estática para el callback wrapper
     static MainController* instancia;
-    struct MQTTCommand {
-        String commandId;
-        String action;
-        String params;
-        unsigned long timestamp;
-    };
     
     void handleCommand(const char* topic, const char* message);
     void processCommand(const MQTTCommand& cmd);
     void publishStatus();
+    void sendCommandResponse(const CommandResponse& response);
+    void resetDeviceConfig();
     
 public:
     MainController();
