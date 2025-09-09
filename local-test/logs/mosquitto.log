@@ -34298,3 +34298,2171 @@
 1756960179: Received PINGREQ from director_b39e5c30
 1756960179: Sending PINGRESP to director_b39e5c30
 1756960191: Client osmo_norte has exceeded timeout, disconnecting.
+1757426199: mosquitto version 2.0.21 starting
+1757426199: Config loaded from mosquitto.conf.
+1757426199: Opening ipv6 listen socket on port 1883.
+1757426199: Opening ipv4 listen socket on port 1883.
+1757426199: mosquitto version 2.0.21 running
+1757426202: New connection from 192.168.1.48:64059 on port 1883.
+1757426202: New client connected from 192.168.1.48:64059 as osmo_norte (p2, c1, k15, u'osmo_norte').
+1757426202: No will message specified.
+1757426202: Sending CONNACK to osmo_norte (0, 0)
+1757426202: Received SUBSCRIBE from osmo_norte
+1757426202: 	motete/director/commands/osmo_norte (QoS 0)
+1757426202: osmo_norte 0 motete/director/commands/osmo_norte
+1757426202: Sending SUBACK to osmo_norte
+1757426212: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426217: Received PINGREQ from osmo_norte
+1757426217: Sending PINGRESP to osmo_norte
+1757426222: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426232: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426232: Received PINGREQ from osmo_norte
+1757426232: Sending PINGRESP to osmo_norte
+1757426242: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426248: Received PINGREQ from osmo_norte
+1757426248: Sending PINGRESP to osmo_norte
+1757426252: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426262: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426263: Received PINGREQ from osmo_norte
+1757426263: Sending PINGRESP to osmo_norte
+1757426272: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426278: Received PINGREQ from osmo_norte
+1757426278: Sending PINGRESP to osmo_norte
+1757426282: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426292: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426293: Received PINGREQ from osmo_norte
+1757426293: Sending PINGRESP to osmo_norte
+1757426302: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426308: Received PINGREQ from osmo_norte
+1757426308: Sending PINGRESP to osmo_norte
+1757426312: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426323: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426323: Received PINGREQ from osmo_norte
+1757426323: Sending PINGRESP to osmo_norte
+1757426324: mosquitto version 2.0.21 terminating
+1757426324: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1757426324: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1757426324: Error: Bad file descriptor.
+1757426351: mosquitto version 2.0.21 starting
+1757426351: Config loaded from mosquitto.conf.
+1757426351: Opening ipv6 listen socket on port 1883.
+1757426351: Opening ipv4 listen socket on port 1883.
+1757426351: mosquitto version 2.0.21 running
+1757426352: New connection from 192.168.1.48:64045 on port 1883.
+1757426352: New client connected from 192.168.1.48:64045 as osmo_norte (p2, c1, k15, u'osmo_norte').
+1757426352: No will message specified.
+1757426352: Sending CONNACK to osmo_norte (0, 0)
+1757426352: Received SUBSCRIBE from osmo_norte
+1757426352: 	motete/director/commands/osmo_norte (QoS 0)
+1757426352: osmo_norte 0 motete/director/commands/osmo_norte
+1757426352: Sending SUBACK to osmo_norte
+1757426354: New connection from ::1:50487 on port 1883.
+1757426354: New client connected from ::1:50487 as director_fad2c043 (p2, c1, k60, u'director').
+1757426354: No will message specified.
+1757426354: Sending CONNACK to director_fad2c043 (0, 0)
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/+/status (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/+/status
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/+/actions (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/+/actions
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/+/errors (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/+/errors
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/+/sensors (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/+/sensors
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/+/response (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/+/response
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/discovery (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/discovery
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/osmo_norte/status (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/osmo_norte/status
+1757426354: Sending SUBACK to director_fad2c043
+1757426354: Received SUBSCRIBE from director_fad2c043
+1757426354: 	motete/osmo/osmo_norte/response (QoS 1)
+1757426354: director_fad2c043 1 motete/osmo/osmo_norte/response
+1757426354: Sending SUBACK to director_fad2c043
+1757426359: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426359: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426367: Received PINGREQ from osmo_norte
+1757426367: Sending PINGRESP to osmo_norte
+1757426369: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426369: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426369: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51138, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426369: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426369: Sending PUBACK to director_fad2c043 (m51138, rc0)
+1757426369: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426369: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426375: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51139, 'motete/director/commands/osmo_norte', ... (120 bytes))
+1757426375: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (120 bytes))
+1757426375: Sending PUBACK to director_fad2c043 (m51139, rc0)
+1757426376: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (156 bytes))
+1757426376: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (156 bytes))
+1757426379: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426379: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426380: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51140, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426380: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426380: Sending PUBACK to director_fad2c043 (m51140, rc0)
+1757426380: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426380: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426384: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51141, 'motete/director/commands/osmo_norte', ... (120 bytes))
+1757426384: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (120 bytes))
+1757426384: Sending PUBACK to director_fad2c043 (m51141, rc0)
+1757426384: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (156 bytes))
+1757426384: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (156 bytes))
+1757426386: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51142, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426386: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426386: Sending PUBACK to director_fad2c043 (m51142, rc0)
+1757426386: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426386: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426389: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51143, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426389: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426389: Sending PUBACK to director_fad2c043 (m51143, rc0)
+1757426389: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426389: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426389: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (204 bytes))
+1757426389: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (204 bytes))
+1757426399: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426399: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426404: Received PINGREQ from osmo_norte
+1757426404: Sending PINGRESP to osmo_norte
+1757426409: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426409: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426419: Received PINGREQ from osmo_norte
+1757426419: Sending PINGRESP to osmo_norte
+1757426419: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426419: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426430: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426430: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426434: Received PINGREQ from osmo_norte
+1757426434: Sending PINGRESP to osmo_norte
+1757426435: Received PUBLISH from director_fad2c043 (d0, q1, r0, m51144, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426435: Sending PUBLISH to osmo_norte (d0, q0, r0, m0, 'motete/director/commands/osmo_norte', ... (134 bytes))
+1757426435: Sending PUBACK to director_fad2c043 (m51144, rc0)
+1757426435: Received PUBLISH from osmo_norte (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426435: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/response', ... (153 bytes))
+1757426440: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (204 bytes))
+1757426440: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (204 bytes))
+1757426450: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426450: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426450: Received PINGREQ from osmo_norte
+1757426450: Sending PINGRESP to osmo_norte
+1757426460: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426460: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426466: Received PINGREQ from osmo_norte
+1757426466: Sending PINGRESP to osmo_norte
+1757426470: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426470: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426480: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426480: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426481: Received PINGREQ from osmo_norte
+1757426481: Sending PINGRESP to osmo_norte
+1757426490: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426490: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426495: Received PINGREQ from director_fad2c043
+1757426495: Sending PINGRESP to director_fad2c043
+1757426496: Received PINGREQ from osmo_norte
+1757426496: Sending PINGRESP to osmo_norte
+1757426500: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426500: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426510: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426510: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426511: Received PINGREQ from osmo_norte
+1757426511: Sending PINGRESP to osmo_norte
+1757426520: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426520: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426526: Received PINGREQ from osmo_norte
+1757426526: Sending PINGRESP to osmo_norte
+1757426530: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426530: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426540: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426540: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426541: Received PINGREQ from osmo_norte
+1757426541: Sending PINGRESP to osmo_norte
+1757426550: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426550: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426555: Received PINGREQ from director_fad2c043
+1757426555: Sending PINGRESP to director_fad2c043
+1757426556: Received PINGREQ from osmo_norte
+1757426556: Sending PINGRESP to osmo_norte
+1757426560: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426560: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426571: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426571: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426572: Received PINGREQ from osmo_norte
+1757426572: Sending PINGRESP to osmo_norte
+1757426581: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426581: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426587: Received PINGREQ from osmo_norte
+1757426587: Sending PINGRESP to osmo_norte
+1757426591: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426591: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426601: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426601: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426602: Received PINGREQ from osmo_norte
+1757426602: Sending PINGRESP to osmo_norte
+1757426611: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426611: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426615: Received PINGREQ from director_fad2c043
+1757426615: Sending PINGRESP to director_fad2c043
+1757426617: Received PINGREQ from osmo_norte
+1757426617: Sending PINGRESP to osmo_norte
+1757426621: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426621: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426631: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426631: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426632: Received PINGREQ from osmo_norte
+1757426632: Sending PINGRESP to osmo_norte
+1757426641: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426641: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426647: Received PINGREQ from osmo_norte
+1757426647: Sending PINGRESP to osmo_norte
+1757426651: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426651: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426661: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426661: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426662: Received PINGREQ from osmo_norte
+1757426662: Sending PINGRESP to osmo_norte
+1757426671: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426671: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426675: Received PINGREQ from director_fad2c043
+1757426675: Sending PINGRESP to director_fad2c043
+1757426678: Received PINGREQ from osmo_norte
+1757426678: Sending PINGRESP to osmo_norte
+1757426681: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426681: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426691: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426691: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426693: Received PINGREQ from osmo_norte
+1757426693: Sending PINGRESP to osmo_norte
+1757426701: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426701: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426708: Received PINGREQ from osmo_norte
+1757426708: Sending PINGRESP to osmo_norte
+1757426711: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426711: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426722: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426722: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426723: Received PINGREQ from osmo_norte
+1757426723: Sending PINGRESP to osmo_norte
+1757426732: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426732: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426735: Received PINGREQ from director_fad2c043
+1757426735: Sending PINGRESP to director_fad2c043
+1757426738: Received PINGREQ from osmo_norte
+1757426738: Sending PINGRESP to osmo_norte
+1757426742: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426742: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426752: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426752: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426753: Received PINGREQ from osmo_norte
+1757426753: Sending PINGRESP to osmo_norte
+1757426762: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426762: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426769: Received PINGREQ from osmo_norte
+1757426769: Sending PINGRESP to osmo_norte
+1757426772: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426772: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426782: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426782: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426784: Received PINGREQ from osmo_norte
+1757426784: Sending PINGRESP to osmo_norte
+1757426792: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426792: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426795: Received PINGREQ from director_fad2c043
+1757426795: Sending PINGRESP to director_fad2c043
+1757426799: Received PINGREQ from osmo_norte
+1757426799: Sending PINGRESP to osmo_norte
+1757426802: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426802: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426812: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426812: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426814: Received PINGREQ from osmo_norte
+1757426814: Sending PINGRESP to osmo_norte
+1757426822: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426822: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426829: Received PINGREQ from osmo_norte
+1757426829: Sending PINGRESP to osmo_norte
+1757426832: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426832: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426842: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426842: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426844: Received PINGREQ from osmo_norte
+1757426844: Sending PINGRESP to osmo_norte
+1757426852: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426852: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426855: Received PINGREQ from director_fad2c043
+1757426855: Sending PINGRESP to director_fad2c043
+1757426859: Received PINGREQ from osmo_norte
+1757426859: Sending PINGRESP to osmo_norte
+1757426863: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426863: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426873: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426873: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426875: Received PINGREQ from osmo_norte
+1757426875: Sending PINGRESP to osmo_norte
+1757426883: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426883: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426890: Received PINGREQ from osmo_norte
+1757426890: Sending PINGRESP to osmo_norte
+1757426893: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426893: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426903: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426903: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426905: Received PINGREQ from osmo_norte
+1757426905: Sending PINGRESP to osmo_norte
+1757426913: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426913: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426915: Received PINGREQ from director_fad2c043
+1757426915: Sending PINGRESP to director_fad2c043
+1757426920: Received PINGREQ from osmo_norte
+1757426920: Sending PINGRESP to osmo_norte
+1757426923: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426923: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426933: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426933: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426935: Received PINGREQ from osmo_norte
+1757426935: Sending PINGRESP to osmo_norte
+1757426943: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426943: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426950: Received PINGREQ from osmo_norte
+1757426950: Sending PINGRESP to osmo_norte
+1757426953: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426953: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426963: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426963: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426965: Received PINGREQ from osmo_norte
+1757426965: Sending PINGRESP to osmo_norte
+1757426973: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426973: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426975: Received PINGREQ from director_fad2c043
+1757426975: Sending PINGRESP to director_fad2c043
+1757426981: Received PINGREQ from osmo_norte
+1757426981: Sending PINGRESP to osmo_norte
+1757426983: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426983: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426993: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426993: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757426996: Received PINGREQ from osmo_norte
+1757426996: Sending PINGRESP to osmo_norte
+1757427003: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427003: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427011: Received PINGREQ from osmo_norte
+1757427011: Sending PINGRESP to osmo_norte
+1757427014: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427014: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427024: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427024: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427026: Received PINGREQ from osmo_norte
+1757427026: Sending PINGRESP to osmo_norte
+1757427034: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427034: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427035: Received PINGREQ from director_fad2c043
+1757427035: Sending PINGRESP to director_fad2c043
+1757427041: Received PINGREQ from osmo_norte
+1757427041: Sending PINGRESP to osmo_norte
+1757427044: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427044: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427054: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427054: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427056: Received PINGREQ from osmo_norte
+1757427056: Sending PINGRESP to osmo_norte
+1757427064: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427064: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427072: Received PINGREQ from osmo_norte
+1757427072: Sending PINGRESP to osmo_norte
+1757427074: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427074: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427084: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427084: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427087: Received PINGREQ from osmo_norte
+1757427087: Sending PINGRESP to osmo_norte
+1757427094: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427094: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427095: Received PINGREQ from director_fad2c043
+1757427095: Sending PINGRESP to director_fad2c043
+1757427102: Received PINGREQ from osmo_norte
+1757427102: Sending PINGRESP to osmo_norte
+1757427104: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427104: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427114: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427114: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427117: Received PINGREQ from osmo_norte
+1757427117: Sending PINGRESP to osmo_norte
+1757427124: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427124: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427132: Received PINGREQ from osmo_norte
+1757427132: Sending PINGRESP to osmo_norte
+1757427134: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427134: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427144: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427144: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427147: Received PINGREQ from osmo_norte
+1757427147: Sending PINGRESP to osmo_norte
+1757427154: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427154: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427155: Received PINGREQ from director_fad2c043
+1757427155: Sending PINGRESP to director_fad2c043
+1757427162: Received PINGREQ from osmo_norte
+1757427162: Sending PINGRESP to osmo_norte
+1757427165: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427165: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427175: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427175: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427178: Received PINGREQ from osmo_norte
+1757427178: Sending PINGRESP to osmo_norte
+1757427185: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427185: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427193: Received PINGREQ from osmo_norte
+1757427193: Sending PINGRESP to osmo_norte
+1757427195: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427195: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427205: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427205: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427208: Received PINGREQ from osmo_norte
+1757427208: Sending PINGRESP to osmo_norte
+1757427215: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427215: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427215: Received PINGREQ from director_fad2c043
+1757427215: Sending PINGRESP to director_fad2c043
+1757427223: Received PINGREQ from osmo_norte
+1757427223: Sending PINGRESP to osmo_norte
+1757427225: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427225: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427235: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427235: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427238: Received PINGREQ from osmo_norte
+1757427238: Sending PINGRESP to osmo_norte
+1757427245: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427245: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427253: Received PINGREQ from osmo_norte
+1757427253: Sending PINGRESP to osmo_norte
+1757427255: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427255: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427265: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427265: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427269: Received PINGREQ from osmo_norte
+1757427269: Sending PINGRESP to osmo_norte
+1757427275: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427275: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427275: Received PINGREQ from director_fad2c043
+1757427275: Sending PINGRESP to director_fad2c043
+1757427284: Received PINGREQ from osmo_norte
+1757427284: Sending PINGRESP to osmo_norte
+1757427285: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427285: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427295: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427295: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427299: Received PINGREQ from osmo_norte
+1757427299: Sending PINGRESP to osmo_norte
+1757427305: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427305: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427314: Received PINGREQ from osmo_norte
+1757427314: Sending PINGRESP to osmo_norte
+1757427316: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427316: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427326: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427326: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427329: Received PINGREQ from osmo_norte
+1757427329: Sending PINGRESP to osmo_norte
+1757427335: Received PINGREQ from director_fad2c043
+1757427335: Sending PINGRESP to director_fad2c043
+1757427336: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427336: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427344: Received PINGREQ from osmo_norte
+1757427344: Sending PINGRESP to osmo_norte
+1757427346: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427346: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427356: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427356: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427359: Received PINGREQ from osmo_norte
+1757427359: Sending PINGRESP to osmo_norte
+1757427366: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427366: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427375: Received PINGREQ from osmo_norte
+1757427375: Sending PINGRESP to osmo_norte
+1757427376: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427376: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427386: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427386: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427390: Received PINGREQ from osmo_norte
+1757427390: Sending PINGRESP to osmo_norte
+1757427395: Received PINGREQ from director_fad2c043
+1757427395: Sending PINGRESP to director_fad2c043
+1757427396: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427396: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427405: Received PINGREQ from osmo_norte
+1757427405: Sending PINGRESP to osmo_norte
+1757427406: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427406: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427416: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427416: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427420: Received PINGREQ from osmo_norte
+1757427420: Sending PINGRESP to osmo_norte
+1757427426: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427426: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427435: Received PINGREQ from osmo_norte
+1757427435: Sending PINGRESP to osmo_norte
+1757427436: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427436: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427446: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427446: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427450: Received PINGREQ from osmo_norte
+1757427450: Sending PINGRESP to osmo_norte
+1757427455: Received PINGREQ from director_fad2c043
+1757427455: Sending PINGRESP to director_fad2c043
+1757427456: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427456: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427466: Received PINGREQ from osmo_norte
+1757427466: Sending PINGRESP to osmo_norte
+1757427467: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427467: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427477: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427477: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427481: Received PINGREQ from osmo_norte
+1757427481: Sending PINGRESP to osmo_norte
+1757427487: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427487: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427496: Received PINGREQ from osmo_norte
+1757427496: Sending PINGRESP to osmo_norte
+1757427497: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427497: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427507: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427507: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427511: Received PINGREQ from osmo_norte
+1757427511: Sending PINGRESP to osmo_norte
+1757427515: Received PINGREQ from director_fad2c043
+1757427515: Sending PINGRESP to director_fad2c043
+1757427517: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427517: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427526: Received PINGREQ from osmo_norte
+1757427526: Sending PINGRESP to osmo_norte
+1757427527: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427527: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427537: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427537: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427541: Received PINGREQ from osmo_norte
+1757427541: Sending PINGRESP to osmo_norte
+1757427547: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427547: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427556: Received PINGREQ from osmo_norte
+1757427556: Sending PINGRESP to osmo_norte
+1757427557: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427557: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427567: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427567: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427572: Received PINGREQ from osmo_norte
+1757427572: Sending PINGRESP to osmo_norte
+1757427575: Received PINGREQ from director_fad2c043
+1757427575: Sending PINGRESP to director_fad2c043
+1757427577: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427577: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427587: Received PINGREQ from osmo_norte
+1757427587: Sending PINGRESP to osmo_norte
+1757427587: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427587: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427597: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427597: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427602: Received PINGREQ from osmo_norte
+1757427602: Sending PINGRESP to osmo_norte
+1757427608: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427608: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427617: Received PINGREQ from osmo_norte
+1757427617: Sending PINGRESP to osmo_norte
+1757427618: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427618: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427628: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427628: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427632: Received PINGREQ from osmo_norte
+1757427632: Sending PINGRESP to osmo_norte
+1757427635: Received PINGREQ from director_fad2c043
+1757427635: Sending PINGRESP to director_fad2c043
+1757427638: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427638: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427647: Received PINGREQ from osmo_norte
+1757427647: Sending PINGRESP to osmo_norte
+1757427648: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427648: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427658: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427658: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427662: Received PINGREQ from osmo_norte
+1757427662: Sending PINGRESP to osmo_norte
+1757427668: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427668: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427678: Received PINGREQ from osmo_norte
+1757427678: Sending PINGRESP to osmo_norte
+1757427678: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427678: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427688: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427688: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427693: Received PINGREQ from osmo_norte
+1757427693: Sending PINGRESP to osmo_norte
+1757427695: Received PINGREQ from director_fad2c043
+1757427695: Sending PINGRESP to director_fad2c043
+1757427698: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427698: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427708: Received PINGREQ from osmo_norte
+1757427708: Sending PINGRESP to osmo_norte
+1757427708: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427708: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427718: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427718: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427723: Received PINGREQ from osmo_norte
+1757427723: Sending PINGRESP to osmo_norte
+1757427728: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427728: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427738: Received PINGREQ from osmo_norte
+1757427738: Sending PINGRESP to osmo_norte
+1757427738: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427738: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427748: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427748: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427753: Received PINGREQ from osmo_norte
+1757427753: Sending PINGRESP to osmo_norte
+1757427755: Received PINGREQ from director_fad2c043
+1757427755: Sending PINGRESP to director_fad2c043
+1757427759: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427759: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427769: Received PINGREQ from osmo_norte
+1757427769: Sending PINGRESP to osmo_norte
+1757427769: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427769: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427779: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427779: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427784: Received PINGREQ from osmo_norte
+1757427784: Sending PINGRESP to osmo_norte
+1757427789: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427789: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427799: Received PINGREQ from osmo_norte
+1757427799: Sending PINGRESP to osmo_norte
+1757427799: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427799: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427809: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427809: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427814: Received PINGREQ from osmo_norte
+1757427814: Sending PINGRESP to osmo_norte
+1757427815: Received PINGREQ from director_fad2c043
+1757427815: Sending PINGRESP to director_fad2c043
+1757427819: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427819: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427829: Received PINGREQ from osmo_norte
+1757427829: Sending PINGRESP to osmo_norte
+1757427829: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427829: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427839: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427839: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427844: Received PINGREQ from osmo_norte
+1757427844: Sending PINGRESP to osmo_norte
+1757427849: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427849: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427859: Received PINGREQ from osmo_norte
+1757427859: Sending PINGRESP to osmo_norte
+1757427859: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427859: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427869: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427869: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427874: Received PINGREQ from osmo_norte
+1757427874: Sending PINGRESP to osmo_norte
+1757427875: Received PINGREQ from director_fad2c043
+1757427875: Sending PINGRESP to director_fad2c043
+1757427879: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427879: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427889: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427889: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427889: Received PINGREQ from osmo_norte
+1757427889: Sending PINGRESP to osmo_norte
+1757427899: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427899: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427905: Received PINGREQ from osmo_norte
+1757427905: Sending PINGRESP to osmo_norte
+1757427910: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427910: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427920: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427920: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427920: Received PINGREQ from osmo_norte
+1757427920: Sending PINGRESP to osmo_norte
+1757427930: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427930: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427935: Received PINGREQ from osmo_norte
+1757427935: Sending PINGRESP to osmo_norte
+1757427935: Received PINGREQ from director_fad2c043
+1757427935: Sending PINGRESP to director_fad2c043
+1757427940: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427940: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427950: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427950: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427950: Received PINGREQ from osmo_norte
+1757427950: Sending PINGRESP to osmo_norte
+1757427960: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427960: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427965: Received PINGREQ from osmo_norte
+1757427965: Sending PINGRESP to osmo_norte
+1757427970: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427970: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427980: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427980: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427980: Received PINGREQ from osmo_norte
+1757427980: Sending PINGRESP to osmo_norte
+1757427990: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427990: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757427995: Received PINGREQ from director_fad2c043
+1757427995: Sending PINGRESP to director_fad2c043
+1757427996: Received PINGREQ from osmo_norte
+1757427996: Sending PINGRESP to osmo_norte
+1757428000: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428000: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428010: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428010: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428011: Received PINGREQ from osmo_norte
+1757428011: Sending PINGRESP to osmo_norte
+1757428020: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428020: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428026: Received PINGREQ from osmo_norte
+1757428026: Sending PINGRESP to osmo_norte
+1757428030: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428030: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428040: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428040: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428041: Received PINGREQ from osmo_norte
+1757428041: Sending PINGRESP to osmo_norte
+1757428051: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428051: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428055: Received PINGREQ from director_fad2c043
+1757428055: Sending PINGRESP to director_fad2c043
+1757428056: Received PINGREQ from osmo_norte
+1757428056: Sending PINGRESP to osmo_norte
+1757428061: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428061: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428071: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428071: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428071: Received PINGREQ from osmo_norte
+1757428071: Sending PINGRESP to osmo_norte
+1757428081: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428081: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428087: Received PINGREQ from osmo_norte
+1757428087: Sending PINGRESP to osmo_norte
+1757428091: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428091: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428101: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428101: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428102: Received PINGREQ from osmo_norte
+1757428102: Sending PINGRESP to osmo_norte
+1757428111: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428111: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428116: Received PINGREQ from director_fad2c043
+1757428116: Sending PINGRESP to director_fad2c043
+1757428117: Received PINGREQ from osmo_norte
+1757428117: Sending PINGRESP to osmo_norte
+1757428121: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428121: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428131: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428131: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428132: Received PINGREQ from osmo_norte
+1757428132: Sending PINGRESP to osmo_norte
+1757428141: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428141: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428147: Received PINGREQ from osmo_norte
+1757428147: Sending PINGRESP to osmo_norte
+1757428151: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428151: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428151: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1757428151: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1757428151: Error: Bad file descriptor.
+1757428161: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428161: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428162: Received PINGREQ from osmo_norte
+1757428162: Sending PINGRESP to osmo_norte
+1757428171: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428171: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428176: Received PINGREQ from director_fad2c043
+1757428176: Sending PINGRESP to director_fad2c043
+1757428177: Received PINGREQ from osmo_norte
+1757428177: Sending PINGRESP to osmo_norte
+1757428181: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428181: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428191: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428191: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428193: Received PINGREQ from osmo_norte
+1757428193: Sending PINGRESP to osmo_norte
+1757428202: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428202: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428208: Received PINGREQ from osmo_norte
+1757428208: Sending PINGRESP to osmo_norte
+1757428212: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428212: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428222: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428222: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428223: Received PINGREQ from osmo_norte
+1757428223: Sending PINGRESP to osmo_norte
+1757428232: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428232: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428236: Received PINGREQ from director_fad2c043
+1757428236: Sending PINGRESP to director_fad2c043
+1757428238: Received PINGREQ from osmo_norte
+1757428238: Sending PINGRESP to osmo_norte
+1757428242: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428242: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428252: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428252: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428253: Received PINGREQ from osmo_norte
+1757428253: Sending PINGRESP to osmo_norte
+1757428262: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428262: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428268: Received PINGREQ from osmo_norte
+1757428268: Sending PINGRESP to osmo_norte
+1757428272: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428272: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428282: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428282: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428283: Received PINGREQ from osmo_norte
+1757428283: Sending PINGRESP to osmo_norte
+1757428292: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428292: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428296: Received PINGREQ from director_fad2c043
+1757428296: Sending PINGRESP to director_fad2c043
+1757428299: Received PINGREQ from osmo_norte
+1757428299: Sending PINGRESP to osmo_norte
+1757428302: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428302: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428312: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428312: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428314: Received PINGREQ from osmo_norte
+1757428314: Sending PINGRESP to osmo_norte
+1757428322: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428322: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428329: Received PINGREQ from osmo_norte
+1757428329: Sending PINGRESP to osmo_norte
+1757428332: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428332: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428342: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428342: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428344: Received PINGREQ from osmo_norte
+1757428344: Sending PINGRESP to osmo_norte
+1757428353: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428353: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428356: Received PINGREQ from director_fad2c043
+1757428356: Sending PINGRESP to director_fad2c043
+1757428359: Received PINGREQ from osmo_norte
+1757428359: Sending PINGRESP to osmo_norte
+1757428363: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428363: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428373: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428373: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428374: Received PINGREQ from osmo_norte
+1757428374: Sending PINGRESP to osmo_norte
+1757428383: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428383: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428390: Received PINGREQ from osmo_norte
+1757428390: Sending PINGRESP to osmo_norte
+1757428393: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428393: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428403: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428403: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428405: Received PINGREQ from osmo_norte
+1757428405: Sending PINGRESP to osmo_norte
+1757428413: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428413: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428416: Received PINGREQ from director_fad2c043
+1757428416: Sending PINGRESP to director_fad2c043
+1757428420: Received PINGREQ from osmo_norte
+1757428420: Sending PINGRESP to osmo_norte
+1757428423: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428423: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428433: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428433: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428435: Received PINGREQ from osmo_norte
+1757428435: Sending PINGRESP to osmo_norte
+1757428443: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428443: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428450: Received PINGREQ from osmo_norte
+1757428450: Sending PINGRESP to osmo_norte
+1757428453: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428453: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428463: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428463: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428465: Received PINGREQ from osmo_norte
+1757428465: Sending PINGRESP to osmo_norte
+1757428473: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428473: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428476: Received PINGREQ from director_fad2c043
+1757428476: Sending PINGRESP to director_fad2c043
+1757428480: Received PINGREQ from osmo_norte
+1757428480: Sending PINGRESP to osmo_norte
+1757428483: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428483: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428493: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428493: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428496: Received PINGREQ from osmo_norte
+1757428496: Sending PINGRESP to osmo_norte
+1757428504: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428504: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428511: Received PINGREQ from osmo_norte
+1757428511: Sending PINGRESP to osmo_norte
+1757428514: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428514: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428524: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428524: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428526: Received PINGREQ from osmo_norte
+1757428526: Sending PINGRESP to osmo_norte
+1757428534: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428534: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428536: Received PINGREQ from director_fad2c043
+1757428536: Sending PINGRESP to director_fad2c043
+1757428541: Received PINGREQ from osmo_norte
+1757428541: Sending PINGRESP to osmo_norte
+1757428544: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428544: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428554: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428554: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428556: Received PINGREQ from osmo_norte
+1757428556: Sending PINGRESP to osmo_norte
+1757428564: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428564: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428571: Received PINGREQ from osmo_norte
+1757428571: Sending PINGRESP to osmo_norte
+1757428574: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428574: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428584: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428584: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428586: Received PINGREQ from osmo_norte
+1757428586: Sending PINGRESP to osmo_norte
+1757428594: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428594: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428596: Received PINGREQ from director_fad2c043
+1757428596: Sending PINGRESP to director_fad2c043
+1757428602: Received PINGREQ from osmo_norte
+1757428602: Sending PINGRESP to osmo_norte
+1757428604: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428604: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428614: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428614: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428617: Received PINGREQ from osmo_norte
+1757428617: Sending PINGRESP to osmo_norte
+1757428624: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428624: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428632: Received PINGREQ from osmo_norte
+1757428632: Sending PINGRESP to osmo_norte
+1757428634: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428634: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428644: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428644: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428647: Received PINGREQ from osmo_norte
+1757428647: Sending PINGRESP to osmo_norte
+1757428655: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428655: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428656: Received PINGREQ from director_fad2c043
+1757428656: Sending PINGRESP to director_fad2c043
+1757428662: Received PINGREQ from osmo_norte
+1757428662: Sending PINGRESP to osmo_norte
+1757428665: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428665: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428675: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428675: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428677: Received PINGREQ from osmo_norte
+1757428677: Sending PINGRESP to osmo_norte
+1757428685: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428685: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428693: Received PINGREQ from osmo_norte
+1757428693: Sending PINGRESP to osmo_norte
+1757428695: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428695: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428705: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428705: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428708: Received PINGREQ from osmo_norte
+1757428708: Sending PINGRESP to osmo_norte
+1757428715: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428715: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428716: Received PINGREQ from director_fad2c043
+1757428716: Sending PINGRESP to director_fad2c043
+1757428723: Received PINGREQ from osmo_norte
+1757428723: Sending PINGRESP to osmo_norte
+1757428725: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428725: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428735: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428735: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428738: Received PINGREQ from osmo_norte
+1757428738: Sending PINGRESP to osmo_norte
+1757428745: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428745: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428753: Received PINGREQ from osmo_norte
+1757428753: Sending PINGRESP to osmo_norte
+1757428755: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428755: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428765: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428765: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428768: Received PINGREQ from osmo_norte
+1757428768: Sending PINGRESP to osmo_norte
+1757428775: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428775: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428776: Received PINGREQ from director_fad2c043
+1757428776: Sending PINGRESP to director_fad2c043
+1757428783: Received PINGREQ from osmo_norte
+1757428783: Sending PINGRESP to osmo_norte
+1757428785: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428785: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428795: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428795: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428799: Received PINGREQ from osmo_norte
+1757428799: Sending PINGRESP to osmo_norte
+1757428806: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428806: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428814: Received PINGREQ from osmo_norte
+1757428814: Sending PINGRESP to osmo_norte
+1757428816: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428816: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428826: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428826: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428829: Received PINGREQ from osmo_norte
+1757428829: Sending PINGRESP to osmo_norte
+1757428836: Received PINGREQ from director_fad2c043
+1757428836: Sending PINGRESP to director_fad2c043
+1757428836: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428836: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428844: Received PINGREQ from osmo_norte
+1757428844: Sending PINGRESP to osmo_norte
+1757428846: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428846: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428856: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428856: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428859: Received PINGREQ from osmo_norte
+1757428859: Sending PINGRESP to osmo_norte
+1757428866: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428866: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428874: Received PINGREQ from osmo_norte
+1757428874: Sending PINGRESP to osmo_norte
+1757428876: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428876: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428886: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428886: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428890: Received PINGREQ from osmo_norte
+1757428890: Sending PINGRESP to osmo_norte
+1757428896: Received PINGREQ from director_fad2c043
+1757428896: Sending PINGRESP to director_fad2c043
+1757428896: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428896: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428905: Received PINGREQ from osmo_norte
+1757428905: Sending PINGRESP to osmo_norte
+1757428906: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428906: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428916: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428916: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428920: Received PINGREQ from osmo_norte
+1757428920: Sending PINGRESP to osmo_norte
+1757428926: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428926: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428935: Received PINGREQ from osmo_norte
+1757428935: Sending PINGRESP to osmo_norte
+1757428936: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428936: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428947: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428947: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428950: Received PINGREQ from osmo_norte
+1757428950: Sending PINGRESP to osmo_norte
+1757428956: Received PINGREQ from director_fad2c043
+1757428956: Sending PINGRESP to director_fad2c043
+1757428957: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428957: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428965: Received PINGREQ from osmo_norte
+1757428965: Sending PINGRESP to osmo_norte
+1757428967: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428967: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428977: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428977: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428980: Received PINGREQ from osmo_norte
+1757428980: Sending PINGRESP to osmo_norte
+1757428987: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428987: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428996: Received PINGREQ from osmo_norte
+1757428996: Sending PINGRESP to osmo_norte
+1757428997: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757428997: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429007: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429007: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429011: Received PINGREQ from osmo_norte
+1757429011: Sending PINGRESP to osmo_norte
+1757429016: Received PINGREQ from director_fad2c043
+1757429016: Sending PINGRESP to director_fad2c043
+1757429017: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429017: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429026: Received PINGREQ from osmo_norte
+1757429026: Sending PINGRESP to osmo_norte
+1757429027: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429027: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429037: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429037: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429041: Received PINGREQ from osmo_norte
+1757429041: Sending PINGRESP to osmo_norte
+1757429047: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429047: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429056: Received PINGREQ from osmo_norte
+1757429056: Sending PINGRESP to osmo_norte
+1757429057: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429057: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429067: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429067: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429071: Received PINGREQ from osmo_norte
+1757429071: Sending PINGRESP to osmo_norte
+1757429076: Received PINGREQ from director_fad2c043
+1757429076: Sending PINGRESP to director_fad2c043
+1757429077: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429077: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429087: Received PINGREQ from osmo_norte
+1757429087: Sending PINGRESP to osmo_norte
+1757429087: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429087: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429098: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429098: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429102: Received PINGREQ from osmo_norte
+1757429102: Sending PINGRESP to osmo_norte
+1757429108: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429108: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429117: Received PINGREQ from osmo_norte
+1757429117: Sending PINGRESP to osmo_norte
+1757429118: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429118: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429128: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429128: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429132: Received PINGREQ from osmo_norte
+1757429132: Sending PINGRESP to osmo_norte
+1757429136: Received PINGREQ from director_fad2c043
+1757429136: Sending PINGRESP to director_fad2c043
+1757429138: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429138: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429147: Received PINGREQ from osmo_norte
+1757429147: Sending PINGRESP to osmo_norte
+1757429148: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429148: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429158: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429158: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429162: Received PINGREQ from osmo_norte
+1757429162: Sending PINGRESP to osmo_norte
+1757429168: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429168: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429177: Received PINGREQ from osmo_norte
+1757429177: Sending PINGRESP to osmo_norte
+1757429178: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429178: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429188: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429188: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429193: Received PINGREQ from osmo_norte
+1757429193: Sending PINGRESP to osmo_norte
+1757429196: Received PINGREQ from director_fad2c043
+1757429196: Sending PINGRESP to director_fad2c043
+1757429198: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429198: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429208: Received PINGREQ from osmo_norte
+1757429208: Sending PINGRESP to osmo_norte
+1757429208: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429208: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429218: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429218: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429223: Received PINGREQ from osmo_norte
+1757429223: Sending PINGRESP to osmo_norte
+1757429228: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429228: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429238: Received PINGREQ from osmo_norte
+1757429238: Sending PINGRESP to osmo_norte
+1757429238: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429238: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429249: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429249: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429253: Received PINGREQ from osmo_norte
+1757429253: Sending PINGRESP to osmo_norte
+1757429256: Received PINGREQ from director_fad2c043
+1757429256: Sending PINGRESP to director_fad2c043
+1757429259: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429259: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429268: Received PINGREQ from osmo_norte
+1757429268: Sending PINGRESP to osmo_norte
+1757429269: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429269: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429279: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429279: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429283: Received PINGREQ from osmo_norte
+1757429283: Sending PINGRESP to osmo_norte
+1757429289: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429289: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429299: Received PINGREQ from osmo_norte
+1757429299: Sending PINGRESP to osmo_norte
+1757429299: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429299: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429309: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429309: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429314: Received PINGREQ from osmo_norte
+1757429314: Sending PINGRESP to osmo_norte
+1757429316: Received PINGREQ from director_fad2c043
+1757429316: Sending PINGRESP to director_fad2c043
+1757429319: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429319: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429329: Received PINGREQ from osmo_norte
+1757429329: Sending PINGRESP to osmo_norte
+1757429329: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429329: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429339: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429339: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429344: Received PINGREQ from osmo_norte
+1757429344: Sending PINGRESP to osmo_norte
+1757429349: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429349: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429359: Received PINGREQ from osmo_norte
+1757429359: Sending PINGRESP to osmo_norte
+1757429359: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429359: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429369: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429369: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429374: Received PINGREQ from osmo_norte
+1757429374: Sending PINGRESP to osmo_norte
+1757429376: Received PINGREQ from director_fad2c043
+1757429376: Sending PINGRESP to director_fad2c043
+1757429379: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429379: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429389: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429389: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429390: Received PINGREQ from osmo_norte
+1757429390: Sending PINGRESP to osmo_norte
+1757429400: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429400: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429405: Received PINGREQ from osmo_norte
+1757429405: Sending PINGRESP to osmo_norte
+1757429410: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429410: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429420: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429420: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429420: Received PINGREQ from osmo_norte
+1757429420: Sending PINGRESP to osmo_norte
+1757429430: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429430: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429435: Received PINGREQ from osmo_norte
+1757429435: Sending PINGRESP to osmo_norte
+1757429436: Received PINGREQ from director_fad2c043
+1757429436: Sending PINGRESP to director_fad2c043
+1757429440: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429440: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429450: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429450: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429450: Received PINGREQ from osmo_norte
+1757429450: Sending PINGRESP to osmo_norte
+1757429460: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429460: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429465: Received PINGREQ from osmo_norte
+1757429465: Sending PINGRESP to osmo_norte
+1757429470: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429470: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429480: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429480: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429480: Received PINGREQ from osmo_norte
+1757429480: Sending PINGRESP to osmo_norte
+1757429490: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429490: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429496: Received PINGREQ from osmo_norte
+1757429496: Sending PINGRESP to osmo_norte
+1757429496: Received PINGREQ from director_fad2c043
+1757429496: Sending PINGRESP to director_fad2c043
+1757429500: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429500: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429510: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429510: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429511: Received PINGREQ from osmo_norte
+1757429511: Sending PINGRESP to osmo_norte
+1757429520: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429520: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429526: Received PINGREQ from osmo_norte
+1757429526: Sending PINGRESP to osmo_norte
+1757429530: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429530: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429540: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429540: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429541: Received PINGREQ from osmo_norte
+1757429541: Sending PINGRESP to osmo_norte
+1757429551: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429551: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429556: Received PINGREQ from director_fad2c043
+1757429556: Sending PINGRESP to director_fad2c043
+1757429556: Received PINGREQ from osmo_norte
+1757429556: Sending PINGRESP to osmo_norte
+1757429561: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429561: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429571: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429571: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429571: Received PINGREQ from osmo_norte
+1757429571: Sending PINGRESP to osmo_norte
+1757429581: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429581: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429587: Received PINGREQ from osmo_norte
+1757429587: Sending PINGRESP to osmo_norte
+1757429591: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429591: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429601: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429601: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429602: Received PINGREQ from osmo_norte
+1757429602: Sending PINGRESP to osmo_norte
+1757429611: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429611: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429616: Received PINGREQ from director_fad2c043
+1757429616: Sending PINGRESP to director_fad2c043
+1757429617: Received PINGREQ from osmo_norte
+1757429617: Sending PINGRESP to osmo_norte
+1757429621: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429621: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429631: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429631: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429632: Received PINGREQ from osmo_norte
+1757429632: Sending PINGRESP to osmo_norte
+1757429641: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429641: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429647: Received PINGREQ from osmo_norte
+1757429647: Sending PINGRESP to osmo_norte
+1757429651: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429651: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429661: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429661: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429662: Received PINGREQ from osmo_norte
+1757429662: Sending PINGRESP to osmo_norte
+1757429671: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429671: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429676: Received PINGREQ from director_fad2c043
+1757429676: Sending PINGRESP to director_fad2c043
+1757429677: Received PINGREQ from osmo_norte
+1757429677: Sending PINGRESP to osmo_norte
+1757429681: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429681: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429692: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429692: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429693: Received PINGREQ from osmo_norte
+1757429693: Sending PINGRESP to osmo_norte
+1757429702: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429702: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429708: Received PINGREQ from osmo_norte
+1757429708: Sending PINGRESP to osmo_norte
+1757429712: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429712: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429722: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429722: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429723: Received PINGREQ from osmo_norte
+1757429723: Sending PINGRESP to osmo_norte
+1757429732: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429732: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429736: Received PINGREQ from director_fad2c043
+1757429736: Sending PINGRESP to director_fad2c043
+1757429738: Received PINGREQ from osmo_norte
+1757429738: Sending PINGRESP to osmo_norte
+1757429742: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429742: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429752: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429752: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429753: Received PINGREQ from osmo_norte
+1757429753: Sending PINGRESP to osmo_norte
+1757429762: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429762: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429768: Received PINGREQ from osmo_norte
+1757429768: Sending PINGRESP to osmo_norte
+1757429772: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429772: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429782: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429782: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429784: Received PINGREQ from osmo_norte
+1757429784: Sending PINGRESP to osmo_norte
+1757429792: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429792: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429796: Received PINGREQ from director_fad2c043
+1757429796: Sending PINGRESP to director_fad2c043
+1757429799: Received PINGREQ from osmo_norte
+1757429799: Sending PINGRESP to osmo_norte
+1757429802: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429802: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429812: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429812: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429814: Received PINGREQ from osmo_norte
+1757429814: Sending PINGRESP to osmo_norte
+1757429822: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429822: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429829: Received PINGREQ from osmo_norte
+1757429829: Sending PINGRESP to osmo_norte
+1757429832: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429832: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429843: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429843: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429844: Received PINGREQ from osmo_norte
+1757429844: Sending PINGRESP to osmo_norte
+1757429853: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429853: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429856: Received PINGREQ from director_fad2c043
+1757429856: Sending PINGRESP to director_fad2c043
+1757429859: Received PINGREQ from osmo_norte
+1757429859: Sending PINGRESP to osmo_norte
+1757429863: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429863: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429873: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429873: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429874: Received PINGREQ from osmo_norte
+1757429874: Sending PINGRESP to osmo_norte
+1757429883: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429883: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429890: Received PINGREQ from osmo_norte
+1757429890: Sending PINGRESP to osmo_norte
+1757429893: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429893: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429903: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429903: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429905: Received PINGREQ from osmo_norte
+1757429905: Sending PINGRESP to osmo_norte
+1757429913: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429913: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429916: Received PINGREQ from director_fad2c043
+1757429916: Sending PINGRESP to director_fad2c043
+1757429920: Received PINGREQ from osmo_norte
+1757429920: Sending PINGRESP to osmo_norte
+1757429923: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429923: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429933: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429933: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429936: Received PINGREQ from osmo_norte
+1757429936: Sending PINGRESP to osmo_norte
+1757429943: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429943: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429951: Received PINGREQ from osmo_norte
+1757429951: Sending PINGRESP to osmo_norte
+1757429952: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1757429952: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1757429952: Error: Bad file descriptor.
+1757429953: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429953: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429963: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429963: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429966: Received PINGREQ from osmo_norte
+1757429966: Sending PINGRESP to osmo_norte
+1757429973: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429973: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429976: Received PINGREQ from director_fad2c043
+1757429976: Sending PINGRESP to director_fad2c043
+1757429981: Received PINGREQ from osmo_norte
+1757429981: Sending PINGRESP to osmo_norte
+1757429983: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429983: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429994: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429994: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757429996: Received PINGREQ from osmo_norte
+1757429996: Sending PINGRESP to osmo_norte
+1757430004: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430004: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430011: Received PINGREQ from osmo_norte
+1757430011: Sending PINGRESP to osmo_norte
+1757430014: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430014: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430024: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430024: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430026: Received PINGREQ from osmo_norte
+1757430026: Sending PINGRESP to osmo_norte
+1757430034: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430034: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430036: Received PINGREQ from director_fad2c043
+1757430036: Sending PINGRESP to director_fad2c043
+1757430042: Received PINGREQ from osmo_norte
+1757430042: Sending PINGRESP to osmo_norte
+1757430044: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430044: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430054: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430054: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430057: Received PINGREQ from osmo_norte
+1757430057: Sending PINGRESP to osmo_norte
+1757430064: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430064: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430072: Received PINGREQ from osmo_norte
+1757430072: Sending PINGRESP to osmo_norte
+1757430074: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430074: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430084: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430084: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430087: Received PINGREQ from osmo_norte
+1757430087: Sending PINGRESP to osmo_norte
+1757430094: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430094: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430096: Received PINGREQ from director_fad2c043
+1757430096: Sending PINGRESP to director_fad2c043
+1757430102: Received PINGREQ from osmo_norte
+1757430102: Sending PINGRESP to osmo_norte
+1757430104: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430104: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430114: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430114: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430117: Received PINGREQ from osmo_norte
+1757430117: Sending PINGRESP to osmo_norte
+1757430124: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430124: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430132: Received PINGREQ from osmo_norte
+1757430132: Sending PINGRESP to osmo_norte
+1757430134: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430134: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430145: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430145: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430148: Received PINGREQ from osmo_norte
+1757430148: Sending PINGRESP to osmo_norte
+1757430155: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430155: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430156: Received PINGREQ from director_fad2c043
+1757430156: Sending PINGRESP to director_fad2c043
+1757430163: Received PINGREQ from osmo_norte
+1757430163: Sending PINGRESP to osmo_norte
+1757430165: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430165: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430175: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430175: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430178: Received PINGREQ from osmo_norte
+1757430178: Sending PINGRESP to osmo_norte
+1757430185: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430185: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430193: Received PINGREQ from osmo_norte
+1757430193: Sending PINGRESP to osmo_norte
+1757430195: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430195: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430205: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430205: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430208: Received PINGREQ from osmo_norte
+1757430208: Sending PINGRESP to osmo_norte
+1757430215: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430215: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430216: Received PINGREQ from director_fad2c043
+1757430216: Sending PINGRESP to director_fad2c043
+1757430223: Received PINGREQ from osmo_norte
+1757430223: Sending PINGRESP to osmo_norte
+1757430225: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430225: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430235: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430235: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430239: Received PINGREQ from osmo_norte
+1757430239: Sending PINGRESP to osmo_norte
+1757430245: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430245: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430254: Received PINGREQ from osmo_norte
+1757430254: Sending PINGRESP to osmo_norte
+1757430255: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430255: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430265: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430265: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430269: Received PINGREQ from osmo_norte
+1757430269: Sending PINGRESP to osmo_norte
+1757430275: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430275: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430276: Received PINGREQ from director_fad2c043
+1757430276: Sending PINGRESP to director_fad2c043
+1757430284: Received PINGREQ from osmo_norte
+1757430284: Sending PINGRESP to osmo_norte
+1757430285: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430285: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430296: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430296: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430299: Received PINGREQ from osmo_norte
+1757430299: Sending PINGRESP to osmo_norte
+1757430306: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430306: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430314: Received PINGREQ from osmo_norte
+1757430314: Sending PINGRESP to osmo_norte
+1757430316: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430316: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430326: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430326: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430329: Received PINGREQ from osmo_norte
+1757430329: Sending PINGRESP to osmo_norte
+1757430336: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430336: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430336: Received PINGREQ from director_fad2c043
+1757430336: Sending PINGRESP to director_fad2c043
+1757430345: Received PINGREQ from osmo_norte
+1757430345: Sending PINGRESP to osmo_norte
+1757430346: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430346: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430356: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430356: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430360: Received PINGREQ from osmo_norte
+1757430360: Sending PINGRESP to osmo_norte
+1757430366: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430366: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430375: Received PINGREQ from osmo_norte
+1757430375: Sending PINGRESP to osmo_norte
+1757430376: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430376: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430386: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430386: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430390: Received PINGREQ from osmo_norte
+1757430390: Sending PINGRESP to osmo_norte
+1757430396: Received PINGREQ from director_fad2c043
+1757430396: Sending PINGRESP to director_fad2c043
+1757430396: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430396: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430405: Received PINGREQ from osmo_norte
+1757430405: Sending PINGRESP to osmo_norte
+1757430406: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430406: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430416: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430416: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430420: Received PINGREQ from osmo_norte
+1757430420: Sending PINGRESP to osmo_norte
+1757430426: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430426: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430435: Received PINGREQ from osmo_norte
+1757430435: Sending PINGRESP to osmo_norte
+1757430436: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430436: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430447: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430447: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430451: Received PINGREQ from osmo_norte
+1757430451: Sending PINGRESP to osmo_norte
+1757430456: Received PINGREQ from director_fad2c043
+1757430456: Sending PINGRESP to director_fad2c043
+1757430457: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430457: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430466: Received PINGREQ from osmo_norte
+1757430466: Sending PINGRESP to osmo_norte
+1757430467: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430467: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430477: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430477: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430481: Received PINGREQ from osmo_norte
+1757430481: Sending PINGRESP to osmo_norte
+1757430487: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430487: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430496: Received PINGREQ from osmo_norte
+1757430496: Sending PINGRESP to osmo_norte
+1757430497: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430497: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430507: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430507: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430511: Received PINGREQ from osmo_norte
+1757430511: Sending PINGRESP to osmo_norte
+1757430516: Received PINGREQ from director_fad2c043
+1757430516: Sending PINGRESP to director_fad2c043
+1757430517: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430517: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430526: Received PINGREQ from osmo_norte
+1757430526: Sending PINGRESP to osmo_norte
+1757430527: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430527: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430537: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430537: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430542: Received PINGREQ from osmo_norte
+1757430542: Sending PINGRESP to osmo_norte
+1757430547: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430547: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430557: Received PINGREQ from osmo_norte
+1757430557: Sending PINGRESP to osmo_norte
+1757430557: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430557: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430567: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430567: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430572: Received PINGREQ from osmo_norte
+1757430572: Sending PINGRESP to osmo_norte
+1757430576: Received PINGREQ from director_fad2c043
+1757430576: Sending PINGRESP to director_fad2c043
+1757430577: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430577: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430587: Received PINGREQ from osmo_norte
+1757430587: Sending PINGRESP to osmo_norte
+1757430587: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430587: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430598: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430598: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430602: Received PINGREQ from osmo_norte
+1757430602: Sending PINGRESP to osmo_norte
+1757430608: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430608: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430617: Received PINGREQ from osmo_norte
+1757430617: Sending PINGRESP to osmo_norte
+1757430618: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430618: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430628: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430628: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430632: Received PINGREQ from osmo_norte
+1757430632: Sending PINGRESP to osmo_norte
+1757430636: Received PINGREQ from director_fad2c043
+1757430636: Sending PINGRESP to director_fad2c043
+1757430638: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430638: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430648: Received PINGREQ from osmo_norte
+1757430648: Sending PINGRESP to osmo_norte
+1757430648: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430648: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430658: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430658: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430663: Received PINGREQ from osmo_norte
+1757430663: Sending PINGRESP to osmo_norte
+1757430668: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430668: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430678: Received PINGREQ from osmo_norte
+1757430678: Sending PINGRESP to osmo_norte
+1757430678: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430678: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430688: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430688: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430693: Received PINGREQ from osmo_norte
+1757430693: Sending PINGRESP to osmo_norte
+1757430696: Received PINGREQ from director_fad2c043
+1757430696: Sending PINGRESP to director_fad2c043
+1757430698: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430698: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430708: Received PINGREQ from osmo_norte
+1757430708: Sending PINGRESP to osmo_norte
+1757430708: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430708: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430718: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430718: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430723: Received PINGREQ from osmo_norte
+1757430723: Sending PINGRESP to osmo_norte
+1757430728: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430728: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430738: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430738: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430739: Received PINGREQ from osmo_norte
+1757430739: Sending PINGRESP to osmo_norte
+1757430749: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430749: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430754: Received PINGREQ from osmo_norte
+1757430754: Sending PINGRESP to osmo_norte
+1757430756: Received PINGREQ from director_fad2c043
+1757430756: Sending PINGRESP to director_fad2c043
+1757430759: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430759: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430769: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430769: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430769: Received PINGREQ from osmo_norte
+1757430769: Sending PINGRESP to osmo_norte
+1757430779: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430779: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430784: Received PINGREQ from osmo_norte
+1757430784: Sending PINGRESP to osmo_norte
+1757430789: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430789: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430799: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430799: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430799: Received PINGREQ from osmo_norte
+1757430799: Sending PINGRESP to osmo_norte
+1757430809: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430809: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430814: Received PINGREQ from osmo_norte
+1757430814: Sending PINGRESP to osmo_norte
+1757430816: Received PINGREQ from director_fad2c043
+1757430816: Sending PINGRESP to director_fad2c043
+1757430819: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430819: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430829: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430829: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430829: Received PINGREQ from osmo_norte
+1757430829: Sending PINGRESP to osmo_norte
+1757430839: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430839: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430845: Received PINGREQ from osmo_norte
+1757430845: Sending PINGRESP to osmo_norte
+1757430849: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430849: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430859: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430859: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430860: Received PINGREQ from osmo_norte
+1757430860: Sending PINGRESP to osmo_norte
+1757430869: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430869: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430875: Received PINGREQ from osmo_norte
+1757430875: Sending PINGRESP to osmo_norte
+1757430876: Received PINGREQ from director_fad2c043
+1757430876: Sending PINGRESP to director_fad2c043
+1757430879: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430879: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430890: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430890: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430890: Received PINGREQ from osmo_norte
+1757430890: Sending PINGRESP to osmo_norte
+1757430900: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430900: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430905: Received PINGREQ from osmo_norte
+1757430905: Sending PINGRESP to osmo_norte
+1757430910: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430910: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430920: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430920: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430920: Received PINGREQ from osmo_norte
+1757430920: Sending PINGRESP to osmo_norte
+1757430930: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430930: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430936: Received PINGREQ from osmo_norte
+1757430936: Sending PINGRESP to osmo_norte
+1757430936: Received PINGREQ from director_fad2c043
+1757430936: Sending PINGRESP to director_fad2c043
+1757430940: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430940: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430950: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430950: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430951: Received PINGREQ from osmo_norte
+1757430951: Sending PINGRESP to osmo_norte
+1757430960: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430960: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430966: Received PINGREQ from osmo_norte
+1757430966: Sending PINGRESP to osmo_norte
+1757430970: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430970: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430980: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430980: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430981: Received PINGREQ from osmo_norte
+1757430981: Sending PINGRESP to osmo_norte
+1757430990: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430990: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757430996: Received PINGREQ from osmo_norte
+1757430996: Sending PINGRESP to osmo_norte
+1757430996: Received PINGREQ from director_fad2c043
+1757430996: Sending PINGRESP to director_fad2c043
+1757431000: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431000: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431010: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431010: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431011: Received PINGREQ from osmo_norte
+1757431011: Sending PINGRESP to osmo_norte
+1757431020: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431020: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431026: Received PINGREQ from osmo_norte
+1757431026: Sending PINGRESP to osmo_norte
+1757431030: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431030: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431041: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431041: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431042: Received PINGREQ from osmo_norte
+1757431042: Sending PINGRESP to osmo_norte
+1757431051: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431051: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431056: Received PINGREQ from director_fad2c043
+1757431056: Sending PINGRESP to director_fad2c043
+1757431057: Received PINGREQ from osmo_norte
+1757431057: Sending PINGRESP to osmo_norte
+1757431061: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431061: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431071: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431071: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431072: Received PINGREQ from osmo_norte
+1757431072: Sending PINGRESP to osmo_norte
+1757431081: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431081: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431087: Received PINGREQ from osmo_norte
+1757431087: Sending PINGRESP to osmo_norte
+1757431091: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431091: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431101: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431101: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431102: Received PINGREQ from osmo_norte
+1757431102: Sending PINGRESP to osmo_norte
+1757431111: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431111: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431116: Received PINGREQ from director_fad2c043
+1757431116: Sending PINGRESP to director_fad2c043
+1757431117: Received PINGREQ from osmo_norte
+1757431117: Sending PINGRESP to osmo_norte
+1757431121: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431121: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431131: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431131: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431133: Received PINGREQ from osmo_norte
+1757431133: Sending PINGRESP to osmo_norte
+1757431141: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431141: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431148: Received PINGREQ from osmo_norte
+1757431148: Sending PINGRESP to osmo_norte
+1757431151: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431151: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431161: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431161: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431163: Received PINGREQ from osmo_norte
+1757431163: Sending PINGRESP to osmo_norte
+1757431171: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431171: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431176: Received PINGREQ from director_fad2c043
+1757431176: Sending PINGRESP to director_fad2c043
+1757431178: Received PINGREQ from osmo_norte
+1757431178: Sending PINGRESP to osmo_norte
+1757431181: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431181: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431192: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431192: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431193: Received PINGREQ from osmo_norte
+1757431193: Sending PINGRESP to osmo_norte
+1757431202: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431202: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431208: Received PINGREQ from osmo_norte
+1757431208: Sending PINGRESP to osmo_norte
+1757431212: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431212: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431222: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431222: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431223: Received PINGREQ from osmo_norte
+1757431223: Sending PINGRESP to osmo_norte
+1757431232: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431232: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431236: Received PINGREQ from director_fad2c043
+1757431236: Sending PINGRESP to director_fad2c043
+1757431239: Received PINGREQ from osmo_norte
+1757431239: Sending PINGRESP to osmo_norte
+1757431242: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431242: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431252: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431252: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431254: Received PINGREQ from osmo_norte
+1757431254: Sending PINGRESP to osmo_norte
+1757431262: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431262: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431269: Received PINGREQ from osmo_norte
+1757431269: Sending PINGRESP to osmo_norte
+1757431272: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431272: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431282: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431282: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431284: Received PINGREQ from osmo_norte
+1757431284: Sending PINGRESP to osmo_norte
+1757431292: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431292: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431296: Received PINGREQ from director_fad2c043
+1757431296: Sending PINGRESP to director_fad2c043
+1757431299: Received PINGREQ from osmo_norte
+1757431299: Sending PINGRESP to osmo_norte
+1757431302: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431302: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431312: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431312: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431314: Received PINGREQ from osmo_norte
+1757431314: Sending PINGRESP to osmo_norte
+1757431322: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431322: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431330: Received PINGREQ from osmo_norte
+1757431330: Sending PINGRESP to osmo_norte
+1757431332: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431332: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431343: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431343: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431345: Received PINGREQ from osmo_norte
+1757431345: Sending PINGRESP to osmo_norte
+1757431353: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431353: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431356: Received PINGREQ from director_fad2c043
+1757431356: Sending PINGRESP to director_fad2c043
+1757431360: Received PINGREQ from osmo_norte
+1757431360: Sending PINGRESP to osmo_norte
+1757431363: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431363: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431373: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431373: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431375: Received PINGREQ from osmo_norte
+1757431375: Sending PINGRESP to osmo_norte
+1757431383: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431383: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431390: Received PINGREQ from osmo_norte
+1757431390: Sending PINGRESP to osmo_norte
+1757431393: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431393: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431403: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431403: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431405: Received PINGREQ from osmo_norte
+1757431405: Sending PINGRESP to osmo_norte
+1757431413: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431413: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431416: Received PINGREQ from director_fad2c043
+1757431416: Sending PINGRESP to director_fad2c043
+1757431420: Received PINGREQ from osmo_norte
+1757431420: Sending PINGRESP to osmo_norte
+1757431423: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431423: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431433: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431433: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431436: Received PINGREQ from osmo_norte
+1757431436: Sending PINGRESP to osmo_norte
+1757431443: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431443: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431451: Received PINGREQ from osmo_norte
+1757431451: Sending PINGRESP to osmo_norte
+1757431453: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431453: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431463: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431463: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431466: Received PINGREQ from osmo_norte
+1757431466: Sending PINGRESP to osmo_norte
+1757431473: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431473: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431476: Received PINGREQ from director_fad2c043
+1757431476: Sending PINGRESP to director_fad2c043
+1757431481: Received PINGREQ from osmo_norte
+1757431481: Sending PINGRESP to osmo_norte
+1757431484: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431484: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431494: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431494: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431496: Received PINGREQ from osmo_norte
+1757431496: Sending PINGRESP to osmo_norte
+1757431504: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431504: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431511: Received PINGREQ from osmo_norte
+1757431511: Sending PINGRESP to osmo_norte
+1757431514: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431514: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431524: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431524: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431526: Received PINGREQ from osmo_norte
+1757431526: Sending PINGRESP to osmo_norte
+1757431534: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431534: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431536: Received PINGREQ from director_fad2c043
+1757431536: Sending PINGRESP to director_fad2c043
+1757431542: Received PINGREQ from osmo_norte
+1757431542: Sending PINGRESP to osmo_norte
+1757431544: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431544: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431554: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431554: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431557: Received PINGREQ from osmo_norte
+1757431557: Sending PINGRESP to osmo_norte
+1757431564: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431564: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431572: Received PINGREQ from osmo_norte
+1757431572: Sending PINGRESP to osmo_norte
+1757431574: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431574: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431584: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431584: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431587: Received PINGREQ from osmo_norte
+1757431587: Sending PINGRESP to osmo_norte
+1757431594: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431594: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431596: Received PINGREQ from director_fad2c043
+1757431596: Sending PINGRESP to director_fad2c043
+1757431602: Received PINGREQ from osmo_norte
+1757431602: Sending PINGRESP to osmo_norte
+1757431604: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431604: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431614: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431614: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431617: Received PINGREQ from osmo_norte
+1757431617: Sending PINGRESP to osmo_norte
+1757431624: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431624: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431633: Received PINGREQ from osmo_norte
+1757431633: Sending PINGRESP to osmo_norte
+1757431635: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431635: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431645: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431645: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431648: Received PINGREQ from osmo_norte
+1757431648: Sending PINGRESP to osmo_norte
+1757431655: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431655: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431656: Received PINGREQ from director_fad2c043
+1757431656: Sending PINGRESP to director_fad2c043
+1757431663: Received PINGREQ from osmo_norte
+1757431663: Sending PINGRESP to osmo_norte
+1757431665: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431665: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431675: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431675: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431678: Received PINGREQ from osmo_norte
+1757431678: Sending PINGRESP to osmo_norte
+1757431685: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431685: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431693: Received PINGREQ from osmo_norte
+1757431693: Sending PINGRESP to osmo_norte
+1757431695: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431695: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431705: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431705: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431708: Received PINGREQ from osmo_norte
+1757431708: Sending PINGRESP to osmo_norte
+1757431715: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431715: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431716: Received PINGREQ from director_fad2c043
+1757431716: Sending PINGRESP to director_fad2c043
+1757431724: Received PINGREQ from osmo_norte
+1757431724: Sending PINGRESP to osmo_norte
+1757431725: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431725: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431735: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431735: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431739: Received PINGREQ from osmo_norte
+1757431739: Sending PINGRESP to osmo_norte
+1757431745: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431745: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431753: Saving in-memory database to F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.
+1757431753: Error saving in-memory database, unable to open F:/Documents/Motete-Transensorial/local-test/data/\mosquitto.db.new for writing.
+1757431753: Error: Bad file descriptor.
+1757431754: Received PINGREQ from osmo_norte
+1757431754: Sending PINGRESP to osmo_norte
+1757431755: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431755: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431765: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431765: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431769: Received PINGREQ from osmo_norte
+1757431769: Sending PINGRESP to osmo_norte
+1757431775: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431775: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431776: Received PINGREQ from director_fad2c043
+1757431776: Sending PINGRESP to director_fad2c043
+1757431784: Received PINGREQ from osmo_norte
+1757431784: Sending PINGRESP to osmo_norte
+1757431786: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431786: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431796: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431796: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431799: Received PINGREQ from osmo_norte
+1757431799: Sending PINGRESP to osmo_norte
+1757431806: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431806: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431814: Received PINGREQ from osmo_norte
+1757431814: Sending PINGRESP to osmo_norte
+1757431816: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431816: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431826: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431826: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431830: Received PINGREQ from osmo_norte
+1757431830: Sending PINGRESP to osmo_norte
+1757431836: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431836: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431837: Received PINGREQ from director_fad2c043
+1757431837: Sending PINGRESP to director_fad2c043
+1757431845: Received PINGREQ from osmo_norte
+1757431845: Sending PINGRESP to osmo_norte
+1757431846: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431846: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431856: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431856: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431860: Received PINGREQ from osmo_norte
+1757431860: Sending PINGRESP to osmo_norte
+1757431866: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431866: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431875: Received PINGREQ from osmo_norte
+1757431875: Sending PINGRESP to osmo_norte
+1757431876: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431876: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431886: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431886: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431890: Received PINGREQ from osmo_norte
+1757431890: Sending PINGRESP to osmo_norte
+1757431896: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431896: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431897: Received PINGREQ from director_fad2c043
+1757431897: Sending PINGRESP to director_fad2c043
+1757431905: Received PINGREQ from osmo_norte
+1757431905: Sending PINGRESP to osmo_norte
+1757431906: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431906: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431916: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431916: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431920: Received PINGREQ from osmo_norte
+1757431920: Sending PINGRESP to osmo_norte
+1757431927: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431927: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431936: Received PINGREQ from osmo_norte
+1757431936: Sending PINGRESP to osmo_norte
+1757431937: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431937: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431947: Received PUBLISH from osmo_norte (d0, q0, r1, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431947: Sending PUBLISH to director_fad2c043 (d0, q0, r0, m0, 'motete/osmo/osmo_norte/status', ... (203 bytes))
+1757431951: Received PINGREQ from osmo_norte
+1757431951: Sending PINGRESP to osmo_norte
