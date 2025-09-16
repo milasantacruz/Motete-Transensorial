@@ -1,5 +1,10 @@
 {
     "unit_id": "osmo_sur",
-    "status": "busy",
-    "battery": 72
-  }
+    "status": "ready",
+    "battery": 72,
+    "pumps": {
+        "1": {"active": false, "level": 0, "cooldown_remaining": 0},
+        "2": {"active": false, "level": 0, "cooldown_remaining": 0},
+        "3": {"active": false, "level": 0, "cooldown_remaining": 0}
+    }
+}

@@ -1,7 +1,11 @@
 #include "pump_controller.h"
+#include "network_manager.h"
+#include "command_definition.h"
 #include <Arduino.h>
+#include <ArduinoJson.h>
 
-PumpController::PumpController(int count) : pumpCount(count) {
+PumpController::PumpController(int count, NetworkManager* netMgr) 
+    : pumpCount(count), networkManager(netMgr), initialConfigSent(false) {
     pumpPins = new int[count];
     pumpStates = new bool[count];
     pumpLevels = new int[count];
@@ -13,8 +17,8 @@ PumpController::PumpController(int count) : pumpCount(count) {
         pumpPins[i] = deviceConfig.pumpPins[i];  // Pines configurables
         pumpStates[i] = false;
         pumpLevels[i] = 0;
-        pumpActivationTimes[i] = 1000;  // 1 segundo por defecto
-        pumpCooldownTimes[i] = 5000;    // 5 segundos por defecto
+        pumpActivationTimes[i] = deviceConfig.pumpDefaults.activationTime;  // Usar configuración
+        pumpCooldownTimes[i] = deviceConfig.pumpDefaults.cooldownTime;      // Usar configuración
         pumpLastActivation[i] = 0;      // Nunca activado
     }
 }
@@ -148,6 +152,22 @@ unsigned long PumpController::getPumpLastActivation(int pumpId) {
     return 0;
 }
 
+int PumpController::getPumpCooldownRemaining(int pumpId) {
+    if (pumpId >= 0 && pumpId < pumpCount) {
+        unsigned long currentTime = millis();
+        unsigned long timeSinceLastActivation = currentTime - pumpLastActivation[pumpId];
+        
+        // Si está en cooldown, calcular tiempo restante
+        if (timeSinceLastActivation < pumpCooldownTimes[pumpId]) {
+            return pumpCooldownTimes[pumpId] - timeSinceLastActivation;
+        }
+        
+        // Si no está en cooldown, retornar 0
+        return 0;
+    }
+    return 0;
+}
+
 void PumpController::resetPumpConfig(int pumpId) {
     if (pumpId >= 0 && pumpId < pumpCount) {
         pumpActivationTimes[pumpId] = 1000;  // 1 segundo por defecto
@@ -163,4 +183,78 @@ void PumpController::resetAllPumpConfigs() {
         resetPumpConfig(i);
     }
     Serial.println("🔄 Todas las configuraciones de bombas restablecidas");
+}
+
+void PumpController::performInitialMQTTConfig() {
+    if (initialConfigSent) {
+        Serial.println("⚠️ Configuración inicial MQTT ya enviada");
+        return;
+    }
+    
+    if (!networkManager) {
+        Serial.println("❌ NetworkManager no disponible para configuración MQTT");
+        return;
+    }
+    
+    if (!networkManager->isMQTTConnected()) {
+        Serial.println("❌ MQTT no conectado, no se puede enviar configuración");
+        return;
+    }
+    
+    Serial.println("🔧 Enviando configuración inicial de bombas vía MQTT...");
+    Serial.printf("🔧 Valores por defecto: activación=%dms, cooldown=%dms\n", 
+                  deviceConfig.pumpDefaults.activationTime, 
+                  deviceConfig.pumpDefaults.cooldownTime);
+    
+    // Enviar configuración para cada bomba
+    for (int i = 0; i < pumpCount; i++) {
+        Serial.printf("🔧 Enviando configuración para bomba %d...\n", i);
+        sendPumpConfigCommand(i, 
+                            deviceConfig.pumpDefaults.activationTime, 
+                            deviceConfig.pumpDefaults.cooldownTime);
+        delay(100); // Pequeña pausa entre comandos
+    }
+    
+    initialConfigSent = true;
+    Serial.println("✅ Configuración inicial MQTT completada");
+}
+
+void PumpController::sendPumpConfigCommand(int pumpId, int activationTime, int cooldownTime) {
+    // Crear comando set_pump_config
+    StaticJsonDocument<256> doc;
+    doc["command_id"] = "init_config_" + String(pumpId) + "_" + String(millis());
+    doc["action"] = Commands::SET_PUMP_CONFIG;
+    
+    JsonObject params = doc.createNestedObject("params");
+    params["pump_id"] = pumpId;
+    params["activation_time"] = activationTime;
+    params["cooldown_time"] = cooldownTime;
+    
+    doc["timestamp"] = millis();
+    
+    String commandJSON;
+    serializeJson(doc, commandJSON);
+    
+    // Crear topic de configuración
+    char topic[50];
+    sprintf(topic, "motete/osmo/%s/config", deviceConfig.unitId);
+    
+    Serial.printf("📤 Enviando configuración para bomba %d: activación=%dms, cooldown=%dms\n", 
+                  pumpId, activationTime, cooldownTime);
+    
+    // Enviar comando (usar QoS 0 para evitar problemas de buffer)
+    if (networkManager->publishWithQoS(topic, commandJSON.c_str(), 0)) {
+        Serial.printf("✅ Comando de configuración enviado para bomba %d\n", pumpId);
+    } else {
+        Serial.printf("❌ Error enviando configuración para bomba %d\n", pumpId);
+    }
+}
+
+bool PumpController::isInitialConfigSent() const {
+    return initialConfigSent;
+}
+
+void PumpController::resetInitialConfig() {
+    initialConfigSent = false;
+    Serial.println("🔄 Configuración inicial MQTT reiniciada");
 }

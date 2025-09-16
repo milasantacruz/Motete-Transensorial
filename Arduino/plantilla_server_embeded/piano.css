@@ -1,0 +1,78 @@
+/* Heredar estilos globales del theme; sin fondo local */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* El header/nav se unifica desde common.css */
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 100% !important;
+}
+/* El estado del servidor se muestra en el header común */
+
+.controls {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.controls input, .controls label {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.controls input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+#piano-sketch {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  nav {
+    padding: 10px;
+  }
+  
+  nav a {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .controls {
+    padding: 15px;
+  }
+  
+  .controls input, .controls label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .controls p {
+    font-size: 12px !important;
+  }
+  
+  #piano-sketch {
+    padding: 10px;
+  }
+}

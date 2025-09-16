@@ -5,6 +5,8 @@ class OsmoMQTTClient {
   constructor(password) {
     this.client = null;
     this.connectedOsmos = new Map();
+    this.osmoConfigs = new Map(); // ✅ Nuevo: almacenar configuraciones
+    this.cooldowns = new Map(); // ✅ unitId -> Map<pumpId, { startedAt, durationMs }>
     this.isConnected = false;
     this.password = password || 'director'; // Fallback por si no se provee
     console.log('🔧 Constructor OsmoMQTTClient iniciado');
@@ -63,6 +65,8 @@ class OsmoMQTTClient {
       'motete/osmo/+/errors',
       'motete/osmo/+/sensors',
       'motete/osmo/+/response',  // ✅ Agregado para respuestas de comandos
+      'motete/osmo/+/command',   // ✅ Agregado para comandos operativos
+      'motete/osmo/+/config',    // ✅ Agregado para configuración
       'motete/osmo/discovery'
     ];
 
@@ -74,8 +78,12 @@ class OsmoMQTTClient {
     // Suscribirse también al topic específico del ESP8266
     this.client.subscribe('motete/osmo/osmo_norte/status', { qos: 1 });
     this.client.subscribe('motete/osmo/osmo_norte/response', { qos: 1 });  // ✅ Agregado
+    this.client.subscribe('motete/osmo/osmo_norte/command', { qos: 1 });   // ✅ Agregado para comandos
+    this.client.subscribe('motete/osmo/osmo_norte/config', { qos: 1 });    // ✅ Agregado para configuración
     console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/status`);
     console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/response`);
+    console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/command`);
+    console.log(`📡 Suscrito específicamente a: motete/osmo/osmo_norte/config`);
     
     console.log('✅ Todas las suscripciones configuradas');
   }
@@ -98,6 +106,32 @@ class OsmoMQTTClient {
         });
         console.log(`💚 Estado actualizado para ${unitId}`);
         console.log(`📊 Total de Osmos conectados: ${this.connectedOsmos.size}`);
+
+        // 🔄 Opcional: sincronizar cooldowns desde status si existe cooldown_remaining
+        try {
+          if (data && data.pumps) {
+            const now = Date.now();
+            Object.keys(data.pumps).forEach((pumpKey) => {
+              const pump = data.pumps[pumpKey];
+              if (pump && typeof pump.cooldown_remaining === 'number') {
+                const pumpId = parseInt(pumpKey, 10);
+                if (!this.cooldowns.has(unitId)) this.cooldowns.set(unitId, new Map());
+                if (pump.cooldown_remaining > 0) {
+                  this.cooldowns.get(unitId).set(pumpId, {
+                    startedAt: now - Math.max(0, (this._getCooldownDurationMs(unitId, pumpId) - pump.cooldown_remaining)),
+                    durationMs: this._getCooldownDurationMs(unitId, pumpId)
+                  });
+                } else {
+                  // cooldown terminado
+                  const unitMap = this.cooldowns.get(unitId);
+                  if (unitMap) unitMap.delete(pumpId);
+                }
+              }
+            });
+          }
+        } catch (e) {
+          console.warn('⚠️ No se pudo sincronizar cooldowns desde status:', e.message);
+        }
       }
 
       if (topic.includes('/actions')) {
@@ -127,6 +161,42 @@ class OsmoMQTTClient {
           } else {
             console.log(`❌ Comando falló para ${unitId}: ${data.message} (Código: ${data.code})`);
           }
+        }
+      }
+
+      if (topic.includes('/command')) {
+        const unitId = topic.split('/')[2];
+        console.log(`🔧 Comando operativo enviado por ${unitId}:`, data);
+        console.log(`🔧 ${unitId} envió comando: ${data.action}`);
+      }
+
+      if (topic.includes('/config')) {
+        const unitId = topic.split('/')[2];
+        console.log(`⚙️ Configuración enviada por ${unitId}:`, data);
+        console.log(`⚙️ Topic completo: ${topic}`);
+        
+        // Almacenar configuración de bombas
+        if (data.action === 'set_pump_config') {
+          console.log(`🔧 ${unitId} configurando bomba ${data.params.pump_id}: activación=${data.params.activation_time}ms, cooldown=${data.params.cooldown_time}ms`);
+          
+          // Almacenar configuración por bomba
+          if (!this.osmoConfigs.has(unitId)) {
+            this.osmoConfigs.set(unitId, {});
+            console.log(`📝 Creado nuevo Map para ${unitId}`);
+          }
+          
+          const osmoConfig = this.osmoConfigs.get(unitId);
+          osmoConfig[`pump_${data.params.pump_id}`] = {
+            activationTime: data.params.activation_time,
+            cooldownTime: data.params.cooldown_time,
+            lastUpdated: new Date()
+          };
+          
+          this.osmoConfigs.set(unitId, osmoConfig);
+          console.log(`💾 Configuración almacenada para ${unitId} bomba ${data.params.pump_id}`);
+          console.log(`💾 Estado actual del Map para ${unitId}:`, osmoConfig);
+        } else {
+          console.log(`⚙️ ${unitId} envió configuración: ${data.action}`);
         }
       }
 
@@ -162,6 +232,19 @@ class OsmoMQTTClient {
     const topic = `motete/director/commands/${unitId}`;
     this.client.publish(topic, JSON.stringify(command), { qos: 1 });
     console.log(`📤 Comando enviado a ${unitId}:`, command);
+
+    // ✅ Si es activate_pump y NO estamos en simulación, iniciar cooldown en servidor inmediatamente
+    if (!simulate && action === 'activate_pump') {
+      const pumpId = params?.pump_id;
+      if (typeof pumpId === 'number') {
+        // Duración total basada en config: activación + cooldown
+        const cfg = this.osmoConfigs.get(unitId)?.[`pump_${pumpId}`];
+        const activation = cfg?.activationTime ?? 1000;
+        const cooldown = cfg?.cooldownTime ?? 3000;
+        const total = activation + cooldown;
+        this.startCooldown(unitId, pumpId, total);
+      }
+    }
     return command.command_id;
   }
 
@@ -207,6 +290,61 @@ class OsmoMQTTClient {
     const osmos = Array.from(this.connectedOsmos.values());
     console.log('📊 Osmos a devolver:', osmos);
     return osmos;
+  }
+
+  getOsmoConfigs() {
+    console.log('⚙️ getOsmoConfigs llamado');
+    console.log('📊 Total de configuraciones almacenadas:', this.osmoConfigs.size);
+    console.log('📊 Contenido del Map osmoConfigs:', this.osmoConfigs);
+    
+    // Convertir Map a objeto para facilitar el uso en el frontend
+    const configs = {};
+    this.osmoConfigs.forEach((config, unitId) => {
+      configs[unitId] = config;
+      console.log(`📊 Configuración para ${unitId}:`, config);
+    });
+    
+    console.log('📊 Configuraciones a devolver:', configs);
+    return configs;
+  }
+
+  // ===== Cooldowns (servidor autoritativo) =====
+  _getCooldownDurationMs(unitId, pumpId) {
+    const cfg = this.osmoConfigs.get(unitId)?.[`pump_${pumpId}`];
+    if (cfg && typeof cfg.cooldownTime === 'number') return cfg.cooldownTime;
+    // default 3000ms si no hay config
+    return 3000;
+  }
+
+  startCooldown(unitId, pumpId, durationMs) {
+    if (!this.cooldowns.has(unitId)) this.cooldowns.set(unitId, new Map());
+    const d = typeof durationMs === 'number' ? durationMs : this._getCooldownDurationMs(unitId, pumpId);
+    this.cooldowns.get(unitId).set(pumpId, { startedAt: Date.now(), durationMs: d });
+    console.log(`⏱️ [SERVER] Cooldown iniciado: ${unitId} bomba ${pumpId} por ${d}ms`);
+    if (typeof this.onCooldownsChanged === 'function') {
+      this.onCooldownsChanged();
+    }
+  }
+
+  getCooldownsSnapshot() {
+    const now = Date.now();
+    const out = {};
+    this.cooldowns.forEach((unitMap, unitId) => {
+      const unitOut = {};
+      unitMap.forEach((meta, pumpId) => {
+        const elapsed = now - meta.startedAt;
+        const remaining = Math.max(0, meta.durationMs - elapsed);
+        if (remaining > 0) {
+          unitOut[pumpId] = { remainingMs: remaining, totalMs: meta.durationMs };
+        }
+      });
+      out[unitId] = unitOut;
+    });
+    return out;
+  }
+
+  getCooldownDurationMs(unitId, pumpId) {
+    return this._getCooldownDurationMs(unitId, pumpId);
   }
 }
 

@@ -1,16 +1,20 @@
 #include "main_controller.h"
+#include "pump_controller.h"
+#include "status_publisher.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
-#include "command_definition.h"
 // Inicializar la variable estática
 MainController* MainController::instancia = nullptr;
 
 // En main_controller.cpp
 MainController::MainController() 
-    : pumpController(deviceConfig.pumpCount),  // Pasar número de bombas
-      statusPublisher(&pumpController, &networkManager), 
-      lastStatusPublish(0) {
+    : lastStatusPublish(0) {
         Serial.println("🔧 Constructor MainController iniciado");  // ← LOG EN CONSTRUCTOR
+        
+        // Crear instancias dinámicamente
+        pumpController = new PumpController(deviceConfig.pumpCount, &networkManager);
+        statusPublisher = new StatusPublisher(pumpController, &networkManager);
+        
         instancia = this;
         Serial.println("✅ Constructor MainController completado");
 }
@@ -26,7 +30,7 @@ void MainController::initialize() {
     Serial.println("✅ LED configurado");
     Serial.println("📌 Paso 2: Inicializando bombas...");
     // Inicializar componentes
-    pumpController.initialize();
+    pumpController->initialize();
     Serial.println("✅ Bombas inicializadas");
     Serial.println("📌 Paso 3: Configurando callback MQTT...");
     networkManager.setCallback(messageCallback);
@@ -37,7 +41,9 @@ void MainController::initialize() {
 }
 
 MainController::~MainController() {
-    // Destructor automático
+    // Liberar memoria de instancias dinámicas
+    delete pumpController;
+    delete statusPublisher;
 }
 
 // Método estático que redirige la llamada
@@ -93,7 +99,7 @@ void MainController::processCommand(const MQTTCommand& cmd) {
         Serial.println(" ms");
         
         // Verificar si la bomba está disponible
-        if (!pumpController.isPumpAvailable(params.pumpId) && !params.force) {
+        if (!pumpController->isPumpAvailable(params.pumpId) && !params.force) {
             Serial.print("❌ Bomba ");
             Serial.print(params.pumpId);
             Serial.println(" en cooldown");
@@ -103,7 +109,7 @@ void MainController::processCommand(const MQTTCommand& cmd) {
         }
         
         // Activar bomba
-        pumpController.setPumpState(params.pumpId, true);
+        pumpController->setPumpState(params.pumpId, true);
         Serial.print("✅ Bomba ");
         Serial.print(params.pumpId);
         Serial.println(" activada");
@@ -117,7 +123,7 @@ void MainController::processCommand(const MQTTCommand& cmd) {
         Serial.println(params.pumpId);
         
         // Desactivar bomba
-        pumpController.setPumpState(params.pumpId, false);
+        pumpController->setPumpState(params.pumpId, false);
         Serial.print("✅ Bomba ");
         Serial.print(params.pumpId);
         Serial.println(" desactivada");
@@ -145,7 +151,7 @@ void MainController::processCommand(const MQTTCommand& cmd) {
         Serial.println(" ms");
         
         // Integrar configuración de parámetros de bomba
-        pumpController.setPumpConfig(params.pumpId, params.activationTime, params.cooldownTime);
+        pumpController->setPumpConfig(params.pumpId, params.activationTime, params.cooldownTime);
         
         CommandResponse successResponse = createResponse(ResponseCodes::SUCCESS, SuccessMessages::CONFIG_UPDATED, cmd.commandId);
         sendCommandResponse(successResponse);
@@ -206,7 +212,7 @@ void MainController::publishStatus() {
     }
     
     // Usar el método del StatusPublisher que ya maneja todo
-    statusPublisher.publishStatus();
+    statusPublisher->publishStatus();
 }
 
 void MainController::sendCommandResponse(const CommandResponse& response) {
@@ -247,8 +253,13 @@ void MainController::loop() {
     
     networkManager.loop();
     
+    // Configuración inicial de bombas (una sola vez después de conectar)
+    if (networkManager.isMQTTConnected() && !pumpController->isInitialConfigSent()) {
+        pumpController->performInitialMQTTConfig();
+    }
+    
     // Actualizar estado de bombas (cooldown, desactivación automática)
-    pumpController.updatePumps();
+    pumpController->updatePumps();
     
     // Publicar estado periódicamente
     if (millis() - lastStatusPublish > deviceConfig.statusInterval) {
@@ -263,8 +274,11 @@ void MainController::loop() {
 void MainController::resetDeviceConfig() {
     Serial.println("🔄 Restableciendo configuración del dispositivo...");
     
-    // Reset todas las configuraciones de bombas
-    pumpController.resetAllPumpConfigs();
+        // Reset todas las configuraciones de bombas
+    pumpController->resetAllPumpConfigs();
+    
+    // Reset configuración inicial para que se vuelva a ejecutar
+    pumpController->resetInitialConfig();
     
     // Reset otras configuraciones si es necesario
     // Por ejemplo: WiFi, MQTT, etc.

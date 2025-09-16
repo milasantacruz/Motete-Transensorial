@@ -1,6 +1,11 @@
 {
     "unit_id": "osmo_este",
-    "status": "error",
-    "battery": 23,
-    "pumps":{"1":{"active":false,"level":0}}
+    "status": "ready",
+    "battery": 85,
+    "pumps": {
+        "1": {"active": false, "level": 0, "cooldown_remaining": 5000},
+        "2": {"active": false, "level": 0, "cooldown_remaining": 3000},
+        "3": {"active": false, "level": 0, "cooldown_remaining": 0},
+        "4": {"active": false, "level": 0, "cooldown_remaining": 0}
+    }
 }

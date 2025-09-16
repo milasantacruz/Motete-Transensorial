@@ -19,12 +19,19 @@ struct MQTTConfig {
     bool cleanSession; //Si es true, el broker olvida la sesión anterior al reconectar
 };
 
+// Configuración por defecto de bombas
+struct PumpDefaultConfig {
+    int activationTime;
+    int cooldownTime;
+};
+
 // Configuración del dispositivo
 struct DeviceConfig {
     const char* unitId;
     int pumpCount;
     int statusInterval;
     int pumpPins[4];
+    PumpDefaultConfig pumpDefaults;
 };
 
 // Configuración global

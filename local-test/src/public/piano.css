@@ -1,79 +1,78 @@
+/* Heredar estilos globales del theme; sin fondo local */
 body {
-  font-family: sans-serif;
-  margin: 2em;
+  font-family: 'Arial', sans-serif;
 }
 
-nav {
-  margin-bottom: 20px;
-  padding: 10px;
-  background: #f5f5f5;
-  border-radius: 5px;
+/* El header/nav se unifica desde common.css */
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #333;
+.container {
+  max-width: 100% !important;
 }
-
-nav a:hover {
-  color: #69f;
-}
-
-.osmo-section {
-  border: 1px solid #ccc;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-left: 5px solid #69f;
-}
-
-.button-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.piano-key {
-  padding: 15px;
-  cursor: pointer;
-  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.piano-key:hover {
-  background: linear-gradient(145deg, #cfe3ff, #b3d9ff);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.piano-key:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.piano-key.deactivate {
-  background: linear-gradient(145deg, #ffebee, #ffcdd2);
-  border-color: #f44336;
-  color: #d32f2f;
-}
-
-.piano-key.deactivate:hover {
-  background: linear-gradient(145deg, #ffcdd2, #ef9a9a);
-}
+/* El estado MQTT se muestra en el header común */
 
 .controls {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
 }
 
 .controls input, .controls label {
-  margin-right: 15px;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.controls input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+#piano-sketch {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  nav {
+    padding: 10px;
+  }
+  
+  nav a {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .controls {
+    padding: 15px;
+  }
+  
+  .controls input, .controls label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .controls p {
+    font-size: 12px !important;
+  }
+  
+  #piano-sketch {
+    padding: 10px;
+  }
 }

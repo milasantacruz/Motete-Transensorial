@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <title>Timeline Progress - Composición Temporal</title>
+  <link rel="stylesheet" href="/common.css" />
   <link rel="stylesheet" href="/timeline.css" />
   <script src="https://unpkg.com/tone@14.8.39/build/Tone.js"></script>
 </head>
 <body>
-  <nav>
-    <a href="/">Estado general</a> |
-    <a href="/tickertone.html">Ticker-Tone</a> |
-    <a href="/piano.html">Piano</a> |
-    <a href="/timeline.html">Timeline</a>
-  </nav>
+  <header class="app-header">
+    <div class="app-nav">
+      <span class="brand">Motete Transensorial</span>
+      <a href="/">Estado general</a>
+      <a href="/tickertone.html">Ticker-Tone</a>
+      <a href="/piano.html">Piano</a>
+      <a href="/timeline.html">Timeline</a>
+    </div>
+  </header>
 
-  <h1>Timeline Progress - Composición Temporal</h1>
+  <div class="container">
+    <h1>Timeline Progress - Composición Temporal</h1>
 
   <!-- Sección 1: Controles de reproducción -->
   <section class="playback-controls">
@@ -57,7 +62,7 @@
   </section>
 
   <!-- Sección 3: Timeline visual -->
-  <section class="timeline-section">
+  <section class="timeline-section panel">
     <h3>Línea de Tiempo</h3>
     <div class="timeline-controls">
       <button id="zoomInBtn">🔍+ Zoom In</button>
@@ -70,6 +75,7 @@
     </div>
   </section>
 
+  </div>
   <script src="/timeline.js"></script>
 </body>
 </html>

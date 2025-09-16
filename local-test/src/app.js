@@ -1,8 +1,11 @@
 const express = require("express");
 const path = require("path");
+const http = require('http');
 const OsmoMQTTClient = require("./services/mqttClient");
 
 const app = express();
+const server = http.createServer(app);
+let wss = null; // se inicializa luego
 const PORT = 3000;
 
 app.use(express.json());
@@ -17,9 +20,16 @@ app.get("/api/status", (req, res) => {
   // Si está en modo simulación, forzar que devuelva Osmos simulados
   const osmos = simulate ? mqttClient.getSimulatedOsmos() : mqttClient.getConnectedOsmos();
   
+  // Obtener configuraciones de bombas
+  const osmoConfigs = simulate ? {} : mqttClient.getOsmoConfigs();
+  console.log('📊 Configuraciones obtenidas del mqttClient:', osmoConfigs);
+  const cooldowns = simulate ? {} : mqttClient.getCooldownsSnapshot();
+  
   const response = {
     mqtt_connected: mqttClient.isConnectionHealthy(),
     connected_osmos: osmos,
+    osmo_configs: osmoConfigs, // ✅ Agregado: configuraciones de bombas
+    cooldowns // ✅ Cooldowns autoritativos del servidor { unitId: { pumpId: { remainingMs, totalMs } } }
   };
   
   console.log('📊 Respuesta /api/status:', response);
@@ -58,11 +68,35 @@ app.post("/api/command/:unitId", (req, res) => {
   }
 });
 
+function broadcast(event, payload) {
+  if (!wss) return;
+  const msg = JSON.stringify({ event, payload });
+  wss.clients.forEach((client) => {
+    if (client.readyState === 1) {
+      client.send(msg);
+    }
+  });
+}
+
 async function startServer() {
   try {
     await mqttClient.connect();
-    app.listen(PORT, () => {
-      console.log(`🌐 Servidor web escuchando en http://localhost:${PORT}`);
+    // WebSocket Server
+    const { WebSocketServer } = require('ws');
+    wss = new WebSocketServer({ server });
+    wss.on('connection', (ws) => {
+      console.log('🔌 WS cliente conectado');
+      // Enviar snapshot inicial de cooldowns
+      ws.send(JSON.stringify({ event: 'cooldowns', payload: mqttClient.getCooldownsSnapshot() }));
+    });
+
+    // Hook: cuando comienzan cooldowns, emitir a los clientes
+    mqttClient.onCooldownsChanged = () => {
+      broadcast('cooldowns', mqttClient.getCooldownsSnapshot());
+    };
+
+    server.listen(PORT, () => {
+      console.log(`🌐 Servidor web + WS en http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error("❌ No se pudo iniciar el servidor:", error);

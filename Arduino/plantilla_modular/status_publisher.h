@@ -3,8 +3,10 @@
 
 #include <ArduinoJson.h>
 #include "config.h"
-#include "pump_controller.h"
 #include "network_manager.h"
+
+// Forward declaration para evitar dependencias circulares
+class PumpController;
 
 class StatusPublisher {
 private:

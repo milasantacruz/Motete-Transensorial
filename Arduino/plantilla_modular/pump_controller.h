@@ -3,6 +3,7 @@
 
 #include "config.h"
 #include <Arduino.h>
+#include "network_manager.h"
 class PumpController {
 private:
     int* pumpPins;        
@@ -12,11 +13,17 @@ private:
     int* pumpCooldownTimes;    // Tiempo de cooldown por bomba
     unsigned long* pumpLastActivation; // Última activación por bomba
     int pumpCount;  // Número real de bombas
+    NetworkManager* networkManager;  // Para enviar comandos MQTT
+    bool initialConfigSent;  // Flag para configuración inicial
+    
+    // Método privado para enviar comandos de configuración
+    void sendPumpConfigCommand(int pumpId, int activationTime, int cooldownTime);
     
 public:
-    PumpController(int count);  // Constructor con parámetro de config.h
+    PumpController(int count, NetworkManager* netMgr = nullptr);  // Constructor con NetworkManager opcional
     ~PumpController();
     void initialize();
+    void performInitialMQTTConfig();  // Configuración inicial vía MQTT
     void setPumpState(int pumpId, bool state);
     bool getPumpState(int pumpId);
     void setPumpLevel(int pumpId, int level);
@@ -30,8 +37,11 @@ public:
     int getPumpActivationTime(int pumpId);
     int getPumpCooldownTime(int pumpId);
     unsigned long getPumpLastActivation(int pumpId);
+    int getPumpCooldownRemaining(int pumpId);
     void resetPumpConfig(int pumpId);
     void resetAllPumpConfigs();
+    bool isInitialConfigSent() const;
+    void resetInitialConfig();
 };
 
 #endif

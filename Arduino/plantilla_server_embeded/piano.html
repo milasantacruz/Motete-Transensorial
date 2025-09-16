@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piano de Aromas</title>
+  <link rel="stylesheet" href="/common.css" />
+  <link rel="stylesheet" href="/piano.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-nav">
+      <span class="brand">Motete Transensorial</span>
+      <a href="/">Estado general</a>
+      <a href="/piano.html">Piano</a>
+      <span class="muted" style="margin-left:auto">Servidor: <b id="server-status">Conectado</b></span>
+    </div>
+  </header>
+  
+  <div class="container sketchContainer">
+    <h2>Piano de Aromas</h2>
+
+  <div class="controls">
+    <p style="margin: 10px 0; font-size: 14px; color: #666;">
+      La duración de activación se toma de la configuración de cada bomba del Osmo
+    </p>
+  </div>
+
+    <div class="panel" id="piano-sketch"></div>
+  </div>
+
+  <!-- Configuración de nombres de teclas -->
+  <div id="configModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:1000;">
+    <div style="position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); background:#171a21; border:1px solid #2a2f3a; border-radius:12px; width: min(520px, 90vw); padding:16px; color:#e6e9ef;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+        <h3 id="configTitle" style="margin:0; font-family: Orbitron, Segoe UI, Inter;">Configurar nombres</h3>
+        <button id="configCloseBtn" class="btn" style="background:#2a2f3a;">✕</button>
+      </div>
+      <p class="muted" style="margin-top:0;">Asigna etiquetas a cada tecla (por ejemplo: "Lavanda", "P0", "Percusión").</p>
+      <form id="configForm" style="max-height:50vh; overflow:auto; display:grid; grid-template-columns: 1fr 2fr; gap:10px;">
+        <!-- Inputs generados dinámicamente -->
+      </form>
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:12px;">
+        <button id="configCancelBtn" class="btn" style="background:#2a2f3a;">Cancelar</button>
+        <button id="configSaveBtn" class="btn btn-success">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/piano.js"></script>
+</body>
+</html>

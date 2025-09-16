@@ -187,20 +187,21 @@ String createResponseJSON(const CommandResponse& response) {
 }
 
 // Función para crear JSON de estado
-String createStatusJSON() {
+String createStatusJSON(const DeviceStatusData& statusData) {
     StaticJsonDocument<512> doc;
-    doc["unit_id"] = deviceConfig.unitId;
-    doc["status"] = "online";
-    doc["timestamp"] = millis();
-    doc["pump_count"] = deviceConfig.pumpCount;
+    doc["unit_id"] = statusData.unitId;
+    doc["status"] = statusData.status;
+   // doc["timestamp"] = statusData.timestamp;
+   // doc["pump_count"] = statusData.pumpCount;
     
-    // Crear array de bombas (esto se completará cuando se integre con PumpController)
-    JsonArray pumps = doc.createNestedArray("pumps");
-    for (int i = 0; i < deviceConfig.pumpCount; i++) {
-        JsonObject pump = pumps.createNestedObject();
-        pump["id"] = i;
-        pump["active"] = false; // Se actualizará con el estado real
-        pump["cooldown_remaining"] = 0; // Se actualizará con el tiempo real
+    // Crear objeto de bombas con datos reales
+    JsonObject pumps = doc.createNestedObject("pumps");
+    for (int i = 0; i < statusData.pumpCount; i++) {
+        JsonObject pump = pumps.createNestedObject(String(i));
+        pump["active"] = statusData.pumps[i].active;
+        pump["available"] = statusData.pumps[i].available;
+       // pump["cooldown_remaining"] = statusData.pumps[i].cooldown_remaining;
+       // pump["level"] = statusData.pumps[i].level;
     }
     
     String jsonString;

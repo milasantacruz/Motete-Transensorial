@@ -2,15 +2,17 @@
 #define MAIN_CONTROLLER_H
 
 #include "network_manager.h"
-#include "pump_controller.h"
-#include "status_publisher.h"
 #include "command_definition.h"
+
+// Forward declarations para evitar dependencias circulares
+class PumpController;
+class StatusPublisher;
 
 class MainController {
 private:
     NetworkManager networkManager;
-    PumpController pumpController;
-    StatusPublisher statusPublisher;
+    PumpController* pumpController;
+    StatusPublisher* statusPublisher;
     
     unsigned long lastStatusPublish;
     

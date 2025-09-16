@@ -1,5 +1,13 @@
 {
     "unit_id": "osmo_norte",
     "status": "ready",
-    "battery": 95
-  }
+    "battery": 95,
+    "pumps": {
+        "1": {"active": false, "level": 0, "cooldown_remaining": 5000},
+        "2": {"active": false, "level": 0, "cooldown_remaining": 3000},
+        "3": {"active": false, "level": 0, "cooldown_remaining": 1000},
+        "4": {"active": false, "level": 0, "cooldown_remaining": 0},
+        "5": {"active": false, "level": 0, "cooldown_remaining": 0},
+        "6": {"active": false, "level": 0, "cooldown_remaining": 0}
+    }
+}

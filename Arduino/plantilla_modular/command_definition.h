@@ -36,6 +36,23 @@ struct PumpConfigParams {
     int cooldownTime;
 };
 
+// Estructura para datos de estado de bomba
+struct PumpStatusData {
+    bool active;
+    bool available;
+    int cooldown_remaining;
+    int level;
+};
+
+// Estructura para estado completo del dispositivo
+struct DeviceStatusData {
+    String unitId;
+    String status;
+    PumpStatusData* pumps;
+    int pumpCount;
+    unsigned long timestamp;
+};
+
 // Códigos de respuesta
 namespace ResponseCodes {
     extern const int SUCCESS;
@@ -75,7 +92,7 @@ PumpConfigParams extractPumpConfigParams(const String& params);
 String createResponseJSON(const CommandResponse& response);
 
 // Función para crear JSON de estado
-String createStatusJSON();
+String createStatusJSON(const DeviceStatusData& statusData);
 
 // Función para crear JSON de error
 String createErrorJSON(const String& errorType, const String& message);
