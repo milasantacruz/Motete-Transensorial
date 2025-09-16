@@ -18,6 +18,8 @@ async function loadStatus() {
         console.log('📊 Datos recibidos:', data);
       
         document.getElementById('mqtt-status').innerText = data.mqtt_connected ? '✅ Conectado' : '❌ Desconectado';
+        // Guardar cooldowns del servidor para reflejar estado como en Piano
+        window.__serverCooldowns = data.cooldowns || {};
         
         const container = document.getElementById('osmos-container');
         if (data.connected_osmos.length === 0) {
@@ -25,31 +27,39 @@ async function loadStatus() {
             return;
         }
 
-        // Generar una tarjeta por Osmo con botones dinámicos según las bombas detectadas
+        // Helper: obtener cooldown del servidor para una bomba
+        function getCooldown(unitId, pumpId) {
+            const cdRoot = window.__serverCooldowns || {};
+            const unit = cdRoot[unitId];
+            if (!unit) return null;
+            // pumpId puede venir como string; las claves JSON son strings
+            const entry = unit[pumpId] ?? unit[String(pumpId)] ?? unit[Number(pumpId)];
+            return entry || null; // { remainingMs, totalMs }
+        }
+
+        // Generar una tarjeta por Osmo mostrando: estado, visto, configuración de bombas
+        const configs = data.osmo_configs || {};
         container.innerHTML = data.connected_osmos.map(osmo => {
-            const pumpIds = osmo.pumps ? Object.keys(osmo.pumps) : [];
-            const pumpButtons = pumpIds.map(pid => `
-                <div class="pump-control">
-                    <button onclick="sendCommand('${osmo.unit_id}', 'activate_pump', { pump_id: ${pid}, duration: 5000 })" class="activate-btn">
-                        Activar Bomba ${pid}
-                    </button>
-                    <button onclick="sendCommand('${osmo.unit_id}', 'deactivate_pump', { pump_id: ${pid} })" class="deactivate-btn">
-                        Desactivar Bomba ${pid}
-                    </button>
-                    <span class="pump-status" id="pump-${osmo.unit_id}-${pid}">⚪</span>
-                </div>
-            `).join('');
+            const unitId = osmo.unit_id;
+            const cfg = configs[unitId] || {};
+            const cfgItems = Object.keys(cfg).length
+              ? Object.keys(cfg).sort().map(k => {
+                  const pumpId = k.replace('pump_', '');
+                  const c = cfg[k];
+                  return `<li>P${pumpId}: activación ${c.activationTime}ms · cooldown ${c.cooldownTime}ms</li>`;
+                }).join('')
+              : '<li class="muted">Sin configuración recibida</li>';
 
             return `
-                <div class="osmo-card">
-                    <h3>${osmo.unit_id}</h3>
-                    <p>Estado: ${osmo.status}</p>
-                    <div class="pump-controls">
-                        ${pumpButtons}
+                <div class="osmo-card panel">
+                    <h3>${unitId}</h3>
+                    <p class="muted">Estado: ${osmo.status || 'desconocido'}${osmo.lastSeen ? ` · visto: ${new Date(osmo.lastSeen).toLocaleTimeString()}` : ''}</p>
+                    <div>
+                        <h4 style="margin:8px 0;">Configuración de bombas</h4>
+                        <ul style="margin:0 0 8px 18px; padding:0;">
+                            ${cfgItems}
+                        </ul>
                     </div>
-                    <button onclick="sendCommand('${osmo.unit_id}', 'get_status', {})" class="status-btn">
-                        Obtener Estado
-                    </button>
                 </div>
             `;
         }).join('');
@@ -91,12 +101,10 @@ async function sendCommand(unitId, action, params) {
         console.log('✅ Respuesta del servidor:', result);
         
         const mode = isSimulationMode ? '[SIMULACIÓN] ' : '';
-        alert(`${mode}Comando '${action}' enviado a ${unitId}\nID: ${command.command_id}`);
+        console.log(`${mode}Comando '${action}' enviado a ${unitId} (ID: ${command.command_id})`);
         
         // Actualizar estado visual de la bomba si es comando de activación/desactivación
-        if (action === 'activate_pump' || action === 'deactivate_pump') {
-            updatePumpStatus(unitId, params.pump_id, action);
-        }
+        // El estado se actualizará por polling/WS; no forzar UI aquí
         
     } catch (error) {
         console.error('❌ Error enviando comando:', error);
@@ -105,16 +113,7 @@ async function sendCommand(unitId, action, params) {
 }
 
 function updatePumpStatus(unitId, pumpId, action) {
-    const statusElement = document.getElementById(`pump-${unitId}-${pumpId}`);
-    if (statusElement) {
-        if (action === 'activate_pump') {
-            statusElement.textContent = '🔴';
-            statusElement.title = 'Bomba activada';
-        } else if (action === 'deactivate_pump') {
-            statusElement.textContent = '⚪';
-            statusElement.title = 'Bomba desactivada';
-        }
-    }
+    // Obsoleto: ahora el estado se refleja con cooldowns del servidor
 }
 
 // Inicializar polling y controles
@@ -129,5 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
             loadStatus(); // Recargar inmediatamente cuando cambie el checkbox
         });
     }
+    // Conectar WS para actualizar cooldowns en tiempo real como en Piano
+    try {
+        const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+        const url = `${proto}://${location.host}`;
+        const ws = new WebSocket(url);
+        ws.onmessage = (evt) => {
+            try {
+                const msg = JSON.parse(evt.data);
+                if (msg.event === 'cooldowns') {
+                    window.__serverCooldowns = msg.payload || {};
+                    // refrescar UI sin esperar al polling
+                    loadStatus();
+                }
+            } catch {}
+        };
+    } catch {}
     loadStatus();
 }); 

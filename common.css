@@ -1,0 +1,86 @@
+/* Common UI styles for all pages */
+
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --muted: #aab2c0;
+  --text: #e6e9ef;
+  --primary: #4f8cff;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --warning: #f39c12;
+  --border: #2a2f3a;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.app-header .brand {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+}
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+}
+.app-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.app-nav a:hover { background: rgba(255,255,255,0.06); color: var(--text); }
+
+.container { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+
+h1, h2, h3 { margin: 12px 0; font-weight: 600; }
+p { color: var(--muted); }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.osmo-card { border-left: 4px solid var(--success); }
+
+.controls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+label { color: var(--muted); }
+
+button, .btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover, .btn:hover { filter: brightness(1.1); }
+.btn-success { background: var(--success); }
+.btn-danger { background: var(--danger); }
+.btn-info { background: var(--primary); }
+
+.muted { color: var(--muted); }
+
+/* Links as pills inside text navs */
+nav a { color: var(--muted); }
+nav a:hover { color: var(--text); }
+
+
