@@ -12,7 +12,6 @@
     <div class="app-nav">
       <span class="brand">Motete Transensorial</span>
       <a href="/">Estado general</a>
-      <a href="/tickertone.html">Ticker-Tone</a>
       <a href="/piano.html">Piano</a>
       <a href="/timeline.html">Timeline</a>
     </div>
@@ -21,61 +20,95 @@
   <div class="container">
     <h1>Timeline Progress - Composición Temporal</h1>
 
-  <!-- Sección 1: Controles de reproducción -->
-  <section class="playback-controls">
-    <div class="time-controls">
-      <label>
-        Duración total: 
-        <input type="number" id="durationInput" value="60" min="5" max="300" step="1" /> segundos
-      </label>
+    <!-- Layout en columnas -->
+    <div class="timeline-layout">
       
-      <div class="transport-buttons">
-        <button id="stopBtn">⏹️ Stop</button>
-        <button id="playPauseBtn">▶️ Play</button>
+      <!-- Fila 1: Composiciones -->
+      <div class="row compositions-row">
+        <div class="composition-controls">
+          <h4>Composiciones</h4>
+          <div class="composition-buttons">
+            <button id="saveCompositionBtn" class="btn btn-primary">💾 Guardar</button>
+            <button id="loadCompositionBtn" class="btn btn-secondary">📁 Cargar</button>
+            <button id="clearCompositionBtn" class="btn btn-danger">🗑️ Limpiar</button>
+          </div>
+          
+          <div class="composition-list">
+            <h5>Composiciones guardadas:</h5>
+            <div id="compositionsList" class="compositions-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 2: Controles, play/pause, stop, scrubber, zoom -->
+      <div class="row controls-row">
+        <div class="time-controls">
+          <label>
+            Duración total: 
+            <input type="number" id="durationInput" value="60" min="5" max="300" step="1" /> segundos
+          </label>
+        </div>
+        
+        <div class="transport-buttons">
+          <button id="playPauseBtn">▶️ Play</button>
+          <button id="stopBtn">⏹️ Stop</button>
+        </div>
+        
+        <div class="time-display">
+          <span id="currentTime">00:00</span> / <span id="totalTime">01:00</span>
+          <span id="toneStatus" class="tone-status">🎵 Inactivo</span>
+        </div>
+        
+        <div class="scrubber-container">
+          <input type="range" id="scrubber" min="0" max="60" value="0" step="0.1" />
+        </div>
+        
+        <div class="zoom-controls">
+          <button id="zoomInBtn">🔍+ Zoom In</button>
+          <button id="zoomOutBtn">🔍- Zoom Out</button>
+          <span>Zoom: <span id="zoomLevel">100%</span></span>
+        </div>
+        
+        <div class="refresh-controls">
+          <button id="refreshBtn">🔄 Actualizar</button>
+        </div>
+        
+        <div class="simulation-controls">
+          <label>
+            <input type="checkbox" id="simulateCheckbox" />
+            Modo simulación
+          </label>
+        </div>
+      </div>
+
+      <!-- Fila 3: Timeline unificado -->
+      <div class="row timeline-row">
+        <div class="column timeline-column">
+          <div class="timeline-section">
+            <h3>Línea de Tiempo</h3>
+            <div class="timeline-container">
+              <!-- Botón agregar aroma dentro del canvas -->
+              <div class="timeline-header">
+                <button id="addAromaBtn">➕ Agregar Aroma</button>
+                <div class="aroma-count">
+                  <span id="aromaCount">Aromas: 0</span>
+                </div>
+              </div>
+              <!-- Canvas del timeline -->
+              <canvas id="timelineCanvas" width="1000" height="300"></canvas>
+              <!-- Contenedor de aromas dentro del timeline -->
+              <div id="aromasContainer" class="aromas-panel">
+                <!-- Aromas se crearán dinámicamente aquí -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="time-display">
-        <span id="currentTime">00:00</span> / <span id="totalTime">01:00</span>
-        <span id="toneStatus" class="tone-status">🎵 Inactivo</span>
-      </div>
     </div>
-    
-    <div class="scrubber-container">
-      <input type="range" id="scrubber" min="0" max="60" value="0" step="0.1" />
-    </div>
-    
-    <div class="simulation-controls">
-      <label>
-        <input type="checkbox" id="simulateCheckbox" />
-        Modo simulación
-      </label>
-    </div>
-  </section>
-
-  <!-- Sección 2: Gestión de aromas -->
-  <section class="aroma-management">
-    <h3>Gestión de Aromas</h3>
-    <div id="aromasContainer">
-      <!-- Aromas se crearán dinámicamente aquí -->
-    </div>
-    <button id="addAromaBtn">➕ Agregar Aroma</button>
-  </section>
-
-  <!-- Sección 3: Timeline visual -->
-  <section class="timeline-section panel">
-    <h3>Línea de Tiempo</h3>
-    <div class="timeline-controls">
-      <button id="zoomInBtn">🔍+ Zoom In</button>
-      <button id="zoomOutBtn">🔍- Zoom Out</button>
-      <span>Zoom: <span id="zoomLevel">100%</span></span>
-    </div>
-    
-    <div class="timeline-container">
-      <canvas id="timelineCanvas" width="1000" height="300"></canvas>
-    </div>
-  </section>
 
   </div>
+  <script src="/cache-manager.js"></script>
   <script src="/timeline.js"></script>
 </body>
 </html>

@@ -286,6 +286,9 @@ class OsmoMQTTClient {
       return [];
     }
     
+    // Prune por freshness (e.g., 10s sin mensajes => desconectado)
+    this._pruneStaleOsmos(10000);
+    
     console.log('📡 Devolviendo Osmos reales conectados');
     const osmos = Array.from(this.connectedOsmos.values());
     console.log('📊 Osmos a devolver:', osmos);
@@ -345,6 +348,29 @@ class OsmoMQTTClient {
 
   getCooldownDurationMs(unitId, pumpId) {
     return this._getCooldownDurationMs(unitId, pumpId);
+  }
+
+  // ===== Housekeeping =====
+  _pruneStaleOsmos(maxAgeMs = 10000) {
+    try {
+      const now = Date.now();
+      let removed = 0;
+      this.connectedOsmos.forEach((osmo, unitId) => {
+        const lastSeenTs = osmo?.lastSeen instanceof Date ? osmo.lastSeen.getTime() : Number(new Date(osmo?.lastSeen).getTime());
+        const age = now - (Number.isFinite(lastSeenTs) ? lastSeenTs : 0);
+        console.log(`⏱️ Freshness check ${unitId} -> lastSeenTs=${lastSeenTs} age=${age}ms (threshold=${maxAgeMs}ms)`);
+        if (!Number.isFinite(lastSeenTs) || age > maxAgeMs) {
+          this.connectedOsmos.delete(unitId);
+          removed += 1;
+          console.log(`🗑️ Pruned ${unitId} por inactividad (${age}ms)`);
+        }
+      });
+      if (removed > 0) {
+        console.log(`🧹 Prune completo. Eliminados: ${removed}. Restantes: ${this.connectedOsmos.size}`);
+      }
+    } catch (e) {
+      console.warn('⚠️ Error en _pruneStaleOsmos:', e.message);
+    }
   }
 }
 
