@@ -16,6 +16,10 @@ const timelineState = {
   isDragging: false,        // Estado de arrastre
   dragOffset: { x: 0, y: 0 }, // Offset del click al centro del evento
   
+  // Timeline drag
+  isTimelineDragging: false, // Estado de arrastre del timeline
+  timelineDragStart: { x: 0, offset: 0 }, // Posición inicial del arrastre
+  
   // Tone.js
   toneInitialized: false,   // Estado de inicialización de Tone.js
   scheduledEvents: new Map(), // Map<eventId, Tone.js event ID> para eventos programados
@@ -34,6 +38,14 @@ const timelineState = {
   connectedOsmos: [],
   usedPumps: new Map()      // osmoId -> Set<pumpId>
 };
+
+// Configuraciones de Osmos
+let osmoConfigs = {};
+let configsLoaded = false;
+
+// Cache de configuraciones y composiciones
+const configCache = new OsmoConfigCache();
+const timelineCache = new TimelineCache();
 
 // Colores predefinidos para aromas
 const aromaColors = [
@@ -54,10 +66,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeControls();
   
   console.log('🔄 Iniciando polling de Osmos...');
-  loadOsmosStatus();
+  // Carga inicial forzada para asegurar frescura
+  loadOsmosStatus(true);
+  loadConfigurations(true);
+  
+  // Cargar composición actual al iniciar
+  loadCurrentComposition();
   
   // Polling cada 2 segundos para actualizar Osmos
   setInterval(loadOsmosStatus, 2000);
+  
+  // Polling para configuraciones (más frecuente hasta que se carguen)
+  setInterval(loadConfigurations, 1000);
   
   // Render inicial
   updateTimeDisplay();
@@ -150,12 +170,31 @@ function initializeControls() {
   // Gestión de aromas
   addAromaBtn.addEventListener('click', addAroma);
   
+  // Controles de composición
+  initializeCompositionControls();
+  
   // Zoom
   document.getElementById('zoomInBtn').addEventListener('click', () => zoomTimeline(1.2));
   document.getElementById('zoomOutBtn').addEventListener('click', () => zoomTimeline(0.8));
+
+  // Botón de actualización manual
+  const refreshBtn = document.getElementById('refreshBtn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', async () => {
+      try {
+        await Promise.all([
+          loadConfigurations(true),
+          loadOsmosStatus(true)
+        ]);
+        showSuccess('Datos actualizados');
+      } catch (e) {
+        showError('Error al actualizar datos');
+      }
+    });
+  }
   
   // Canvas eventos
-  canvas.addEventListener('click', onCanvasClick);
+  canvas.addEventListener('dblclick', onCanvasDoubleClick);
   canvas.addEventListener('mousemove', onCanvasMouseMove);
   canvas.addEventListener('mousedown', onCanvasMouseDown);
   canvas.addEventListener('mouseup', onCanvasMouseUp);
@@ -165,8 +204,182 @@ function initializeControls() {
   document.addEventListener('keydown', onKeyDown);
 }
 
+// === GESTIÓN DE COMPOSICIONES ===
+function saveCurrentComposition() {
+  const composition = {
+    aromas: timelineState.aromas,
+    events: timelineState.events,
+    totalDuration: timelineState.totalDuration,
+    settings: {
+      zoom: timelineScale,
+      offset: timelineOffset
+    }
+  };
+  
+  timelineCache.saveCurrent(composition);
+}
+
+function loadCurrentComposition() {
+  const composition = timelineCache.loadCurrent();
+  if (composition) {
+    timelineState.aromas = composition.aromas || [];
+    timelineState.events = composition.events || [];
+    timelineState.totalDuration = composition.totalDuration || 60;
+    
+    if (composition.settings) {
+      timelineScale = composition.settings.zoom || TIMELINE_CONFIG.DEFAULT_SCALE;
+      timelineOffset = composition.settings.offset || 0;
+    }
+    
+    renderAromasUI();
+    renderTimeline();
+    updateTimeDisplay();
+    updateScrubber();
+    
+    console.log('✅ Composición actual cargada');
+  }
+}
+
+function autoSaveComposition() {
+  if (timelineState.aromas.length > 0 || timelineState.events.length > 0) {
+    saveCurrentComposition();
+  }
+}
+
+// === CONTROLES DE COMPOSICIÓN ===
+function initializeCompositionControls() {
+  document.getElementById('saveCompositionBtn').addEventListener('click', () => {
+    const name = prompt('Nombre de la composición:');
+    if (name && name.trim()) {
+      const composition = {
+        aromas: timelineState.aromas,
+        events: timelineState.events,
+        totalDuration: timelineState.totalDuration,
+        settings: {
+          zoom: timelineScale,
+          offset: timelineOffset
+        }
+      };
+      timelineCache.saveComposition(name.trim(), composition);
+      showSuccess(`Composición "${name}" guardada`);
+      updateCompositionsList();
+    }
+  });
+  
+  document.getElementById('loadCompositionBtn').addEventListener('click', () => {
+    loadCurrentComposition();
+  });
+  
+  document.getElementById('clearCompositionBtn').addEventListener('click', () => {
+    if (confirm('¿Limpiar composición actual?')) {
+      timelineState.aromas = [];
+      timelineState.events = [];
+      timelineCache.clearCurrent();
+      renderAromasUI();
+      renderTimeline();
+      updateCompositionsList();
+      showSuccess('Composición limpiada');
+    }
+  });
+  
+  // Actualizar lista al inicializar
+  updateCompositionsList();
+}
+
+function updateCompositionsList() {
+  const compositions = timelineCache.getAllCompositions();
+  const list = document.getElementById('compositionsList');
+  
+  if (Object.keys(compositions).length === 0) {
+    list.innerHTML = '<div class="composition-item"><span style="color: #6c757d; font-style: italic;">No hay composiciones guardadas</span></div>';
+    return;
+  }
+  
+  list.innerHTML = Object.keys(compositions).map(name => {
+    const comp = compositions[name];
+    const date = new Date(comp.timestamp).toLocaleString();
+    return `
+      <div class="composition-item">
+        <span>${name} (${comp.aromas || 0} aromas, ${comp.events || 0} eventos)</span>
+        <div>
+          <button onclick="loadComposition('${name}')">Cargar</button>
+          <button onclick="deleteComposition('${name}')">Eliminar</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// Funciones globales para los botones
+window.loadComposition = function(name) {
+  const composition = timelineCache.loadComposition(name);
+  if (composition) {
+    timelineState.aromas = composition.aromas || [];
+    timelineState.events = composition.events || [];
+    timelineState.totalDuration = composition.totalDuration || 60;
+    
+    if (composition.settings) {
+      timelineScale = composition.settings.zoom || TIMELINE_CONFIG.DEFAULT_SCALE;
+      timelineOffset = composition.settings.offset || 0;
+    }
+    
+    renderAromasUI();
+    renderTimeline();
+    updateTimeDisplay();
+    updateScrubber();
+    
+    showSuccess(`Composición "${name}" cargada`);
+  }
+};
+
+window.deleteComposition = function(name) {
+  if (confirm(`¿Eliminar composición "${name}"?`)) {
+    timelineCache.deleteComposition(name);
+    updateCompositionsList();
+    showSuccess(`Composición "${name}" eliminada`);
+  }
+};
+
+// === GESTIÓN DE CONFIGURACIONES ===
+async function loadConfigurations(force = false) {
+  // Si ya tenemos configuraciones, no hacer nada
+  if (!force && configsLoaded) {
+    return;
+  }
+  
+  // Intentar cargar desde cache primero
+  const cachedConfigs = force ? null : configCache.load();
+  if (cachedConfigs) {
+    osmoConfigs = cachedConfigs;
+    configsLoaded = true;
+    console.log('✅ Configuraciones cargadas desde cache');
+    return;
+  }
+  
+  // Si no hay cache, cargar desde servidor
+  try {
+    const response = await fetch('/api/status');
+    const data = await response.json();
+    
+    console.log('📊 Datos recibidos del servidor:', data);
+    
+    if (data.osmo_configs && Object.keys(data.osmo_configs).length > 0) {
+      osmoConfigs = data.osmo_configs;
+      configsLoaded = true;
+      
+      // Guardar en cache
+      configCache.save(osmoConfigs);
+      console.log('✅ Configuraciones cargadas desde servidor y guardadas en cache');
+    } else {
+      console.log('⚠️ No se encontraron configuraciones en la respuesta');
+    }
+  } catch (error) {
+    console.error('Error cargando configuraciones:', error);
+  }
+}
+
 // === GESTIÓN DE OSMOS (reutilizada de ticker-tone) ===
-async function loadOsmosStatus() {
+async function loadOsmosStatus(force = false) {
   try {
     // Preservar estado antes del polling
     const savedState = preserveAromaState();
@@ -222,8 +435,21 @@ async function loadOsmosStatus() {
 }
 
 function pumpOccupied(osmoId, pumpId) {
-  const set = timelineState.usedPumps.get(osmoId);
-  return set ? set.has(pumpId) : false;
+  // Verificar si hay eventos activos que usen esta bomba
+  const aroma = timelineState.aromas.find(a => a.osmoId === osmoId && a.pumpId === pumpId);
+  if (!aroma) return false;
+  
+  // Verificar si hay eventos activos (en reproducción) para este aroma
+  if (timelineState.isPlaying) {
+    return timelineState.events.some(event => 
+      event.aromaId === aroma.id && 
+      event.time <= timelineState.currentTime && 
+      event.time + 1 > timelineState.currentTime // 1 segundo de duración estimada
+    );
+  }
+  
+  // Si no está reproduciendo, permitir múltiples eventos
+  return false;
 }
 
 function occupyPump(osmoId, pumpId) {
@@ -246,7 +472,14 @@ function addAroma() {
     currentAromas: timelineState.aromas.length
   });
   
-  const maxAromas = timelineState.connectedOsmos.length * 8;
+  // Calcular máximo de aromas basado en configuración real
+  let maxAromas = 0;
+  timelineState.connectedOsmos.forEach(osmo => {
+    const osmoConfig = osmoConfigs[osmo.unit_id] || {};
+    const pumpCount = Object.keys(osmoConfig).filter(k => k.startsWith('pump_')).length;
+    maxAromas += pumpCount || 4; // fallback a 4 si no hay configuración
+  });
+  
   if (timelineState.aromas.length >= maxAromas) {
     showError('Límite máximo de aromas alcanzado');
     return;
@@ -258,11 +491,15 @@ function addAroma() {
     return;
   }
   
-  // Buscar primer osmo y pump libre
+  // Buscar primer osmo y pump libre usando configuración real
   let chosenOsmo = timelineState.connectedOsmos[0].unit_id;
   let chosenPump = null;
   
-  for (let p = 0; p < 8; p++) {
+  // Obtener número de bombas de la configuración
+  const osmoConfig = osmoConfigs[chosenOsmo] || {};
+  const pumpCount = Object.keys(osmoConfig).filter(k => k.startsWith('pump_')).length || 4;
+  
+  for (let p = 0; p < pumpCount; p++) {
     if (!pumpOccupied(chosenOsmo, p)) {
       chosenPump = p;
       break;
@@ -275,7 +512,7 @@ function addAroma() {
     return;
   }
   
-  occupyPump(chosenOsmo, chosenPump);
+  // No necesitamos ocupar la bomba aquí - se determina por eventos
   
   const aroma = {
     id: Date.now(),
@@ -292,6 +529,9 @@ function addAroma() {
   
   renderAromasUI();
   updateAddAromaButton();
+  
+  // Guardar composición automáticamente
+  autoSaveComposition();
   renderTimeline();
   
   showSuccess(`Aroma "${aroma.name}" agregado exitosamente`);
@@ -304,7 +544,7 @@ function removeAroma(aromaId) {
   const aroma = timelineState.aromas[aromaIndex];
   
   // Liberar pump
-  releasePump(aroma.osmoId, aroma.pumpId);
+    // No necesitamos liberar bombas - se determina por eventos
   
   // Remover aroma y sus eventos
   timelineState.aromas.splice(aromaIndex, 1);
@@ -313,6 +553,9 @@ function removeAroma(aromaId) {
   renderAromasUI();
   updateAddAromaButton();
   renderTimeline();
+  
+  // Guardar composición automáticamente
+  autoSaveComposition();
 }
 
 function renderAromasUI() {
@@ -339,12 +582,16 @@ function renderAromasUI() {
         ).join('')}
       </select>
       <select class="pump-select" ${isOffline ? 'disabled' : ''}>
-        ${Array.from({length: 8}, (_, i) => 
-          `<option value="${i}" ${i === aroma.pumpId ? 'selected' : ''} 
-           ${pumpOccupied(aroma.osmoId, i) && i !== aroma.pumpId ? 'disabled' : ''}>
-            Bomba ${i}
-          </option>`
-        ).join('')}
+        ${(() => {
+          const osmoConfig = osmoConfigs[aroma.osmoId] || {};
+          const pumpCount = Object.keys(osmoConfig).filter(k => k.startsWith('pump_')).length || 4;
+          return Array.from({length: pumpCount}, (_, i) => 
+            `<option value="${i}" ${i === aroma.pumpId ? 'selected' : ''} 
+             ${pumpOccupied(aroma.osmoId, i) && i !== aroma.pumpId ? 'disabled' : ''}>
+              Bomba ${i}
+            </option>`
+          ).join('');
+        })()}
       </select>
       <button class="toggle-status ${aroma.active ? 'active' : 'inactive'}" ${isOffline ? 'disabled' : ''}>
         ${aroma.active ? 'ON' : 'OFF'}
@@ -400,10 +647,9 @@ function renderAromasUI() {
         return;
       }
       
-      releasePump(aroma.osmoId, aroma.pumpId);
+      // No necesitamos liberar/ocupar bombas - se determina por eventos
       aroma.osmoId = newOsmoId;
       aroma.pumpId = availablePump;
-      occupyPump(aroma.osmoId, availablePump);
       
       showSuccess(`Aroma reasignado a ${newOsmoId}, bomba ${availablePump}`);
       renderAromasUI();
@@ -416,9 +662,8 @@ function renderAromasUI() {
         pumpSelect.value = aroma.pumpId; // Revertir selección
         return;
       }
-      releasePump(aroma.osmoId, aroma.pumpId);
+      // No necesitamos liberar/ocupar bombas - se determina por eventos
       aroma.pumpId = newPump;
-      occupyPump(aroma.osmoId, newPump);
       
       showSuccess(`Bomba cambiada a ${newPump}`);
     });
@@ -600,11 +845,11 @@ async function triggerAromaEvent(aroma, event, toneTime) {
     
     // Preparar comando MQTT
     const command = {
-      action: 'trigger_pump',
+      action: 'activate_pump',
       params: {
         pump_id: aroma.pumpId,
-        duration_ms: 500, // Duración por defecto
-        intensity: 100    // Intensidad por defecto
+        //duration_ms: 500, // Duración por defecto
+       // intensity: 100    // Intensidad por defecto
       }
     };
     
@@ -767,7 +1012,7 @@ function renderTimeRuler(ctx) {
   
   // Calcular intervalos de tiempo para las marcas
   const startTime = Math.max(0, timelineOffset / timelineScale);
-  const endTime = startTime + (timelineWidth / timelineScale);
+  const endTime = Math.min(timelineState.totalDuration, startTime + (timelineWidth / timelineScale));
   const interval = calculateRulerInterval(timelineScale);
   
   ctx.fillStyle = '#495057';
@@ -789,6 +1034,23 @@ function renderTimeRuler(ctx) {
       const timeLabel = formatTime(time);
       ctx.fillText(timeLabel, x, HEADER_HEIGHT - 15);
     }
+  }
+  
+  // Dibujar línea final del timeline
+  const endX = LEFT_MARGIN + (timelineState.totalDuration * timelineScale) - timelineOffset;
+  if (endX >= LEFT_MARGIN && endX <= canvas.width - RIGHT_MARGIN) {
+    ctx.strokeStyle = '#dc3545';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(endX, 0);
+    ctx.lineTo(endX, HEADER_HEIGHT);
+    ctx.stroke();
+    
+    // Etiqueta "FIN"
+    ctx.fillStyle = '#dc3545';
+    ctx.font = 'bold 12px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText('FIN', endX, HEADER_HEIGHT - 5);
   }
   
   // Etiqueta de duración total
@@ -815,6 +1077,17 @@ function renderAromaRows(ctx) {
     ctx.moveTo(0, y + ROW_HEIGHT);
     ctx.lineTo(canvas.width, y + ROW_HEIGHT);
     ctx.stroke();
+    
+    // Línea final del timeline en cada fila
+    const endX = LEFT_MARGIN + (timelineState.totalDuration * timelineScale) - timelineOffset;
+    if (endX >= LEFT_MARGIN && endX <= canvas.width) {
+      ctx.strokeStyle = '#dc3545';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(endX, y);
+      ctx.lineTo(endX, y + ROW_HEIGHT);
+      ctx.stroke();
+    }
     
     // Área del nombre (lado izquierdo)
     ctx.fillStyle = '#ffffff';
@@ -860,6 +1133,27 @@ function renderEvents(ctx) {
     // Solo renderizar si está visible
     if (x >= LEFT_MARGIN - EVENT_RADIUS && x <= canvas.width + EVENT_RADIUS) {
       const aroma = activeAromas[aromaIndex];
+      
+      // Obtener configuración de cooldown
+      const osmoConfig = osmoConfigs[aroma.osmoId] || {};
+      const pumpConfig = osmoConfig[`pump_${aroma.pumpId}`] || {};
+      const activationTime = pumpConfig.activationTime || 1000; // ms
+      const cooldownTime = pumpConfig.cooldownTime || 3000; // ms
+      
+      // Dibujar sombreado de cooldown
+      const cooldownDuration = (activationTime + cooldownTime) / 1000; // segundos
+      const cooldownWidth = cooldownDuration * timelineScale;
+      
+      if (cooldownWidth > 0) {
+        // Sombreado de cooldown (semi-transparente)
+        ctx.fillStyle = 'rgba(255, 193, 7, 0.3)'; // Amarillo semi-transparente
+        ctx.fillRect(x, y - ROW_HEIGHT/2, cooldownWidth, ROW_HEIGHT);
+        
+        // Borde del área de cooldown
+        ctx.strokeStyle = 'rgba(255, 193, 7, 0.6)';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(x, y - ROW_HEIGHT/2, cooldownWidth, ROW_HEIGHT);
+      }
       
       // Círculo del evento
       ctx.fillStyle = getAromaStatusColor(aroma);
@@ -911,6 +1205,57 @@ function renderPlaybackCursor(ctx) {
 
 // === GESTIÓN DE EVENTOS TEMPORALES ===
 function addEvent(aromaId, time) {
+  console.log(`🔍 addEvent llamado con aromaId: ${aromaId}, time: ${time}`);
+  
+  const aroma = timelineState.aromas.find(a => a.id === aromaId);
+  if (!aroma) {
+    console.error('❌ Aroma no encontrado:', aromaId);
+    console.log('📋 Aromas disponibles:', timelineState.aromas.map(a => ({id: a.id, name: a.name})));
+    return;
+  }
+  
+  console.log(`✅ Aroma encontrado: ${aroma.name} (Osmo: ${aroma.osmoId}, Bomba: ${aroma.pumpId})`);
+  
+  // Verificar si la bomba está ocupada
+  if (pumpOccupied(aroma.osmoId, aroma.pumpId)) {
+    console.log(`❌ Bomba ${aroma.pumpId} del Osmo ${aroma.osmoId} está ocupada`);
+    showError(`Bomba ${aroma.pumpId} del Osmo ${aroma.osmoId} está ocupada`);
+    return;
+  }
+  
+  // Verificar cooldown de la bomba
+  const osmo = timelineState.connectedOsmos.find(o => o.unit_id === aroma.osmoId);
+  if (osmo && osmo.pumps && osmo.pumps[aroma.pumpId]) {
+    const pump = osmo.pumps[aroma.pumpId];
+    if (pump.cooldown_remaining > 0) {
+      const cooldownSec = Math.round(pump.cooldown_remaining / 100) / 10;
+      console.log(`❌ Bomba ${aroma.pumpId} en cooldown: ${cooldownSec}s`);
+      showError(`Bomba ${aroma.pumpId} en cooldown. Espera ${cooldownSec}s`);
+      return;
+    }
+  }
+  
+  // Verificar conflictos de tiempo con eventos existentes
+  const osmoConfig = osmoConfigs[aroma.osmoId] || {};
+  const pumpConfig = osmoConfig[`pump_${aroma.pumpId}`] || {};
+  const activationTime = pumpConfig.activationTime || 1000; // ms
+  const cooldownTime = pumpConfig.cooldownTime || 3000; // ms
+  
+  // Buscar eventos existentes para este aroma
+  const existingEvents = timelineState.events.filter(e => e.aromaId === aroma.id);
+  
+  for (const existingEvent of existingEvents) {
+    const timeDiff = Math.abs(existingEvent.time - time);
+    const minInterval = (activationTime + cooldownTime) / 1000; // convertir a segundos
+    
+    if (timeDiff < minInterval) {
+      const minIntervalSec = Math.round(minInterval * 10) / 10;
+      console.log(`❌ Conflicto de tiempo: ${timeDiff}s < ${minIntervalSec}s requeridos`);
+      showError(`Muy cerca de otro evento. Mínimo ${minIntervalSec}s entre eventos`);
+      return;
+    }
+  }
+  
   const newEvent = {
     id: Date.now() + Math.random(), // ID único
     aromaId: aromaId,
@@ -918,6 +1263,7 @@ function addEvent(aromaId, time) {
   };
   
   timelineState.events.push(newEvent);
+  console.log(`✅ Evento agregado al array. Total eventos: ${timelineState.events.length}`);
   
   // Reprogramar eventos si está reproduciendo
   if (timelineState.isPlaying && timelineState.toneInitialized) {
@@ -928,7 +1274,11 @@ function addEvent(aromaId, time) {
   renderAromasUI();
   renderTimeline();
   
-  console.log(`✨ Evento agregado:`, newEvent);
+  console.log(`✨ Evento agregado exitosamente:`, newEvent);
+  
+  // Guardar composición automáticamente
+  autoSaveComposition();
+  
   return newEvent;
 }
 
@@ -945,6 +1295,9 @@ function removeEvent(eventId) {
     // Actualizar contador en UI de aromas
     renderAromasUI();
     renderTimeline();
+    
+    // Guardar composición automáticamente
+    autoSaveComposition();
     
     console.log(`🗑️ Evento eliminado:`, removedEvent);
     return removedEvent;
@@ -1029,7 +1382,15 @@ function onCanvasMouseDown(e) {
   const activeAromas = timelineState.aromas.filter(a => a.active);
   const clickedRowIndex = Math.floor((y - TIMELINE_CONFIG.HEADER_HEIGHT) / (TIMELINE_CONFIG.ROW_HEIGHT + TIMELINE_CONFIG.ROW_MARGIN));
   
-  if (clickedRowIndex < 0 || clickedRowIndex >= activeAromas.length) return;
+  if (clickedRowIndex < 0 || clickedRowIndex >= activeAromas.length) {
+    // Si no hay fila válida, iniciar drag del timeline
+    timelineState.isTimelineDragging = true;
+    timelineState.timelineDragStart.x = x;
+    timelineState.timelineDragStart.offset = timelineOffset;
+    canvas.style.cursor = 'grabbing';
+    console.log('🫴 Iniciando drag del timeline');
+    return;
+  }
   
   const clickedAroma = activeAromas[clickedRowIndex];
   
@@ -1047,55 +1408,91 @@ function onCanvasMouseDown(e) {
     
     canvas.style.cursor = 'grabbing';
     console.log(`🫳 Iniciando drag de evento:`, eventToDrag);
+  } else {
+    // Si no hay evento, iniciar drag del timeline
+    timelineState.isTimelineDragging = true;
+    timelineState.timelineDragStart.x = x;
+    timelineState.timelineDragStart.offset = timelineOffset;
+    canvas.style.cursor = 'grabbing';
+    console.log('🫴 Iniciando drag del timeline');
   }
 }
 
 function onCanvasMouseUp(e) {
   if (timelineState.isDragging && timelineState.draggedEvent) {
-    // Finalizar drag
+    // Finalizar drag de evento
     timelineState.isDragging = false;
     timelineState.draggedEvent = null;
     canvas.style.cursor = 'pointer';
     
     showSuccess('Evento movido exitosamente');
-    console.log(`🫴 Drag finalizado`);
+    console.log(`🫴 Drag de evento finalizado`);
+  } else if (timelineState.isTimelineDragging) {
+    // Finalizar drag del timeline
+    timelineState.isTimelineDragging = false;
+    canvas.style.cursor = 'pointer';
+    
+    console.log(`🫴 Drag del timeline finalizado`);
   }
 }
 
-function onCanvasClick(e) {
-  // Solo procesar clicks si no estamos en modo drag
-  if (timelineState.isDragging) return;
+function onCanvasDoubleClick(e) {
+  console.log('🖱️ Canvas doble click detectado');
+  
+  // Solo procesar doble clicks si no estamos en modo drag
+  if (timelineState.isDragging || timelineState.isTimelineDragging) {
+    console.log('❌ Ignorando doble click - en modo drag');
+    return;
+  }
   
   const rect = canvas.getBoundingClientRect();
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
   
-  // Solo procesar clicks en el área del timeline (no en nombres)
-  if (x < TIMELINE_CONFIG.LEFT_MARGIN) return;
+  console.log(`📍 Doble click en posición: x=${x}, y=${y}`);
+  
+  // Solo procesar doble clicks en el área del timeline (no en nombres)
+  if (x < TIMELINE_CONFIG.LEFT_MARGIN) {
+    console.log('❌ Doble click fuera del área del timeline');
+    return;
+  }
   
   // Calcular tiempo clickeado
   const clickedTime = (x - TIMELINE_CONFIG.LEFT_MARGIN + timelineOffset) / timelineScale;
   
+  console.log(`⏰ Tiempo clickeado: ${clickedTime}s`);
+  
   // Verificar que esté dentro de la duración
-  if (clickedTime < 0 || clickedTime > timelineState.totalDuration) return;
+  if (clickedTime < 0 || clickedTime > timelineState.totalDuration) {
+    console.log('❌ Doble click fuera de la duración del timeline');
+    return;
+  }
   
   // Detectar fila clickeada
   const activeAromas = timelineState.aromas.filter(a => a.active);
   const clickedRowIndex = Math.floor((y - TIMELINE_CONFIG.HEADER_HEIGHT) / (TIMELINE_CONFIG.ROW_HEIGHT + TIMELINE_CONFIG.ROW_MARGIN));
   
-  if (clickedRowIndex < 0 || clickedRowIndex >= activeAromas.length) return;
+  console.log(`📊 Aromas activos: ${activeAromas.length}, Fila clickeada: ${clickedRowIndex}`);
+  
+  if (clickedRowIndex < 0 || clickedRowIndex >= activeAromas.length) {
+    console.log('❌ Doble click fuera de las filas de aromas');
+    return;
+  }
   
   const clickedAroma = activeAromas[clickedRowIndex];
+  console.log(`🎯 Aroma clickeado: ${clickedAroma.name} (ID: ${clickedAroma.id})`);
   
-  // Verificar si hay un evento existente cerca del click
+  // Verificar si hay un evento existente cerca del doble click
   const existingEvent = findEventNearClick(clickedTime, clickedAroma.id);
   
   if (existingEvent) {
-    // Si hay un evento cerca y no era un drag, eliminarlo
+    // Si hay un evento cerca, eliminarlo
+    console.log('🗑️ Eliminando evento existente');
     removeEvent(existingEvent.id);
     showSuccess(`Evento eliminado en ${formatTime(existingEvent.time)}`);
   } else {
     // Si no hay evento, crear uno nuevo
+    console.log('✨ Creando nuevo evento');
     addEvent(clickedAroma.id, clickedTime);
     showSuccess(`Evento agregado: ${clickedAroma.name} en ${formatTime(clickedTime)}`);
   }
@@ -1125,6 +1522,16 @@ function onCanvasMouseMove(e) {
     // Actualizar UI de aromas si cambió
     renderAromasUI();
     
+  } else if (timelineState.isTimelineDragging) {
+    // Mover timeline durante drag
+    const deltaX = x - timelineState.timelineDragStart.x;
+    const newOffset = timelineState.timelineDragStart.offset - deltaX;
+    
+    // Limitar el offset para no ir más allá del contenido
+    const maxOffset = Math.max(0, (timelineState.totalDuration * timelineScale) - (canvas.width - TIMELINE_CONFIG.LEFT_MARGIN - TIMELINE_CONFIG.RIGHT_MARGIN));
+    timelineOffset = Math.max(0, Math.min(newOffset, maxOffset));
+    
+    renderTimeline();
   } else {
     // Hover effects cuando no hay drag
     if (x < TIMELINE_CONFIG.LEFT_MARGIN) {
@@ -1141,7 +1548,7 @@ function onCanvasMouseMove(e) {
         
         canvas.style.cursor = nearEvent ? 'grab' : 'pointer';
       } else {
-        canvas.style.cursor = 'default';
+        canvas.style.cursor = 'grab'; // Cambiar cursor para indicar que se puede arrastrar el timeline
       }
     }
   }

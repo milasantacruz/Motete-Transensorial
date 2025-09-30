@@ -2,6 +2,9 @@
 let osmos = [];
 let osmoConfigs = {}; // ✅ Configuraciones de bombas (se cargan una vez)
 let configsLoaded = false; // ✅ Flag para saber si ya cargamos configuraciones
+
+// Cache de configuraciones
+const configCache = new OsmoConfigCache();
 let mqttConnected = false;
 let pianoBoards = []; // Array de pianos, uno por Osmo
 let activeKeys = new Set();
@@ -455,6 +458,16 @@ async function loadConfigurations() {
     return;
   }
   
+  // Intentar cargar desde cache primero
+  const cachedConfigs = configCache.load();
+  if (cachedConfigs) {
+    osmoConfigs = cachedConfigs;
+    configsLoaded = true;
+    console.log('✅ Configuraciones cargadas desde cache');
+    return;
+  }
+  
+  // Si no hay cache, cargar desde servidor
   try {
     const response = await fetch('/api/status');
     const data = await response.json();
@@ -462,6 +475,10 @@ async function loadConfigurations() {
     if (data.osmo_configs && Object.keys(data.osmo_configs).length > 0) {
       osmoConfigs = data.osmo_configs;
       configsLoaded = true;
+      
+      // Guardar en cache
+      configCache.save(osmoConfigs);
+      console.log('✅ Configuraciones cargadas desde servidor y guardadas en cache');
     }
   } catch (error) {
     console.error('Error cargando configuraciones:', error);
