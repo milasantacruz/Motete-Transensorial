@@ -342,6 +342,22 @@ window.deleteComposition = function(name) {
 
 // === GESTIÓN DE CONFIGURACIONES ===
 async function loadConfigurations(force = false) {
+  // Soporte GH Pages / simulación: si no hay backend, genera configs simuladas
+  const isStaticHost = () => typeof location !== 'undefined' && /github\.io$/i.test(location.hostname);
+  if ((simulateCheckbox?.checked || isStaticHost()) && !force) {
+    if (!configsLoaded) {
+      const unitId = 'sim_osmo';
+      const pumps = 8;
+      const cfg = {};
+      for (let i = 0; i < pumps; i++) {
+        cfg[`pump_${i}`] = { activationTime: 1000, cooldownTime: 3000 };
+      }
+      osmoConfigs = { [unitId]: cfg };
+      configsLoaded = true;
+      console.log('🎭 [SIMULACIÓN] Configuraciones generadas en frontend para GH Pages');
+    }
+    return;
+  }
   // Si ya tenemos configuraciones, no hacer nada
   if (!force && configsLoaded) {
     return;
@@ -358,7 +374,7 @@ async function loadConfigurations(force = false) {
   
   // Si no hay cache, cargar desde servidor
   try {
-    const response = await fetch('/api/status');
+    const response = await fetch('./api/status');
     const data = await response.json();
     
     console.log('📊 Datos recibidos del servidor:', data);
@@ -375,6 +391,18 @@ async function loadConfigurations(force = false) {
     }
   } catch (error) {
     console.error('Error cargando configuraciones:', error);
+    // Fallback a simulación si falla
+    try {
+      const unitId = 'sim_osmo';
+      const pumps = 8;
+      const cfg = {};
+      for (let i = 0; i < pumps; i++) {
+        cfg[`pump_${i}`] = { activationTime: 1000, cooldownTime: 3000 };
+      }
+      osmoConfigs = { [unitId]: cfg };
+      configsLoaded = true;
+      console.log('🎭 [SIMULACIÓN] Fallback de configuraciones generado por error de backend');
+    } catch (_) {}
   }
 }
 
@@ -384,11 +412,31 @@ async function loadOsmosStatus(force = false) {
     // Preservar estado antes del polling
     const savedState = preserveAromaState();
     
-    const simulateParam = simulateCheckbox?.checked ? '?simulate=true' : '';
-    console.log(`🔍 Polling Osmos... ${simulateParam ? '[SIMULACIÓN]' : '[REAL]'}`);
-    
-    const response = await fetch(`/api/status${simulateParam}`);
-    const data = await response.json();
+    const isStaticHost = () => typeof location !== 'undefined' && /github\.io$/i.test(location.hostname);
+    const simulate = !!simulateCheckbox?.checked || isStaticHost();
+    console.log(`🔍 Polling Osmos... ${simulate ? '[SIMULACIÓN]' : '[REAL]'}`);
+
+    let data;
+    if (simulate) {
+      // Datos simulados en frontend para GH Pages o modo simulación
+      const unitId = 'sim_osmo';
+      data = {
+        mqtt_connected: false,
+        connected_osmos: [
+          {
+            unit_id: unitId,
+            status: 'online',
+            pumps: { 0: 'active', 1: 'active', 2: 'active', 3: 'active', 4: 'active', 5: 'active', 6: 'active', 7: 'active' },
+            lastSeen: new Date()
+          }
+        ],
+        osmo_configs: osmoConfigs && Object.keys(osmoConfigs).length ? osmoConfigs : undefined,
+        cooldowns: {}
+      };
+    } else {
+      const response = await fetch(`./api/status${simulate ? '?simulate=true' : ''}`);
+      data = await response.json();
+    }
     
     console.log('📡 Respuesta del servidor:', data);
     
