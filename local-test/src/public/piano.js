@@ -453,6 +453,20 @@ function playKey(keyData) {
 }
 
 async function loadConfigurations() {
+  // Soporte GH Pages / simulación: si no hay backend, generar configs simuladas
+  const isStaticHost = () => typeof location !== 'undefined' && /github\.io$/i.test(location.hostname);
+  if ((isStaticHost()) && !configsLoaded) {
+    const unitId = 'sim_osmo';
+    const pumps = 8;
+    const cfg = {};
+    for (let i = 0; i < pumps; i++) {
+      cfg[`pump_${i}`] = { activationTime: 1000, cooldownTime: 3000 };
+    }
+    osmoConfigs = { [unitId]: cfg };
+    configsLoaded = true;
+    console.log('🎭 [SIMULACIÓN] Configuraciones generadas en frontend (GH Pages)');
+    return;
+  }
   // Si ya tenemos configuraciones, no hacer nada
   if (configsLoaded) {
     return;
@@ -469,7 +483,7 @@ async function loadConfigurations() {
   
   // Si no hay cache, cargar desde servidor
   try {
-    const response = await fetch('/api/status');
+    const response = await fetch('./api/status');
     const data = await response.json();
     
     if (data.osmo_configs && Object.keys(data.osmo_configs).length > 0) {
@@ -482,17 +496,47 @@ async function loadConfigurations() {
     }
   } catch (error) {
     console.error('Error cargando configuraciones:', error);
+    // Fallback simulación si falla
+    try {
+      const unitId = 'sim_osmo';
+      const pumps = 8;
+      const cfg = {};
+      for (let i = 0; i < pumps; i++) {
+        cfg[`pump_${i}`] = { activationTime: 1000, cooldownTime: 3000 };
+      }
+      osmoConfigs = { [unitId]: cfg };
+      configsLoaded = true;
+      console.log('🎭 [SIMULACIÓN] Fallback de configuraciones por error de backend');
+    } catch (_) {}
   }
 }
 
 async function loadStatus() {
   try {
     const simulateCheckbox = document.getElementById('simulateCheckbox');
-    const simulate = simulateCheckbox ? simulateCheckbox.checked : false;
-    const simulateParam = simulate ? '?simulate=true' : '';
+    const isStaticHost = () => typeof location !== 'undefined' && /github\.io$/i.test(location.hostname);
+    const simulate = (simulateCheckbox ? simulateCheckbox.checked : false) || isStaticHost();
     
-    const response = await fetch(`/api/status${simulateParam}`);
-    const data = await response.json();
+    let data;
+    if (simulate) {
+      const unitId = 'sim_osmo';
+      data = {
+        mqtt_connected: false,
+        connected_osmos: [
+          {
+            unit_id: unitId,
+            status: 'online',
+            pumps: { 0: 'active', 1: 'active', 2: 'active', 3: 'active', 4: 'active', 5: 'active', 6: 'active', 7: 'active' },
+            lastSeen: new Date()
+          }
+        ],
+        osmo_configs: osmoConfigs && Object.keys(osmoConfigs).length ? osmoConfigs : undefined,
+        cooldowns: {}
+      };
+    } else {
+      const response = await fetch(`./api/status${simulate ? '?simulate=true' : ''}`);
+      data = await response.json();
+    }
     
     mqttConnected = data.mqtt_connected;
     osmos = data.connected_osmos || [];
@@ -522,14 +566,21 @@ async function loadStatus() {
 async function sendCommand(unitId, pumpId) {
   try {
     const simulateCheckbox = document.getElementById('simulateCheckbox');
-    const simulate = simulateCheckbox ? simulateCheckbox.checked : false;
-    const simulateParam = simulate ? '?simulate=true' : '';
+    const isStaticHost = () => typeof location !== 'undefined' && /github\.io$/i.test(location.hostname);
+    const simulate = (simulateCheckbox ? simulateCheckbox.checked : false) || isStaticHost();
     
     // Obtener duración de la configuración del Osmo
     const duration = getPumpDuration(unitId, pumpId);
     console.log(`⏱️ Duración calculada para ${unitId} bomba ${pumpId}: ${duration}ms`);
     
-    const response = await fetch(`/api/command/${unitId}${simulateParam}`, {
+    if (simulate) {
+      // Simular envío y activar LED localmente
+      console.log(`[SIMULACIÓN] Comando que se habría enviado a ${unitId}: bomba ${pumpId}`);
+      activateKeyLED(unitId, pumpId, duration);
+      return;
+    }
+
+    const response = await fetch(`./api/command/${unitId}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -540,8 +591,7 @@ async function sendCommand(unitId, pumpId) {
     
     if (response.ok) {
       const responseData = await response.json();
-      const mode = simulate ? '[SIMULACIÓN] ' : '';
-      
+      const mode = '';
       
       // ✅ CORRECCIÓN: Solo activar LED si el comando fue exitoso en el MCU
       if (responseData.success) {
