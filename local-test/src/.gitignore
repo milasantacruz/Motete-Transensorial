@@ -1,0 +1,14 @@
+﻿node_modules/
+*.log
+.env
+certs/
+*.pem
+*.crt
+*.key
+*.p12
+*.pfx
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

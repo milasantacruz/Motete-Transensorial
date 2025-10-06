@@ -1,55 +1,137 @@
 const mqtt = require('mqtt');
 const { v4: uuidv4 } = require('uuid');
+const fs = require('fs');
+const path = require('path');
+require('dotenv').config();
 
 class OsmoMQTTClient {
-  constructor(password) {
+  constructor() {
     this.client = null;
     this.connectedOsmos = new Map();
-    this.osmoConfigs = new Map(); // ✅ Nuevo: almacenar configuraciones
-    this.cooldowns = new Map(); // ✅ unitId -> Map<pumpId, { startedAt, durationMs }>
+    this.osmoConfigs = new Map();
+    this.cooldowns = new Map();
     this.isConnected = false;
-    this.password = password || 'director'; // Fallback por si no se provee
-    console.log('🔧 Constructor OsmoMQTTClient iniciado');
-    console.log('🔧 Password configurado:', this.password);
+    
+    // Configuración AWS IoT Core desde variables de entorno
+    this.awsConfig = {
+      endpoint: process.env.AWS_IOT_ENDPOINT,
+      clientId: process.env.AWS_IOT_CLIENT_ID || 'director_aws',
+      // Si existen las variables con el contenido directo, usar esas
+      // Si no, usar las rutas de archivos
+      caCert: process.env.AWS_CA_CERT || null,
+      clientCert: process.env.AWS_CLIENT_CERT || null,
+      privateKey: process.env.AWS_PRIVATE_KEY || null,
+      caCertPath: process.env.AWS_CA_CERT_PATH ? path.join(__dirname, process.env.AWS_CA_CERT_PATH) : null,
+      clientCertPath: process.env.AWS_CLIENT_CERT_PATH ? path.join(__dirname, process.env.AWS_CLIENT_CERT_PATH) : null,
+      privateKeyPath: process.env.AWS_PRIVATE_KEY_PATH ? path.join(__dirname, process.env.AWS_PRIVATE_KEY_PATH) : null,
+    };
+    
+    console.log('🔧 Constructor OsmoMQTTClient (AWS IoT Core) iniciado');
+    console.log('🔧 Endpoint:', this.awsConfig.endpoint);
+    console.log('🔧 Client ID:', this.awsConfig.clientId);
   }
 
   async connect() {
     return new Promise((resolve, reject) => {
-      console.log('🔌 Intentando conectar a MQTT con credenciales...');
-      console.log('🔌 URL:', 'mqtt://localhost:1883');
-      console.log('🔌 Username:', 'director');
-      console.log('🔌 Password:', this.password);
+      console.log('🔌 Intentando conectar a AWS IoT Core...');
+      console.log('🔌 Endpoint:', `mqtts://${this.awsConfig.endpoint}:8883`);
+      console.log('🔌 Client ID:', this.awsConfig.clientId);
       
-      this.client = mqtt.connect('mqtt://localhost:1883', {
-        // Usar credenciales del director
-        username: 'director',
-        password: this.password,
-        clientId: 'director_' + Math.random().toString(16).substr(2, 8),
-        connectTimeout: 5000, // 5 segundos de timeout
-        reconnectPeriod: 0, // No reconectar automáticamente
+      // Obtener certificados desde variables de entorno o archivos
+      let ca, cert, key;
+      
+      if (this.awsConfig.caCert && this.awsConfig.clientCert && this.awsConfig.privateKey) {
+        // Usar certificados desde variables de entorno
+        console.log('✅ Usando certificados desde variables de entorno');
+        ca = this.awsConfig.caCert;
+        cert = this.awsConfig.clientCert;
+        key = this.awsConfig.privateKey;
+      } else if (this.awsConfig.caCertPath && this.awsConfig.clientCertPath && this.awsConfig.privateKeyPath) {
+        // Usar certificados desde archivos
+        console.log('✅ Usando certificados desde archivos');
+        
+        if (!fs.existsSync(this.awsConfig.caCertPath)) {
+          return reject(new Error(`Certificado CA no encontrado: ${this.awsConfig.caCertPath}`));
+        }
+        if (!fs.existsSync(this.awsConfig.clientCertPath)) {
+          return reject(new Error(`Certificado de cliente no encontrado: ${this.awsConfig.clientCertPath}`));
+        }
+        if (!fs.existsSync(this.awsConfig.privateKeyPath)) {
+          return reject(new Error(`Clave privada no encontrada: ${this.awsConfig.privateKeyPath}`));
+        }
+        
+        console.log('📂 Ruta CA:', this.awsConfig.caCertPath);
+        console.log('📂 Ruta Cert:', this.awsConfig.clientCertPath);
+        console.log('📂 Ruta Key:', this.awsConfig.privateKeyPath);
+        
+        ca = fs.readFileSync(this.awsConfig.caCertPath);
+        cert = fs.readFileSync(this.awsConfig.clientCertPath);
+        key = fs.readFileSync(this.awsConfig.privateKeyPath);
+      } else {
+        return reject(new Error('No se configuraron certificados (ni como variables de entorno ni como archivos)'));
+      }
+      
+      // Conectar a AWS IoT Core con TLS
+      this.client = mqtt.connect(`mqtts://${this.awsConfig.endpoint}:8883`, {
+        clientId: this.awsConfig.clientId,
+        ca: ca,
+        cert: cert,
+        key: key,
+        protocol: 'mqtts',
+        port: 8883,
+        keepalive: 60,
+        reconnectPeriod: 5000, // Aumentado a 5 segundos
+        connectTimeout: 30000,
+        rejectUnauthorized: true,
+        clean: true, // Clean session
       });
+      
+      console.log('🔌 Cliente MQTT creado, esperando conexión...');
 
       this.client.on('connect', () => {
-        console.log('✅ Director conectado al broker MQTT');
+        console.log('✅ Director conectado a AWS IoT Core');
         this.isConnected = true;
         this.subscribeToTopics();
+        
+        // Log periódico para verificar que no hay mensajes
+        setInterval(() => {
+          console.log(`📊 [Heartbeat] Osmos conectados: ${this.connectedOsmos.size}`);
+          if (this.connectedOsmos.size === 0) {
+            console.log('⚠️ No hay Osmos conectados. Verifica que ESP82 esté publicando.');
+          }
+        }, 30000); // Cada 30 segundos
+        
         resolve();
       });
 
       this.client.on('error', (error) => {
-        console.error('❌ Error de conexión MQTT:', error);
+        console.error('❌ Error de conexión AWS IoT Core:', error.message);
         this.isConnected = false;
         reject(error);
       });
 
       this.client.on('close', () => {
-        console.log('🔌 Conexión MQTT cerrada');
+        console.log('🔌 Conexión AWS IoT Core cerrada');
         this.isConnected = false;
       });
 
       this.client.on('offline', () => {
-        console.log('📴 Cliente MQTT offline');
+        console.log('📴 Cliente AWS IoT Core offline');
         this.isConnected = false;
+      });
+      
+      this.client.on('reconnect', () => {
+        console.log('🔄 Reconectando a AWS IoT Core...');
+      });
+      
+      this.client.on('end', () => {
+        console.log('🛑 Cliente MQTT finalizó');
+      });
+      
+      // Evento para errores del stream TLS
+      this.client.stream?.on('error', (error) => {
+        console.error('❌ Error TLS:', error.message);
+        console.error('Código:', error.code);
       });
 
       this.client.on('message', (topic, message) => {
@@ -286,8 +368,8 @@ class OsmoMQTTClient {
       return [];
     }
     
-    // Prune por freshness (e.g., 10s sin mensajes => desconectado)
-    this._pruneStaleOsmos(10000);
+    // Prune por freshness (90s = 60s intervalo + 30s margen)
+    this._pruneStaleOsmos(90000); // ✅ Cambiado de 10000 a 90000
     
     console.log('📡 Devolviendo Osmos reales conectados');
     const osmos = Array.from(this.connectedOsmos.values());
@@ -351,7 +433,7 @@ class OsmoMQTTClient {
   }
 
   // ===== Housekeeping =====
-  _pruneStaleOsmos(maxAgeMs = 10000) {
+  _pruneStaleOsmos(maxAgeMs = 90000) { // ✅ 90 segundos (60s de publicación + 30s de margen)
     try {
       const now = Date.now();
       let removed = 0;

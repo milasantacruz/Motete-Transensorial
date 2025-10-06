@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+src/node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Certificados AWS IoT Core (NUNCA subir al repositorio)
+#certs/*.pem
+#certs/*.crt
+#certs/*.key
+!certs/README.md
+
+# Logs
+logs/*.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+data/*.db
+data/*.db.*
