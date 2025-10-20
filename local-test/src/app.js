@@ -7,7 +7,7 @@ const OsmoMQTTClient = require("./services/mqttClient");
 const app = express();
 const server = http.createServer(app);
 let wss = null; // se inicializa luego
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
