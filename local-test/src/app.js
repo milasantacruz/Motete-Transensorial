@@ -80,9 +80,18 @@ function broadcast(event, payload) {
 }
 
 async function startServer() {
+  // ✅ Arrancar servidor Express PRIMERO (sin depender de MQTT)
+  server.listen(PORT, () => {
+    console.log(`🌐 Servidor web arrancado en http://localhost:${PORT}`);
+  });
+
+  // ✅ Intentar conectar MQTT en segundo plano (sin bloquear)
   try {
+    console.log('🔄 Intentando conectar a MQTT...');
     await mqttClient.connect();
-    // WebSocket Server
+    console.log('✅ MQTT conectado correctamente');
+    
+    // Setup WebSocket Server solo si MQTT funciona
     const { WebSocketServer } = require('ws');
     wss = new WebSocketServer({ server });
     wss.on('connection', (ws) => {
@@ -95,13 +104,13 @@ async function startServer() {
     mqttClient.onCooldownsChanged = () => {
       broadcast('cooldowns', mqttClient.getCooldownsSnapshot());
     };
-
-    server.listen(PORT, () => {
-      console.log(`🌐 Servidor web + WS en http://localhost:${PORT}`);
-    });
+    
+    console.log('✅ WebSocket Server configurado');
   } catch (error) {
-    console.error("❌ No se pudo iniciar el servidor:", error);
-    process.exit(1);
+    console.warn('⚠️ MQTT no disponible - Servidor corriendo en modo limitado');
+    console.warn('⚠️ Error:', error.message);
+    console.warn('⚠️ Configure las variables de entorno: AWS_IOT_ENDPOINT, AWS_CA_CERT, AWS_CLIENT_CERT, AWS_PRIVATE_KEY');
+    // ✅ NO hacer process.exit(1) - el servidor Express ya está corriendo
   }
 }
 
