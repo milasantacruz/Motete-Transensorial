@@ -2,6 +2,7 @@ const mqtt = require('mqtt');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
+const AWS = require('aws-sdk');
 require('dotenv').config();
 
 class OsmoMQTTClient {
@@ -11,132 +12,207 @@ class OsmoMQTTClient {
     this.osmoConfigs = new Map();
     this.cooldowns = new Map();
     this.isConnected = false;
+    this.certificates = null; // Cache para certificados
     
     // Configuración AWS IoT Core desde variables de entorno
     this.awsConfig = {
       endpoint: process.env.AWS_IOT_ENDPOINT,
       clientId: process.env.AWS_IOT_CLIENT_ID || 'director_aws',
-      // Si existen las variables con el contenido directo, usar esas
-      // Si no, usar las rutas de archivos
+      secretName: process.env.AWS_SECRET_NAME || 'aromatorio-mqtt-certificates',
+      region: process.env.AWS_REGION || 'us-east-2',
+      // Fallback a variables de entorno directas
       caCert: process.env.AWS_CA_CERT || null,
       clientCert: process.env.AWS_CLIENT_CERT || null,
       privateKey: process.env.AWS_PRIVATE_KEY || null,
+      // Fallback a archivos
       caCertPath: process.env.AWS_CA_CERT_PATH ? path.join(__dirname, process.env.AWS_CA_CERT_PATH) : null,
       clientCertPath: process.env.AWS_CLIENT_CERT_PATH ? path.join(__dirname, process.env.AWS_CLIENT_CERT_PATH) : null,
       privateKeyPath: process.env.AWS_PRIVATE_KEY_PATH ? path.join(__dirname, process.env.AWS_PRIVATE_KEY_PATH) : null,
     };
     
+    // Configurar AWS SDK
+    AWS.config.update({ region: this.awsConfig.region });
+    this.secretsManager = new AWS.SecretsManager();
+    
     console.log('🔧 Constructor OsmoMQTTClient (AWS IoT Core) iniciado');
+    console.log('🔧 DEBUG - process.env.AWS_IOT_ENDPOINT:', process.env.AWS_IOT_ENDPOINT);
+    console.log('🔧 DEBUG - process.env.AWS_IOT_CLIENT_ID:', process.env.AWS_IOT_CLIENT_ID);
+    console.log('🔧 DEBUG - process.env.AWS_SECRET_NAME:', process.env.AWS_SECRET_NAME);
     console.log('🔧 Endpoint:', this.awsConfig.endpoint);
     console.log('🔧 Client ID:', this.awsConfig.clientId);
+    console.log('🔧 Secret Name:', this.awsConfig.secretName);
+    console.log('🔧 Region:', this.awsConfig.region);
   }
 
-  async connect() {
-    return new Promise((resolve, reject) => {
-      console.log('🔌 Intentando conectar a AWS IoT Core...');
-      console.log('🔌 Endpoint:', `mqtts://${this.awsConfig.endpoint}:8883`);
-      console.log('🔌 Client ID:', this.awsConfig.clientId);
+  async getCertificatesFromSecretsManager() {
+    try {
+      console.log('🔐 Obteniendo certificados desde AWS Secrets Manager...');
+      console.log('🔐 Secret Name:', this.awsConfig.secretName);
       
-      // Obtener certificados desde variables de entorno o archivos
-      let ca, cert, key;
+      const result = await this.secretsManager.getSecretValue({
+        SecretId: this.awsConfig.secretName
+      }).promise();
       
+      console.log('✅ Secreto obtenido exitosamente');
+      
+      // Parsear el JSON del secreto
+      const secretData = JSON.parse(result.SecretString);
+      
+      // Validar que tenemos todos los certificados necesarios
+      if (!secretData.AWS_CA_CERT || !secretData.AWS_CLIENT_CERT || !secretData.AWS_PRIVATE_KEY) {
+        throw new Error('Faltan certificados en el secreto. Se requieren: AWS_CA_CERT, AWS_CLIENT_CERT, AWS_PRIVATE_KEY');
+      }
+      
+      // Reformatear certificados para que tengan saltos de línea cada 64 caracteres
+      this.certificates = {
+        ca: this.formatPemCertificate(secretData.AWS_CA_CERT),
+        cert: this.formatPemCertificate(secretData.AWS_CLIENT_CERT),
+        key: this.formatPemCertificate(secretData.AWS_PRIVATE_KEY)
+      };
+      
+      console.log('✅ Certificados cargados desde Secrets Manager');
+      console.log('🔐 CA Cert length:', this.certificates.ca.length);
+      console.log('🔐 Client Cert length:', this.certificates.cert.length);
+      console.log('🔐 Private Key length:', this.certificates.key.length);
+      
+      return this.certificates;
+    } catch (error) {
+      console.error('❌ Error obteniendo certificados desde Secrets Manager:', error.message);
+      throw error;
+    }
+  }
+
+  async getCertificates() {
+    // Si ya tenemos certificados en cache, usarlos
+    if (this.certificates) {
+      console.log('✅ Usando certificados desde cache');
+      return this.certificates;
+    }
+    
+    // Intentar obtener desde Secrets Manager primero
+    try {
+      return await this.getCertificatesFromSecretsManager();
+    } catch (secretsError) {
+      console.warn('⚠️ No se pudieron obtener certificados desde Secrets Manager:', secretsError.message);
+      
+      // Fallback a variables de entorno
       if (this.awsConfig.caCert && this.awsConfig.clientCert && this.awsConfig.privateKey) {
-        // Usar certificados desde variables de entorno
         console.log('✅ Usando certificados desde variables de entorno');
-        ca = this.awsConfig.caCert;
-        cert = this.awsConfig.clientCert;
-        key = this.awsConfig.privateKey;
-      } else if (this.awsConfig.caCertPath && this.awsConfig.clientCertPath && this.awsConfig.privateKeyPath) {
-        // Usar certificados desde archivos
+        // Reformatear certificados para que tengan saltos de línea cada 64 caracteres
+        this.certificates = {
+          ca: this.formatPemCertificate(this.awsConfig.caCert),
+          cert: this.formatPemCertificate(this.awsConfig.clientCert),
+          key: this.formatPemCertificate(this.awsConfig.privateKey)
+        };
+        return this.certificates;
+      }
+      
+      // Fallback a archivos
+      if (this.awsConfig.caCertPath && this.awsConfig.clientCertPath && this.awsConfig.privateKeyPath) {
         console.log('✅ Usando certificados desde archivos');
         
         if (!fs.existsSync(this.awsConfig.caCertPath)) {
-          return reject(new Error(`Certificado CA no encontrado: ${this.awsConfig.caCertPath}`));
+          throw new Error(`Certificado CA no encontrado: ${this.awsConfig.caCertPath}`);
         }
         if (!fs.existsSync(this.awsConfig.clientCertPath)) {
-          return reject(new Error(`Certificado de cliente no encontrado: ${this.awsConfig.clientCertPath}`));
+          throw new Error(`Certificado de cliente no encontrado: ${this.awsConfig.clientCertPath}`);
         }
         if (!fs.existsSync(this.awsConfig.privateKeyPath)) {
-          return reject(new Error(`Clave privada no encontrada: ${this.awsConfig.privateKeyPath}`));
+          throw new Error(`Clave privada no encontrada: ${this.awsConfig.privateKeyPath}`);
         }
         
-        console.log('📂 Ruta CA:', this.awsConfig.caCertPath);
-        console.log('📂 Ruta Cert:', this.awsConfig.clientCertPath);
-        console.log('📂 Ruta Key:', this.awsConfig.privateKeyPath);
-        
-        ca = fs.readFileSync(this.awsConfig.caCertPath);
-        cert = fs.readFileSync(this.awsConfig.clientCertPath);
-        key = fs.readFileSync(this.awsConfig.privateKeyPath);
-      } else {
-        return reject(new Error('No se configuraron certificados (ni como variables de entorno ni como archivos)'));
+        this.certificates = {
+          ca: fs.readFileSync(this.awsConfig.caCertPath),
+          cert: fs.readFileSync(this.awsConfig.clientCertPath),
+          key: fs.readFileSync(this.awsConfig.privateKeyPath)
+        };
+        return this.certificates;
       }
       
-      // Conectar a AWS IoT Core con TLS
-      this.client = mqtt.connect(`mqtts://${this.awsConfig.endpoint}:8883`, {
-        clientId: this.awsConfig.clientId,
-        ca: ca,
-        cert: cert,
-        key: key,
-        protocol: 'mqtts',
-        port: 8883,
-        keepalive: 60,
-        reconnectPeriod: 5000, // Aumentado a 5 segundos
-        connectTimeout: 30000,
-        rejectUnauthorized: true,
-        clean: true, // Clean session
-      });
-      
-      console.log('🔌 Cliente MQTT creado, esperando conexión...');
+      throw new Error('No se configuraron certificados (ni en Secrets Manager, ni como variables de entorno ni como archivos)');
+    }
+  }
 
-      this.client.on('connect', () => {
-        console.log('✅ Director conectado a AWS IoT Core');
-        this.isConnected = true;
-        this.subscribeToTopics();
+  async connect() {
+    return new Promise(async (resolve, reject) => {
+      try {
+        console.log('🔌 Intentando conectar a AWS IoT Core...');
+        console.log('🔌 Endpoint:', `mqtts://${this.awsConfig.endpoint}:8883`);
+        console.log('🔌 Client ID:', this.awsConfig.clientId);
         
-        // Log periódico para verificar que no hay mensajes
-        setInterval(() => {
-          console.log(`📊 [Heartbeat] Osmos conectados: ${this.connectedOsmos.size}`);
-          if (this.connectedOsmos.size === 0) {
-            console.log('⚠️ No hay Osmos conectados. Verifica que ESP82 esté publicando.');
-          }
-        }, 30000); // Cada 30 segundos
+        // Obtener certificados usando el nuevo método
+        const certs = await this.getCertificates();
         
-        resolve();
-      });
+        // Conectar a AWS IoT Core con TLS
+        this.client = mqtt.connect(`mqtts://${this.awsConfig.endpoint}:8883`, {
+          clientId: this.awsConfig.clientId,
+          ca: certs.ca,
+          cert: certs.cert,
+          key: certs.key,
+          protocol: 'mqtts',
+          port: 8883,
+          keepalive: 60,
+          reconnectPeriod: 5000,
+          connectTimeout: 30000,
+          rejectUnauthorized: true,
+          clean: true,
+        });
+        
+        console.log('🔌 Cliente MQTT creado, esperando conexión...');
 
-      this.client.on('error', (error) => {
-        console.error('❌ Error de conexión AWS IoT Core:', error.message);
-        this.isConnected = false;
+        this.client.on('connect', () => {
+          console.log('✅ Director conectado a AWS IoT Core');
+          this.isConnected = true;
+          this.subscribeToTopics();
+          
+          // Log periódico para verificar que no hay mensajes
+          setInterval(() => {
+            console.log(`📊 [Heartbeat] Osmos conectados: ${this.connectedOsmos.size}`);
+            if (this.connectedOsmos.size === 0) {
+              console.log('⚠️ No hay Osmos conectados. Verifica que ESP82 esté publicando.');
+            }
+          }, 30000); // Cada 30 segundos
+          
+          resolve();
+        });
+
+        this.client.on('error', (error) => {
+          console.error('❌ Error de conexión AWS IoT Core:', error.message);
+          this.isConnected = false;
+          reject(error);
+        });
+
+        this.client.on('close', () => {
+          console.log('🔌 Conexión AWS IoT Core cerrada');
+          this.isConnected = false;
+        });
+
+        this.client.on('offline', () => {
+          console.log('📴 Cliente AWS IoT Core offline');
+          this.isConnected = false;
+        });
+        
+        this.client.on('reconnect', () => {
+          console.log('🔄 Reconectando a AWS IoT Core...');
+        });
+        
+        this.client.on('end', () => {
+          console.log('🛑 Cliente MQTT finalizó');
+        });
+        
+        // Evento para errores del stream TLS
+        this.client.stream?.on('error', (error) => {
+          console.error('❌ Error TLS:', error.message);
+          console.error('Código:', error.code);
+        });
+
+        this.client.on('message', (topic, message) => {
+          this.handleMessage(topic, message);
+        });
+      } catch (error) {
+        console.error('❌ Error en connect():', error.message);
         reject(error);
-      });
-
-      this.client.on('close', () => {
-        console.log('🔌 Conexión AWS IoT Core cerrada');
-        this.isConnected = false;
-      });
-
-      this.client.on('offline', () => {
-        console.log('📴 Cliente AWS IoT Core offline');
-        this.isConnected = false;
-      });
-      
-      this.client.on('reconnect', () => {
-        console.log('🔄 Reconectando a AWS IoT Core...');
-      });
-      
-      this.client.on('end', () => {
-        console.log('🛑 Cliente MQTT finalizó');
-      });
-      
-      // Evento para errores del stream TLS
-      this.client.stream?.on('error', (error) => {
-        console.error('❌ Error TLS:', error.message);
-        console.error('Código:', error.code);
-      });
-
-      this.client.on('message', (topic, message) => {
-        this.handleMessage(topic, message);
-      });
+      }
     });
   }
 
@@ -453,6 +529,44 @@ class OsmoMQTTClient {
     } catch (e) {
       console.warn('⚠️ Error en _pruneStaleOsmos:', e.message);
     }
+  }
+
+  /**
+   * Reformatea un certificado PEM para que tenga saltos de línea cada 64 caracteres
+   * @param {string} cert - Certificado en formato PEM (puede estar en una sola línea)
+   * @returns {string} - Certificado con formato PEM correcto
+   */
+  formatPemCertificate(cert) {
+    if (!cert) return cert;
+    
+    // Si ya tiene saltos de línea, devolverlo tal como está
+    if (cert.includes('\n')) {
+      return cert;
+    }
+    
+    // Extraer el tipo de certificado (BEGIN/END lines)
+    const beginMatch = cert.match(/-----BEGIN [^-]+-----/);
+    const endMatch = cert.match(/-----END [^-]+-----/);
+    
+    if (!beginMatch || !endMatch) {
+      console.warn('⚠️ Certificado no tiene formato PEM válido, devolviendo tal como está');
+      return cert;
+    }
+    
+    const beginLine = beginMatch[0];
+    const endLine = endMatch[0];
+    
+    // Extraer el contenido del certificado (sin las líneas BEGIN/END)
+    const content = cert.substring(beginLine.length, cert.lastIndexOf(endLine)).trim();
+    
+    // Dividir el contenido en líneas de 64 caracteres
+    const lines = [];
+    for (let i = 0; i < content.length; i += 64) {
+      lines.push(content.substring(i, i + 64));
+    }
+    
+    // Reconstruir el certificado con formato correcto
+    return `${beginLine}\n${lines.join('\n')}\n${endLine}`;
   }
 }
 
