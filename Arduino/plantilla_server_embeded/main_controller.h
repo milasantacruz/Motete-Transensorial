@@ -1,13 +1,15 @@
 #ifndef MAIN_CONTROLLER_H
 #define MAIN_CONTROLLER_H
 
-#include "network_manager.h"
-#include "pump_controller.h"
+// Forward declarations para evitar problemas de inicialización
+class NetworkManager;
+class PumpController;
 
 class MainController {
 private:
-    NetworkManager networkManager;
-    PumpController pumpController;
+    // Usar punteros para crear objetos dinámicamente después de Serial.begin()
+    NetworkManager* networkManager;
+    PumpController* pumpController;
     
     unsigned long lastStatusPublish;
     

@@ -2,42 +2,56 @@
 
 > **Nota:** Este documento asume que el hardware funciona correctamente (el sketch `plantilla_AWS_IOT` funciona), por lo que se enfoca en problemas específicos del código de `plantilla_server_embeded`.
 
-## 🔍 Problema Identificado: Uso de deviceConfig en Constructor
+## 🔍 Problema Identificado y Solución Aplicada
 
-### ⚠️ PROBLEMA PRINCIPAL (CAUSA DEL BLOQUEO)
+### ⚠️ PROBLEMA PRINCIPAL: Objetos como miembros de clase vs punteros
 
-**El constructor de `PumpController` se ejecuta ANTES de `setup()` y usa `deviceConfig`:**
+**El problema era que `plantilla_server_embeded` usaba objetos como miembros de clase:**
 
 ```cpp
-// En pump_controller.cpp línea 4-14
-PumpController::PumpController() : pumpCount(0) {
-    // ...
-    pumps[i].activationTime = deviceConfig.pumpDefaults.activationTime;  // ← PROBLEMA
-    pumps[i].cooldownTime = deviceConfig.pumpDefaults.cooldownTime;      // ← PROBLEMA
-}
+// ANTES (problemático):
+class MainController {
+private:
+    NetworkManager networkManager;   // ← Objeto, constructor se ejecuta ANTES de setup()
+    PumpController pumpController;   // ← Objeto, constructor se ejecuta ANTES de setup()
+};
 ```
 
-**Orden de ejecución (INCORRECTO):**
-1. Se crea `MainController controller` (global, se ejecuta ANTES de `setup()`)
-2. Esto crea `PumpController pumpController` como miembro
-3. Se ejecuta el constructor de `PumpController` → **usa `deviceConfig`**
-4. Si hay algún problema con `deviceConfig`, el código se cuelga
-5. **NUNCA llega a `setup()`** → **NUNCA se ejecuta `Serial.begin()`** → **No ves ningún print**
+**Esto causaba que:**
+1. Al crear `MainController controller` (variable global), se ejecutaban los constructores de `NetworkManager` y `PumpController` ANTES de `setup()`
+2. Estos constructores podían usar librerías o variables que aún no estaban inicializadas
+3. El código se colgaba ANTES de llegar a `setup()` → ANTES de `Serial.begin()` → No ves ningún print
 
-**Solución aplicada:**
-- Mover el uso de `deviceConfig` del constructor al método `initialize()`
-- El constructor ahora solo inicializa valores temporales
-- `deviceConfig` se usa después de que `Serial.begin()` se ejecute
+### ✅ SOLUCIÓN APLICADA: Usar punteros (igual que plantilla_AWS_IOT)
 
-### 1. ⚠️ Falta de Delay Inicial
+```cpp
+// AHORA (correcto):
+class MainController {
+private:
+    NetworkManager* networkManager;   // ← Puntero, se crea en initialize() DESPUÉS de Serial.begin()
+    PumpController* pumpController;   // ← Puntero, se crea en initialize() DESPUÉS de Serial.begin()
+};
+```
 
-**Problema:** El código no tenía un delay después de `Serial.begin()`, por lo que los primeros mensajes se perdían si el Serial Monitor no estaba abierto a tiempo.
+**Orden de ejecución (CORRECTO):**
+1. Se crea `MainController controller` (global)
+2. Constructor de `MainController` solo inicializa punteros a `nullptr` (rápido, sin problemas)
+3. Se ejecuta `setup()` → `controller.initialize()`
+4. Dentro de `initialize()`:
+   - Se ejecuta `Serial.begin(115200)`
+   - Se ejecuta `delay(2000)`
+   - Se crean los objetos con `new PumpController()` y `new NetworkManager()`
+   - Se inicializan los objetos
+5. **Ahora SÍ ves los prints porque Serial ya está inicializado**
 
-**Solución aplicada:** Se agregó `delay(2000)` después de `Serial.begin(115200)`.
+### 📋 Comparación con plantilla_AWS_IOT
 
-**Comparación con `plantilla_AWS_IOT`:**
-- `plantilla_AWS_IOT` tiene `delay(8000)` después de `Serial.begin()`
-- `plantilla_server_embeded` ahora también tiene delay
+| Característica | plantilla_AWS_IOT | plantilla_server_embeded (antes) | plantilla_server_embeded (ahora) |
+|----------------|-------------------|----------------------------------|----------------------------------|
+| PumpController | `PumpController*` (puntero) | `PumpController` (objeto) | `PumpController*` (puntero) ✅ |
+| NetworkManager | `NetworkManager` (objeto) | `NetworkManager` (objeto) | `NetworkManager*` (puntero) ✅ |
+| Creación de objetos | `new` en constructor | automática (constructor de clase) | `new` en initialize() ✅ |
+| Serial funciona | ✅ Sí | ❌ No | ✅ Sí |
 
 ### 4. ⚠️ Posible Problema con WiFi.begin()
 
