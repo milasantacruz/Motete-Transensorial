@@ -1,8 +1,8 @@
 #include "config.h"
 
 WiFiConfig wifiConfig = {
-    .ssid = "FreakStudio_TPLink",
-    .password = "Freaknoize2025"
+    .ssid = "Personal-926", //"FreakStudio_TPLink",
+    .password = "6TJv6nwtHn" // "Freaknoize2025"
 };
 
 // Configuración AWS IoT Core

@@ -2,8 +2,8 @@
 
 // Configuración WiFi
 WiFiConfig wifiConfig = {
-    "FreakStudio_TPLink",           // SSID de tu red WiFi
-    "Freaknoize2025"        // Contraseña de tu red WiFi
+    .ssid = "Personal-926", //"FreakStudio_TPLink",
+    .password = "6TJv6nwtHn" // "Freaknoize2025"
 };
 
 // Configuración del servidor web
@@ -18,5 +18,5 @@ DeviceConfig deviceConfig = {
     4,                  // Número de bombas
     2000,               // Intervalo de publicación de estado (ms)
     {12,13,14,15},      // Pines de las bombas (GPIO)
-    {1000, 3000}        // Tiempo de activación y cooldown por defecto (ms)
+    {2000, 3000}        // Tiempo de activación y cooldown por defecto (ms)
 };

@@ -9,6 +9,7 @@ MainController::~MainController() {
 
 void MainController::initialize() {
     Serial.begin(115200);
+    delay(2000);  // Dar tiempo para abrir Serial Monitor
     Serial.println();
     Serial.println("=== Motete Transensorial - Piano Server ===");
     Serial.printf("Dispositivo: %s\n", deviceConfig.unitId);

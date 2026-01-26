@@ -2,14 +2,15 @@
 #include "config.h"
 
 PumpController::PumpController() : pumpCount(0) {
-    // Inicializar estado de bombas
+    // Inicializar estado básico de bombas (sin usar deviceConfig aquí)
+    // deviceConfig se usa en initialize() después de Serial.begin()
     for (int i = 0; i < 4; i++) {
         pumps[i].pumpId = i;
         pumps[i].isActive = false;
         pumps[i].activationStartTime = 0;
         pumps[i].cooldownStartTime = 0;
-        pumps[i].activationTime = deviceConfig.pumpDefaults.activationTime;
-        pumps[i].cooldownTime = deviceConfig.pumpDefaults.cooldownTime;
+        pumps[i].activationTime = 1000;  // Valor temporal, se actualiza en initialize()
+        pumps[i].cooldownTime = 3000;    // Valor temporal, se actualiza en initialize()
         pumps[i].cooldownRemaining = 0;
     }
 }
@@ -27,6 +28,12 @@ void PumpController::initialize() {
     // Copiar configuración de pines
     for (int i = 0; i < pumpCount; i++) {
         pumpPins[i] = deviceConfig.pumpPins[i];
+    }
+    
+    // Actualizar valores de deviceConfig (ahora que Serial está inicializado)
+    for (int i = 0; i < pumpCount; i++) {
+        pumps[i].activationTime = deviceConfig.pumpDefaults.activationTime;
+        pumps[i].cooldownTime = deviceConfig.pumpDefaults.cooldownTime;
     }
     
     // Configurar pines como salida
